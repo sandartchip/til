@@ -45,7 +45,8 @@ If you’ve provided a custom delete() method on a model class and want to ensur
 you will need to “manually” delete instances of that model 
 (e.g., by iterating over a QuerySet and calling delete() on each object individually) 
 rather than using the bulk delete() method of a QuerySet.
-```
+
 을 발견하였다.
 
+즉, model.objects.filter()로 는 여러개의 객체가 넘어오기 때문에, 커스터마이징된 delete()함수가 적용되지 않은 것.
 
