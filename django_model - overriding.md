@@ -39,8 +39,7 @@ remove_item에 delete 함수를 적용하였는데, 오버라이딩 된 delete�
 
 원인을 알 수 없어 고통받던 도중, 
 Django 공식 문서(https://docs.djangoproject.com/en/3.1/topics/db/queries/)에서 
->
-Keep in mind that this will, whenever possible, be executed purely in SQL, 
+> Keep in mind that this will, whenever possible, be executed purely in SQL, 
 and so the delete() methods of individual object instances will not necessarily be called during the process. 
 If you’ve provided a custom delete() method on a model class and want to ensure that it is called, 
 you will need to “manually” delete instances of that model 
