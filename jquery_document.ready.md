@@ -20,3 +20,4 @@ $(document).ready() 는, 해당 구문의 안에 있는 코드가 실행되기 �
 A. 이벤트 같은 경우에는, 문서가 전부 로드 될 때 까지 기다릴 필요가 없음.(->확인 요망)
 
 참고:https://twinsoul.tistory.com/74
+https://www.phpschool.com/gnuboard4/bbs/board.php?bo_table=qna_html&wr_id=248685
