@@ -50,7 +50,8 @@ XMLHttpRequest.open의 사용법은 아래와 같다.
 XMLHttpRequest.open(method, url[, async])
 ``` 
 
-![image](https://user-images.githubusercontent.com/15938354/114855017-6bd20480-9e20-11eb-8df7-c23fb8594c9d.png)
+![image](https://user-images.githubusercontent.com/15938354/114855097-84dab580-9e20-11eb-976c-d84abffca565.png)  
+
 
 
 ##  XMLHttpRequest.send
