@@ -1,4 +1,4 @@
-## XMLHttpRequest
+# XMLHttpRequest
 
 - XMLHttpRequest(XHR) 객체는 서버와 상호작용하기 위하여 사용된다.
 전체 페이지의 새로고침없이도 URL 로부터 데이터를 받아올 수 있다. 
@@ -31,7 +31,7 @@ xhr.send();
 
 
 
-### 생성자
+## 생성자
 ```
 XMLHttpRequest() 
 ```
@@ -41,7 +41,7 @@ XMLHttpRequest()
 다른 모든 메소드 호출이전에 호출되어야 한다.
 
 
-### XMLHttpRequest.open
+## XMLHttpRequest.open
 
 XMLHttpRequest 객체의 인스턴스를 생성하고, XMLHttpRequest.open 메소드를 사용하여 서버로의 요청을 준비한다. 
 
@@ -56,7 +56,7 @@ async: 비동기 조작 여부. 옵션으로 default는 true이며 비동기 방
 
 
 
-###  XMLHttpRequest.send
+##  XMLHttpRequest.send
 
 XMLHttpRequest.send 메소드로 준비된 요청을 서버에 전달한다.
 
@@ -82,7 +82,7 @@ xhr.send(null);
 **만약 요청 메소드가 GET인 경우, send 메소드의 인수는 무시되고 request body은 null로 설정된다.**
 
 
-### XMLHttpRequest.setRequestHeader
+## XMLHttpRequest.setRequestHeader
 
 XMLHttpRequest.setRequestHeader 메소드는 HTTP Request Header의 값을 설정한다. 
 
@@ -90,7 +90,7 @@ setRequestHeader 메소드는 반드시 XMLHttpRequest.open 메소드 호출 이
 
 자주 사용하는 Request Header인 Content-type, Accept에 대해 살펴보자.
 
-#### Content-type
+### Content-type
 
 Content-type은 request body에 담아 전송할 데이터의 MIME-type의 정보를 표현한다. 자주 사용되는 MIME-type은 아래와 같다.
 
@@ -112,7 +112,7 @@ xhr.send(JSON.stringify(data));
 ```
 
 
-#### Accept
+### Accept
 
 HTTP 클라이언트가 서버에 요청할 때 서버가 send back 할 데이터의 MIME-type을 Accept로 지정할 수 있다.
 
