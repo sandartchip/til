@@ -18,7 +18,7 @@
 - 서버가 브라우저의 요청에 대해 응답을 반환하면, 같은 XMLHttpRequest 객체가 그 결과를 처리한다.
 
 
-```
+```javascript
 // XMLHttpRequest 객체의 생성
 const xhr = new XMLHttpRequest();
 
@@ -32,7 +32,7 @@ xhr.send();
 
 
 ## 생성자
-```
+```javascript
 XMLHttpRequest() 
 ```
 
@@ -46,7 +46,7 @@ XMLHttpRequest()
 XMLHttpRequest 객체의 인스턴스를 생성하고, XMLHttpRequest.open 메소드를 사용하여 서버로의 요청을 준비한다. 
 
 XMLHttpRequest.open의 사용법은 아래와 같다.
-```
+```javascript
 XMLHttpRequest.open(method, url[, async])
 ``` 
 
@@ -69,7 +69,7 @@ POST 메소드의 경우, 데이터(페이로드)를 Request Body에 담아 전�
 
 XMLHttpRequest.send 메소드에는 request body에 담아 전송할 인수를 전달할 수 있다.
 
-```
+```javascript
 xhr.send(null);
 // xhr.send('string');
 // xhr.send(new Blob()); // 파일 업로드와 같이 바이너리 컨텐트를 보내는 방법
@@ -97,7 +97,7 @@ Content-type은 request body에 담아 전송할 데이터의 MIME-type의 정�
 
 다음은 request body에 담아 서버로 전송할 데이터의 MIME-type을 지정하는 예이다.
 
-```
+```javascript
 // json으로 전송하는 경우
 xhr.open('POST', '/users');
 
@@ -116,7 +116,7 @@ HTTP 클라이언트가 서버에 요청할 때 서버가 send back 할 데이�
 
 다음은 서버가 send back할 데이터의 MIME-type을 지정하는 예이다.
 
-```
+```javascript
 // 서버가 센드백할 데이터의 MIME-type 지정: json
 xhr.setRequestHeader('Accept', 'application/json');
 ```
