@@ -52,7 +52,7 @@ XMLHttpRequest.open(method, url[, async])
 
 method: HTTP method (“GET”, “POST”, “PUT”, “DELETE” 등)
 url: 요청을 보낼 URL
-async: 비동기 조작 여부. 옵션으로 default는 true이며 비동기 방식으로 동작한다.
+async: 비동기 조작 여부. 옵션으로 default는 true이며 비동기 방식으로 동작한다.  
 
 
 
