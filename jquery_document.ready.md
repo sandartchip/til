@@ -15,7 +15,29 @@ $(document).ready() 는, 해당 구문의 안에 있는 코드가 실행되기 �
 반드시 이 구문 안에 해당 코드를 위치시켜야 제대로 작동함을 보장한다.
 
 
-**Q. 그러면 모든 DOM element에 대한 함수를 document.ready 안에 적어야 하나?**
+
+예시)
+```
+$('#id_file').change(function() { // 파일 선택  input에 변화가 있으면
+        console.log("체인지");
+});
+```
+을, document.ready 밖에 적으면 file input에 파일을 넣어도, 이벤트 인식이 안 된다.
+
+해당 함수를 document.ready 안에 넣으면 이벤트 인식이 된다.
+
+```
+$(document).ready(function(){
+
+    $('#id_file').change(function() { // 파일 선택  input에 변화가 있으면
+            console.log("체인지");
+    });
+```
+
+
+
+**Q. 그러면 모든 DOM element에 대한 함수를 document.ready 안에 적어야 하나? document.ready 바깥으로 뺄 수 있는 경우는 어떤 경우인가?**
+
 
 A. 이벤트 같은 경우에는, 문서가 전부 로드 될 때 까지 기다릴 필요가 없음.(->확인 요망)
 
