@@ -48,12 +48,9 @@ XMLHttpRequest 객체의 인스턴스를 생성하고, XMLHttpRequest.open 메�
 XMLHttpRequest.open의 사용법은 아래와 같다.
 ```
 XMLHttpRequest.open(method, url[, async])
-```
+``` 
 
-method: HTTP method (“GET”, “POST”, “PUT”, “DELETE” 등)
-url: 요청을 보낼 URL
-async: 비동기 조작 여부. 옵션으로 default는 true이며 비동기 방식으로 동작한다.  
-
+![image](https://user-images.githubusercontent.com/15938354/114855017-6bd20480-9e20-11eb-8df7-c23fb8594c9d.png)
 
 
 ##  XMLHttpRequest.send
