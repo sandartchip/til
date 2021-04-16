@@ -25,3 +25,4 @@ middleware는 다음과 같이 app을 감싸고 있으면서, request가 들어�
 ![image](https://user-images.githubusercontent.com/15938354/114992179-6c78a280-9ed5-11eb-8f48-bbb15a296aed.png)  
 
 
+참고:https://ssungkang.tistory.com/entry/Django-HttpRequest-HttpResponse
