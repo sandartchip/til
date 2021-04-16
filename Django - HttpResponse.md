@@ -20,8 +20,8 @@ MIDDLEWARE = [
 ]
 ```
 
+middleware는 다음과 같이 app을 감싸고 있으면서, request가 들어올 때는 적절하게 가공해주고, response가 나갈 때도 확인을 해 준다.   
 
 ![image](https://user-images.githubusercontent.com/15938354/114992179-6c78a280-9ed5-11eb-8f48-bbb15a296aed.png)  
 
 
-middleware는 다음과 같이 app을 감싸고 있으면서, request가 들어올 때는 적절하게 가공해주고, response가 나갈 때도 확인을 해 준다. 
