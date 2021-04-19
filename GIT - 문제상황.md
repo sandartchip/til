@@ -19,9 +19,21 @@ git filter-branch -f --index-filter 'git rm --cached --ignore-unmatch 에러가 
 Removing sensitive data from Git. “fatal: ambiguous argument 'rm'”
 ```
 
+
 => single quote(')을 "으로 바꾸니 해결 
 ```
 git filter-branch -f --index-filter "git rm --cached --ignore-unmatch 에러가 난 파일명"
 
 ```
+
+=> 삭제해야하는, fastq.gz을 한꺼번에 삭제 후 해결.
+
+```
+
+git filter-branch -f --index-filter "git rm --cached --ignore-unmatch  *.fastq.gz"
+
+```
+
+오랜시간 push를 못하게 한 대용량 파일 문제가 해결됨.
+
 
