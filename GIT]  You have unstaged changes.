@@ -1,0 +1,7 @@
+
+
+- unstaged change는 
+
+보통 이미 git에서 tracking이 되고 있으며 change가 있는, 즉 변경된 파일.
+
+=> git add 작업을 다시 해주어야 함.
