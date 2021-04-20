@@ -16,10 +16,10 @@ class Upload(models.Model):
 ```
 
 모델에서, FileField형의 필드를 만들면
+
 해당 파일 모델에 대한
-- 레이블 태그와
-- input 태그가 생긴다. 
-- 이 때 input 태그에서, 모델의 필드명(file)이 해당 필드에 대응하는 input 요소의 id값(id_file)이 된다.
+- 레이블 태그(label for 속성이 id_필드명)으로 지정 와
+- input 태그(name과 type이 해당 필드명으로)가 생긴다. 
 
 
 
