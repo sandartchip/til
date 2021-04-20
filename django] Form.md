@@ -16,6 +16,6 @@ class Upload(models.Model):
 ```
 
 
-즉, 모델의 필드값이 해당 input의 id값이 된다.
+즉, 모델의 필드명(file)이 해당 필드에 대응하는 input 요소의 id값(id_file)이 된다.
 
 
