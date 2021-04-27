@@ -1,4 +1,6 @@
 
+### opacity 0 
+
 ```css
 
 opacity: 0 
@@ -13,3 +15,36 @@ opacity: 0
 ### width 속성
 
 width의 % 요소 : 부모 요소에 **상대적인** 너비.  
+
+
+### nth-child 속성 
+=> 부모 안의 **모든 요소** 중 N번째 요소. 
+
+```html
+
+<div id="test">
+  <p>Ttitle</p>
+  <ul>
+  </ul>
+  <ul>
+  </ul>
+```
+
+```css
+  div#test ul:nth-child(1){ 
+    
+   }
+  div#test ul:nth-child(2) {
+  
+   }
+```
+
+이렇게 css 줄 경우에, nth-child(2)는 첫 번째 ul에 걸린다. 
+나는 nth-child 속성이 태그명까지 구분한다 생각했지만 아님. 
+
+### nth-of-type
+
+내가 생각한 방식대로 스타일이 적용되게 하려면 nth-of-type을 적용해야 한다.
+
+즉, 부모 안의 요소 중 1번재 ul요소, 2번째 ul 요소에 적용된다.
+
