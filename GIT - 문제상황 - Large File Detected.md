@@ -37,3 +37,12 @@ git filter-branch -f --index-filter "git rm --cached --ignore-unmatch  *.fastq.g
 오랜시간 push를 못하게 한 대용량 파일 문제가 해결됨.
 
 
+
+> 또 다시 하니, 
+```
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+``` 
+문제가 발생함
+
