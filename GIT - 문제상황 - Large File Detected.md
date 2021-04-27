@@ -46,3 +46,13 @@ hint: 'git pull ...') before pushing again.
 ``` 
 문제가 발생함
 
+```
+git pull origin master --allow-unrelated-histories
+```
+
+엉킨 히스토리를 무시하고 pull했기 때문에 master 브랜치와 다른 원격저장소의 파일의 충돌이 남.
+=> 일단은 pull하고, 백업한 원본 파일을 다시 붙여넣음.
+
+충돌을 모두 해결한뒤 commit, push 를 하면 된다.
+
+=> 이렇게 해결되긴 했는데 이게 정말 최선인가..
