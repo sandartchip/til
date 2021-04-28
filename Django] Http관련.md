@@ -1,0 +1,298 @@
+
+### Request와 Response 객체
+
+장고는 request와 response 객체로 
+서버와 클라이언트가 주고 받는다. 
+
+이를위해 장고는 django.http 모듈에서 HttpRequest와 HttpResponse API를 제공한다.
+
+서버-클라이언트 통신 시 아래와 같은 절차로 데이터가 오고 간다.
+
+1) 특정 페이지가 요청(리퀘스트)되면, 장고는 메타데이터를 포함하는 HttpRequest 객체를 생성한다.
+2) 장고는 urls.py에서 정의한 특정 View 클래스/함수에 첫 번째 인자로 해당 객체(request)를 전달한다. 
+3) 해당 view는, 결과값을 HttpResponse 혹은 JsonResponse 객체에 담아 전달한다.
+
+### HttpRequest 객체  
+
+#### 주요 속성(Attribute)
+```
+HttpRequest.body      # request의 body 객체
+HttpRequest.headers   # request의 headers 객체
+HttpRequest.COOKIES   # 모든 쿠키를 담고 있는 딕셔너리 객체 
+HttpRequest.method    # request의 메소드 타입 
+HttpRequest.GET       #  GET 파라미터를 담고 있는 딕셔너리 같은(?) 객체
+HttpRequest.POST      # POST 파라미터를 담고 있는 딕셔너리 같은 객체 
+```
+
+#### 사용 사례 
+- request.method
+
+```python
+
+if request.method == 'GET'
+  do_something()
+elif request.method =='POST':
+  do_something_else()
+  
+```
+
+#### 주요 메소드 
+```python
+HttpRequest.read
+HttpRequest.get_host()
+HttpReqeust.get_port()
+```
+
+### HttpResponse 
+```
+HttpResponse(data, content_type)
+```
+- response를 반환하는 가장 기본적인 함수
+- 주로 html을 반환
+
+```
+# string 전달하기
+HttpResponse("Here is the text of the Web page.")
+
+# html 태그 전달하기 
+response = HttpResponse()
+>>> response.write("<p>Here's the text of the Web page/</p>")
+```
+
+### HttpRedirect 
+```
+HttpResponseRedirect(url)
+```
+- 별다른 response를 하지 않고, 지정된 url페이지로 redirect함.
+- 첫 번째 인자로 url을 반드시 지정하여야 하며, 절대경로/상대경로를 이용 가능 
+
+
+### Render
+```
+render(request(필수), template_name(필수), context=None, content_type=None, status=None, using=None)
+```
+- render는 **HttpResponse 객체를 반환**하는 함수.
+- **template을 context와 엮어 HttpResponse로 쉽게 반환**해준다.
+- context에는, View에서 사용하던 변수(dictionary 자료형)을 html 템플릿에 전달. 
+- key값이 템플릿에서 사용할 변수 이름, value값이 파이썬 변수가 된다.
+
+
+###  JsonReponse 
+```
+JsonReponse(data, encoder=DjagnoJSONEncoder, safe=True, json_dumps_params=None, **kwargs)
+
+```
+
+- HttpResponse의 subclass
+- JSON-encoded response를 생성할 수 있게 해 줌.
+- 첫 번째 인자는 전달한 데이터로, 반드시 dictionary 객체여야 함.
+- 기본 Content-type 헤더는 application/json임.
+- encoder는 데이터를 serialize할 때 사용됨. (->??)
+ython
+
+41
+
+HttpRequest.read
+
+42
+
+HttpRequest.get_host()
+
+43
+
+HttpReqeust.get_port()
+
+44
+
+```
+
+45
+
+
+
+46
+
+### HttpResponse 
+
+47
+
+```
+
+48
+
+HttpResponse(data, content_type)
+
+49
+
+```
+
+50
+
+- response를 반환하는 가장 기본적인 함수
+
+51
+
+- 주로 html을 반환
+
+52
+
+
+
+53
+
+```
+
+54
+
+# string 전달하기
+
+55
+
+HttpResponse("Here is the text of the Web page.")
+
+56
+
+
+
+57
+
+# html 태그 전달하기 
+
+58
+
+response = HttpResponse()
+
+59
+
+>>> response.write("<p>Here's the text of the Web page/</p>")
+
+60
+
+```
+
+61
+
+
+
+62
+
+### HttpRedirect 
+
+63
+
+```
+
+64
+
+HttpResponseRedirect(url)
+
+65
+
+```
+
+66
+
+- 별다른 response를 하지 않고, 지정된 url페이지로 redirect함.
+
+67
+
+- 첫 번째 인자로 url을 반드시 지정하여야 하며, 절대경로/상대경로를 이용 가능 
+
+68
+
+
+
+69
+
+
+
+70
+
+### Render
+
+71
+
+```
+
+72
+
+render(request(필수), template_name(필수), context=None, content_type=None, status=None, using=None)
+
+73
+
+```
+
+74
+
+- render는 **HttpResponse 객체를 반환**하는 함수.
+
+75
+
+- **template을 context와 엮어 HttpResponse로 쉽게 반환**해준다.
+
+76
+
+- context에는, View에서 사용하던 변수(dictionary 자료형)을 html 템플릿에 전달. 
+
+77
+
+- key값이 템플릿에서 사용할 변수 이름, value값이 파이썬 변수가 된다.
+
+78
+
+
+
+79
+
+
+
+80
+
+###  JsonReponse 
+
+81
+
+```
+
+82
+
+JsonReponse(data, encoder=DjagnoJSONEncoder, safe=True, json_dumps_params=None, **kwargs)
+
+83
+
+
+
+84
+
+```
+
+85
+
+
+
+86
+
+- HttpResponse의 subclass
+
+87
+
+- JSON-encoded response를 생성할 수 있게 해 줌.
+
+88
+
+- 첫 번째 인자는 전달한 데이터로, 반드시 dictionary 객체여야 함.
+
+89
+
+- 기본 Content-type 헤더는 application/json임.
+
+90
+
+- encoder는 데이터를 serialize할 때 사용됨. (->??)
+
+91
+
+- JsonResponse는 response를 커스터마이징하여 전달- JsonResponse는 response를 커스터마이징하여 전달
+
+
+참고:https://velog.io/@jcinsh/Django-request-response
