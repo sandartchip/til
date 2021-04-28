@@ -161,7 +161,8 @@ JsonReponse(data, encoder=DjagnoJSONEncoder, safe=True, json_dumps_params=None, 
 - 첫 번째 인자는 전달한 데이터로, 반드시 dictionary 객체여야 함.
 - 기본 Content-type 헤더는 application/json임.
 - encoder는 데이터를 serialize할 때 사용됨. (->??)
-- JsonResponse는 response를 커스터마이징하여 전달- JsonResponse는 response를 커스터마이징하여 전달
+- JsonResponse는 response를 커스터마이징하여 전달하고 싶을 때, HTTP Staus code에 더하여 메세지를 입력하여 전달 가능하다.
+- 딱히 전달할 메세지가 없고, status code만 전달하는 경우에는 HttpResponse를 사용하면 된다. 
 
 
 참고:https://velog.io/@jcinsh/Django-request-response
