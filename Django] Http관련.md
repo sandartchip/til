@@ -90,208 +90,77 @@ JsonReponse(data, encoder=DjagnoJSONEncoder, safe=True, json_dumps_params=None, 
 - encoder는 데이터를 serialize할 때 사용됨. (->??)
 ython
 
-41
 
+```python
 HttpRequest.read
-
-42
-
 HttpRequest.get_host()
-
-43
-
 HttpReqeust.get_port()
-
-44
-
-```
-
-45
-
-
-
-46
+``` 
 
 ### HttpResponse 
-
-47
-
+ 
+ 
 ```
-
-48
-
 HttpResponse(data, content_type)
 
-49
-
 ```
-
-50
 
 - response를 반환하는 가장 기본적인 함수
-
-51
-
 - 주로 html을 반환
-
-52
-
-
-
-53
 
 ```
 
-54
-
 # string 전달하기
-
-55
-
 HttpResponse("Here is the text of the Web page.")
 
-56
-
-
-
-57
 
 # html 태그 전달하기 
 
-58
-
 response = HttpResponse()
-
-59
-
 >>> response.write("<p>Here's the text of the Web page/</p>")
-
-60
 
 ```
 
-61
-
-
-
-62
 
 ### HttpRedirect 
 
-63
 
 ```
-
-64
 
 HttpResponseRedirect(url)
 
-65
-
 ```
 
-66
-
 - 별다른 response를 하지 않고, 지정된 url페이지로 redirect함.
-
-67
-
 - 첫 번째 인자로 url을 반드시 지정하여야 하며, 절대경로/상대경로를 이용 가능 
 
-68
-
-
-
-69
-
-
-
-70
 
 ### Render
 
-71
-
 ```
-
-72
 
 render(request(필수), template_name(필수), context=None, content_type=None, status=None, using=None)
 
-73
-
 ```
 
-74
-
 - render는 **HttpResponse 객체를 반환**하는 함수.
-
-75
-
 - **template을 context와 엮어 HttpResponse로 쉽게 반환**해준다.
-
-76
-
 - context에는, View에서 사용하던 변수(dictionary 자료형)을 html 템플릿에 전달. 
-
-77
-
 - key값이 템플릿에서 사용할 변수 이름, value값이 파이썬 변수가 된다.
 
-78
-
-
-
-79
-
-
-
-80
 
 ###  JsonReponse 
 
-81
-
 ```
-
-82
-
 JsonReponse(data, encoder=DjagnoJSONEncoder, safe=True, json_dumps_params=None, **kwargs)
 
-83
-
-
-
-84
-
 ```
 
-85
-
-
-
-86
-
 - HttpResponse의 subclass
-
-87
-
 - JSON-encoded response를 생성할 수 있게 해 줌.
-
-88
-
 - 첫 번째 인자는 전달한 데이터로, 반드시 dictionary 객체여야 함.
-
-89
-
 - 기본 Content-type 헤더는 application/json임.
-
-90
-
 - encoder는 데이터를 serialize할 때 사용됨. (->??)
-
-91
-
 - JsonResponse는 response를 커스터마이징하여 전달- JsonResponse는 response를 커스터마이징하여 전달
 
 
