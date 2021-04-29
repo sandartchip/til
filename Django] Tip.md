@@ -1,4 +1,8 @@
 
+### null, default, blank의 차이
+
+
+### os.mkdir 과 os.makedirs 
 폴더 만들 때 os.mkdir은 1단 폴더만 만듬
 
 ```python
