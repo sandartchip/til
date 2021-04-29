@@ -22,4 +22,18 @@ class Upload(models.Model):
 - input 태그의 name과 type이 **해당 필드명으로** 지정된다. 
 
 
+### form 커스터마이징 
 
+attr함수를 이용하여 커스터마이징 가능하다. 
+
+```python
+
+class UploadFileForm(forms.ModelForm):
+    class Meta:
+        model = Upload
+        fields = ('file', 'folder',)
+        widgets = {
+            'file': forms.FileInput(attrs = {'id': 'file_id'}),
+            'folder': forms.HiddenInput(attrs = {'id': 'folder_id'})
+        }
+```
