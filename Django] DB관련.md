@@ -30,3 +30,13 @@ migrate시키면
 ![image](https://user-images.githubusercontent.com/15938354/116501977-354ebc00-a8ed-11eb-8f5b-e443b21da78c.png)
 
 내가 원하는 folder필드가 아닌, folder_id를 참조하였다. 
+
+
+```
+class Upload(models.Model):
+    file = models.FileField(upload_to='images_test')
+    folder = models.ForeignKey(Folder, on_delete=models.CASCADE, default=-1, **db_column="folder"**)
+```
+
+![image](https://user-images.githubusercontent.com/15938354/116502072-83fc5600-a8ed-11eb-996f-d1873a6744d4.png)
+
