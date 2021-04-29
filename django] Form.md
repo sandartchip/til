@@ -37,3 +37,9 @@ class UploadFileForm(forms.ModelForm):
             'folder': forms.HiddenInput(attrs = {'id': 'folder_id'})
         }
 ```
+
+
+### cleaned_data
+
+cleaned_data로 form의 데이터 가져오는건 is_valid()함수를 호출 한 이후에만 가능하다. 
+
