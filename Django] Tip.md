@@ -46,7 +46,7 @@ template.html
 
 views.py
 
-```
+```python
 def submit_new_job(request):
     file_form = UploadFileForm(request.POST or None, request.FILES or None)
     if( file_form.is_valid()):
@@ -59,7 +59,8 @@ def submit_new_job(request):
 
 
 after_submit.html
-```
+```html
+
 <p class="job_id">Job ID: {{ folder_uuid_name }}</p>
 
 ```
