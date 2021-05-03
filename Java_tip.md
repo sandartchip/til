@@ -1,8 +1,20 @@
 ![image](https://user-images.githubusercontent.com/15938354/116842077-40b82500-ac16-11eb-86c1-27e4e4b72593.png)
 
-### JRE
-컴파일된 자바 프로그램을 실행시킬 수 있는 자바 환경
-JAVA언어를 사용하는 개발자가 아니라 JAVA언어로 만들어진 프로그램을 실행하는 사용자라면 JRE만 컴퓨터에 설치하면 됩니다.
+### JRE(Java SE Runtime Environment)
+- 컴파일된 자바 프로그램을 실행시킬 수 있는 자바 환경
+
+- JAVA언어로 작성된 프로그램을 실행하기 위해선 JRE(Java SE Runtime Environment)가 필요하다. 
+
+- 보통 사용자 입장에서 JAVA를 설치한다는 것은 JRE를 설치하는 것을 말한다.
+(- JAVA언어를 사용하는 개발자가 아니라 JAVA언어로 만들어진 프로그램을 실행하는 사용자는, JRE만 컴퓨터에 설치하면 된다.)
+
+- JAVA언어를 사용하는 개발자는 JAVA언어로 작성된 소스(Source)를 컴파일하고 관리할 필요가 있다.
+
+- 이때 사용되는 도구를 JDK(Java SE Development Kit)라고 말한다.
+
+- JDK안에는 JRE도 포함되어 있다.(컴파일한 결과를 실행하기 위해서는 JRE가 필요하기 때문)
+
+
 
 
 ### JVM
@@ -25,6 +37,7 @@ JDK 최신버전은 9이다.
 
 참고자료
 
+https://www.boostcourse.org/web316/lecture/16680?isDesc=false
 
 https://www.itworld.co.kr/news/110817
 
