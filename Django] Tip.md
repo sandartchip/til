@@ -1,6 +1,20 @@
 
 ### null, default, blank의 차이
 
+### url, path의 차이
+#### url
+- Django 2.0 이전엔 url 사용
+- django.conf.urls의 url로 라우팅
+- 정규식 사용 
+
+```python
+   urlpatterns = [ url(r'^book/(?P<pk>\d)/$', views.BookDetail.as_view(), name='book_detail')]
+```
+#### path 
+```python
+   urlpatterns = [ path('bookmark/<int:pk>/', BookmarkDV.as_view(), name='detail')]
+```
+
 
 ### os.mkdir 과 os.makedirs 
 폴더 만들 때 os.mkdir은 1단 폴더만 만듬
