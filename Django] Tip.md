@@ -17,6 +17,12 @@
    urlpatterns = [ path('bookmark/<int:pk>/', BookmarkDV.as_view(), name='detail')]
 ```
 
+#### URLConf
+
+- settings.py에 최상위 URLConf 모듈 지정 
+- 특정 url과 뷰 매핑 list 
+- Django 서버로 http요청이 들어올  때마다, URLConf 매핑 리스트를 **처음부터 끝까지 순차적으로** 훑으며 검색
+
 
 ### os.mkdir 과 os.makedirs 
 폴더 만들 때 os.mkdir은 1단 폴더만 만듬
