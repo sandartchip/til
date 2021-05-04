@@ -11,6 +11,8 @@
    urlpatterns = [ url(r'^book/(?P<pk>\d)/$', views.BookDetail.as_view(), name='book_detail')]
 ```
 #### path 
+- Django 2.0 이후엔 path라는 간결한 모듈 등장
+ 
 ```python
    urlpatterns = [ path('bookmark/<int:pk>/', BookmarkDV.as_view(), name='detail')]
 ```
