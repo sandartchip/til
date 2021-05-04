@@ -15,6 +15,11 @@
 - JDK안에는 JRE도 포함되어 있다.(컴파일한 결과를 실행하기 위해서는 JRE가 필요하기 때문)
 
 
+### JDBC
+
+- Java Database Connectivity 
+- 자바에서 DB 프로그래밍을 하기 위해 사용되는 API
+
 
 
 ### JVM
