@@ -37,14 +37,30 @@ JDK 최신버전은 9이다.
     그런데, JDK를 설치할 때는 환경변수를 설정해야 합니다. 환경변수를 설정하는 이유가 무엇일까요?
 #### 현재 설치된 JDK보다 높은 버전의 JDK를 설치했습니다. 이때 수정해야 할 환경변수는 무엇일까요?
 
+
 ### Java Code convention
 
 클래스명 : 첫글자를 대문자로
 프로젝트명, 패키지명 : 소문자
 
+### JAVA SE, EE
+
+#### JAVA SE (Java Standard Edition)
+- SE(Standard Edition) 는 일반 자바프로젝트 버전.
+- 가장 기본이 되는 에디션. 
+- 흔히 자바 언어라고 하는 대부분의 패키지가 포함
+- 주요 패키지로는 java.lang.*, java.io.*, java.util.*, java.awt.*, javax.rmi.*, javax.net.* 등이 있다.
+
+
+#### JAVA EE (Java Enterprise Edition)
+- 자바로 구현되는 웹 프로그래밍에서 가장 많이 사요되는 JSP, Servlet을 비롯
+데이터베이스에 연동하는 JDBC, 그 외에도 JNDI, JTA, EJB 등의 기술이 포함. 
+- Java EE는 Java SE의 API에 추가로(lib 디렉토리에 포함되어 있는 JAR파일들)의 차이이다. 
+
+
 
 참고자료
-
+https://210life.tistory.com/entry/Java-EE와-Java-SE의-차이점
 https://www.boostcourse.org/web316/lecture/16680?isDesc=false
 
 https://www.itworld.co.kr/news/110817
