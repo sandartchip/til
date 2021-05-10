@@ -1,4 +1,21 @@
+### You need to run this command from the toplevel of the working tree.
 
+=> git init한 디렉토리 아닌 다른 하위 위치에서 git push 한 경우. 
+
+
+### Bad file discriptor error: 
+```
+Could not read 164d5e5aab514a74463b7d096583c204f5caa6d2
+bad tree object 164d5e5aab514a74463b7d096583c204f5caa6d2
+fatal: The remote end hung up unexpectedly
+fatal: The remote end hung up unexpectedly
+error: failed to push some refs to 'https://github.com/sandartchip/serotype_v2.git'
+fatal: write error: Bad file descriptor
+```
+=> 똑같이 large file error임.
+
+
+### Large File
 ```
 Large files detected. You may want to try Git Large File Storage 
 ```
