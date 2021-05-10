@@ -1,3 +1,6 @@
+### Cannot rewrite branches: You have unstaged changes.
+
+
 ### You need to run this command from the toplevel of the working tree.
 
 => git init한 디렉토리 아닌 다른 하위 위치에서 git push 한 경우. 
