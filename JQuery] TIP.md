@@ -33,6 +33,9 @@ a.css('backgroundcolor', 'blue')-> 메소드가 안 먹음.
 var $a;
 $a.css('backgroundcolor', 'blue')-> a는 제이쿼리 변수이므로, 해당 css속성이 반영.
 ```
+### next()
+선택한 요소의 바로 다음에 위치한 형제 요소.
+
 
 ### val()
 .val()
