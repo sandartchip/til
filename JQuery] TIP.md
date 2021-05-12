@@ -2,6 +2,7 @@
 
 - Javascript의 this는 이벤트가 발생한 element 요소가 표시
 - jQuery의 $(this)는 이벤트가 발생한 element의 정보들이 **Object로** 표시된다. 
+- (내가 생각한 것처럼, DOM 객체 자체가 바인딩되는게 아님.)
 
 
 
