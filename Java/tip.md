@@ -1,4 +1,18 @@
 
+### getRequestURL() 
+
+쿼리스트링을 제외한 문자열 전체. 
+
+예시
+```
+// Example: http://myhost:8080/people?lastname=Fox&age=30
+
+String uri = 
+             request.getRequestURI() +       // "/people"
+             "?" +                           // "?"
+             request.getQueryString();       // "lastname=Fox&age=30"
+```             
+
 
 ![image](https://user-images.githubusercontent.com/15938354/116842077-40b82500-ac16-11eb-86c1-27e4e4b72593.png)
 
