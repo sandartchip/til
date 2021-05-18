@@ -27,7 +27,7 @@ fatal: write error: Bad file descriptor
 
 결국 
 1. git 폴더 초기화하고,
- > rm -rf .git
+ > rm -rf .git (git commit history와 초기값까지 전부 삭제)
  > git init
 
 이하 커밋 등 기존 절차 밟은 후 
