@@ -1,3 +1,9 @@
+# dockerd
+```
+dockerd is the persistent process that manages containers
+```
+컨테이너를 관리하는 백그라운드 프로세스, 즉 도커 데몬. 
+
 
 # Volume
 
