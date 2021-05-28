@@ -7,7 +7,7 @@ git add .gitignore
 git commit -m "[ADD] Git ignore files"
 git push
 ```
-
+### A.1 
 ```
 git rm -r --cached .
 git add .
@@ -18,10 +18,17 @@ git commit -m "[MOD]Activate .gitignore file"
 
 => 이걸 해도 안 된다...??!
 
-
+### A.2
 ```
 git config --global --unset http.postBuffer
 git config --global http.postBuffer 1048576000
 ```
 => 해도 해결 X
 
+
+### A.3 
+```
+git remote remove origin
+git remote add origin https://github..com/user/repo
+git push --set-upstream origin master
+```
