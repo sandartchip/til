@@ -9,13 +9,11 @@ git push
 ```
 
 .gitignore 파일에 추가해도 large file 에러가 해결이 안될 때
-
-=> 파일이 올라간 git의 캐시 자체를 삭제함
-
+=> 용량이 큰 파일을 커밋 캐시에서 삭제하여 커밋 하지 않도록 한다. 
 
 ### A.1 
 ```
-git rm -r --cached .
+git rm -r --cached .  (혹은, 대용량 파일의 이름)
 git add .
 git commit -m "[MOD]Activate .gitignore file"
 ```
