@@ -16,4 +16,12 @@ git commit -m "[MOD]Activate .gitignore file"
 
 대용량 파일들을 git에서 적용시키지 않게 하기 위해 캐시 삭제.
 
+=> 이걸 해도 안 된다...??!
+
+
+```
+git config --global --unset http.postBuffer
+git config --global http.postBuffer 1048576000
+```
+=> 해도 해결 X
 
