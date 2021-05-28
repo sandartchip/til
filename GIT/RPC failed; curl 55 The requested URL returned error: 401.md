@@ -12,6 +12,8 @@ git push
 git rm -r --cached .
 git add .
 git commit -m "[MOD]Activate .gitignore file"
-`
+```
 
-대용량 파일들을 git에서 적용시키지 않게 하기 위해 .
+대용량 파일들을 git에서 적용시키지 않게 하기 위해 캐시 삭제.
+
+
