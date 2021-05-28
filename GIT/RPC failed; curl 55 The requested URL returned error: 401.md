@@ -7,6 +7,11 @@ git add .gitignore
 git commit -m "[ADD] Git ignore files"
 git push
 ```
+
+.gitignore 파일에 추가해도 large file 에러가 해결이 안될 때
+파일이 올라간 git의 캐시 자체를 삭제함
+
+
 ### A.1 
 ```
 git rm -r --cached .
