@@ -8,9 +8,11 @@ git commit -m "[ADD] Git ignore files"
 git push
 ```
 
+
+## 주의사항  : 기존에 git의 관리를 받고 있던 파일이나 폴더 경로를 .gitignore 파일에 추가로 작성하고 push 해도 무시되지 않음
+
 .gitignore 파일에 추가해도 large file 에러가 해결이 안될 때
 => 용량이 큰 파일을 커밋 캐시에서 삭제하여 커밋 하지 않도록 한다. 
-
 
 
 ### A.1 
