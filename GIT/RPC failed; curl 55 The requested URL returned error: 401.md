@@ -69,3 +69,10 @@ git remote remove origin
 git remote add origin https://github..com/user/repo
 git push --set-upstream origin master
 ```
+
+
+==> 이 모든걸 했는데 
+```
+ pack exceeds maximum allowed size
+```
+가 떴다.
