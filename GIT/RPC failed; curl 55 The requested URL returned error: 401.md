@@ -8,6 +8,22 @@ git commit -m "[ADD] Git ignore files"
 git push
 ```
 
+## 1. media 디렉토리 무시
+```
+media/
+```
+
+## 2. "*.fastq" 확장자 무시
+```
+*.fastq
+```
+
+## 3. sam.fastq 파일 무시 
+```
+sam.fastq
+```
+
+
 
 ## 주의사항  : 기존에 git의 관리를 받고 있던 파일이나 폴더 경로를 .gitignore 파일에 추가로 작성하고 push 해도 무시되지 않음
 
@@ -21,6 +37,13 @@ git rm -r --cached .
 git add .
 git commit -m "[MOD]Activate .gitignore file"
 ```
+
+### media 디렉토리 무시 
+
+```
+git rm --cached media/ -r 
+```
+#### 위의 gitignore과 동일한 형태로 써주면 됨.
 
 혹은, 
 
