@@ -1,3 +1,5 @@
+### click()과 .on("click")의 차이?
+
 ### vanilla js변수 jQuery변수로 만들기
 var a;
 $(a)를 하면 jQuery 변수가 되고, 
