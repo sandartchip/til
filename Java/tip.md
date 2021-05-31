@@ -16,6 +16,7 @@ String uri =
 
 ![image](https://user-images.githubusercontent.com/15938354/116842077-40b82500-ac16-11eb-86c1-27e4e4b72593.png)
 
+### Open JDK 와 Oracle JDK는 다름.
 
 ### JVM(Java Virtual Machine)
 
