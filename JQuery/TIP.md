@@ -1,5 +1,14 @@
 ### click()과 .on("click")의 차이?
 
+- click() 이벤트는 최초에 페이지를 로딩할 때 선언되어 있던 element에 이벤트를 바인딩하고 나서 더 이상 동적 바인딩 X. 
+ 
+- on("click") 이벤트는, 부모의 이벤트를 자식 태그에 delegate시킴. 
+ 
+- 동적으로 추가된 태그에게 이벤트를 바인딩 시킬 수 있다. 
+d
+
+
+
 ### vanilla js변수 jQuery변수로 만들기
 var a;
 
@@ -85,4 +94,5 @@ var value_by_name = $('input[name=test_name]').val();
 
 #참고자료
 
+https://lookingfor.tistory.com/entry/JQuery-%ED%81%B4%EB%A6%AD-%EC%9D%B4%EB%B2%A4%ED%8A%B8-onclick-%EA%B3%BC-click-%EC%9D%98-%EC%B0%A8%EC%9D%B4
 https://d2.naver.com/helloworld/1855209
