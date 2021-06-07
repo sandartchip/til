@@ -3,7 +3,9 @@
 ### vanilla js변수 jQuery변수로 만들기
 var a;
 
-$(a)를 하면 jQuery 변수가 되고, 
+$(a)를 하면 jQuery 변수가 된다.
+
+
 
 ### jQuery의 this와 Javascript의 this
 
