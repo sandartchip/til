@@ -7,7 +7,18 @@ $(a)를 하면 jQuery 변수가 되고,
 
 ### jQuery의 this와 Javascript의 this
 
-- Javascript의 this는 이벤트가 발생한 element 요소가 표시
+- Javascript의 this는 이벤트 핸들러가 등록된 DOM 요소를 가리킨다. 
+- jQuery 함수를 사용하려면, $(this)와 같이 감싸서 jQuery 객체로 만들어야 한다.
+
+```javascript 
+
+$("#some").on("click", function(e) {
+   this;     //<= jQuery로 감싸지 않은 요소 (예: <div id="some">..</div>
+   $(this);  // <= jQuery로 감싼 요소 
+}
+
+```
+
 - jQuery의 $(this)는 이벤트가 발생한 element의 정보들이 **Object로** 표시된다. 
 - (내가 생각한 것처럼, DOM 객체 자체가 바인딩되는게 아님.)
 
@@ -68,3 +79,8 @@ var value_by_class = $('.test_class').val();
 var value_by_name = $('input[name=test_name]').val();
 
 ```
+
+
+#참고자료
+
+https://d2.naver.com/helloworld/1855209
