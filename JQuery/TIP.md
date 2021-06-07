@@ -2,6 +2,7 @@
 
 ### vanilla js변수 jQuery변수로 만들기
 var a;
+
 $(a)를 하면 jQuery 변수가 되고, 
 
 ### jQuery의 this와 Javascript의 this
@@ -10,6 +11,8 @@ $(a)를 하면 jQuery 변수가 되고,
 - jQuery의 $(this)는 이벤트가 발생한 element의 정보들이 **Object로** 표시된다. 
 - (내가 생각한 것처럼, DOM 객체 자체가 바인딩되는게 아님.)
 
+- $(this).val()은, oject 형태로 받아온 this의 **value** 값을 가져오는것. 
+(따라서 this가 a 객체이면, val()값이 없다.)
 
 
 #### div에서 이벤트가 발생했을 때, this와 $(this)를 출력했을 때 나타나는 정보
