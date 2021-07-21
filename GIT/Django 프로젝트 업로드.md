@@ -1,6 +1,10 @@
 
 #### gitignore 시킬 거
 
+- .idea :  pycharm 설정 디렉토리
+
+- __pycache__ : 컴파일하면서 만들어지는 디렉토리.
+
 
 - collectstatic 된 static 폴더 
   collectstatic 을 하면, 앱/static 폴더에 있던 정적 파일들이 프로젝트명/static폴더로 이동함 
