@@ -41,6 +41,14 @@ bin/
 
 ```
 
+### gitignore은 대소문자 구분 못한다. 
+- Program 폴더와 program 폴더를 동일하게 인식 함.
+-> git 설정에서 대소문자 구분 하라고 설정해야 함 
+
+(아래 명령어를 수행하라)
+```
+git config core.ignorecase false
+```
 
 #### 이미 push된 프로젝트 .gitignore 재적용 시키기 
 
