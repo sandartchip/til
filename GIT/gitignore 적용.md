@@ -23,9 +23,21 @@ bin
 bin/ 
 # 디렉토리 전체 ignore처리
 # 현재 경로의 디렉토리만.
+
+
 # 모든 위치에서의 디렉토리를 ignore 처리 하고싶다면
 **/디렉토리명/
 
+#예시)
+
+**/bin/
+
+# 은,
+# bin/
+# mine/bin/
+# /mine/mine2/bin/
+
+모두 ignore처리 함.
 
 ```
 
