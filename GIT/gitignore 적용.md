@@ -42,9 +42,7 @@ bin/
 ```
 
 
-#### 디렉토리 ignore 
--> 폴더명/ 
-뒤에 슬래시를 붙여야 한다.
+#### 이미 push된 프로젝트 .gitignore 재적용 시키기 
 
 ```
 git rm -r --cached .
