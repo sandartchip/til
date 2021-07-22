@@ -62,4 +62,10 @@ git commit -m "커밋메세지"
 git push origin {브랜치명}
 ```
 
+#### 원격 서버 내용 강제로 pull받아오기 
+
+```
+ git reset --hard origin/main
+```
+
 참고) https://nochoco-lee.tistory.com/46
