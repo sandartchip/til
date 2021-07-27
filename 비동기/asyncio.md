@@ -5,7 +5,7 @@
 - 네트워크 IO 연산 수행, 자식 프로세스 실행
 - 응용 프로그램 개발자는 일반적으로 asyncio.run()과 같은 고수준의 asyncio 함수를 사용해야 하며, 루프 객체를 참조하거나 메서드를 호출할 필요가 없다. 
 
-https://docs.python.org/ko/3/library/asyncio-eventloop.html
+- 즉, asyncio.get_running_loop(), asyncio.get_event_loop() 등은 **저수준** 이벤트 루프 제어
 
 
 
@@ -22,3 +22,6 @@ https://docs.python.org/ko/3/library/asyncio-eventloop.html
 coroutine 'test' was never awaited 
 ```
 -> 코루틴 함수가 호출되었지만 기다리지 않을 때 (await coro() 대신 coro()일 때)
+
+
+https://docs.python.org/ko/3/library/asyncio-eventloop.html
