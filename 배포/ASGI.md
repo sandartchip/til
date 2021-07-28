@@ -1,4 +1,5 @@
 
+## WSGI로 비동기 처리했을 때의 한계 
 
 - Django has support for writing asynchronous (“async”) views, 
 - along with an entirely async-enabled request stack **if you are running under ASGI.** 
@@ -8,6 +9,9 @@
 - Under a WSGI server, async views will run in their own, one-off event loop. 
 
 - This means you can use async features, like concurrent async HTTP requests, without any issues, but **you will not get the benefits of an async stack.**
+
+
+## Async stack 의 장점
 
 - The main benefits are the ability to service hundreds of connections without using Python threads. 
 
