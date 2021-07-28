@@ -13,7 +13,7 @@
 
 ## Async stack 의 장점
 
-- The main benefits are the **ability to service hundreds of connections ### without using Python threads**.
+- The main benefits are the **ability to service hundreds of connections ### without using Python threads ### **.
 
 - This allows you to use slow streaming, long-polling, and other exciting response types.
 
