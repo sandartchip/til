@@ -1,6 +1,14 @@
 
 ### Request와 Response 객체
 
+
+- Django의 view 는 두 가지중 하나를 하도록 되어 있다. 
+- 요청된 페이지의 내용이 담긴 HttpResponse 객체를 반환하거나
+- 혹은 Http404 같은 예외를 발생하게 해야한다. 
+
+
+
+
 장고는 request와 response 객체로 
 서버와 클라이언트가 주고 받는다. 
 
@@ -68,12 +76,18 @@ HttpResponseRedirect(url)
 
 
 ### Render
+
 ```
 render(request(필수), template_name(필수), context=None, content_type=None, status=None, using=None)
 ```
+- template 에 context 를 채워넣어 표현한 결과를 HttpResponse 객체와 함께 돌려준다. 구문은 자주 쓰는 용법입니다. 따라서 Django 는 이런 표현을 쉽게 표현할 수 있도록 단축 기능(shortcuts)을 제공합니다. index() view 를 단축 기능으로 작성하면 다음과 같습니다.
+
 - render는 **HttpResponse 객체를 반환**하는 함수.
 - **template을 context와 엮어 HttpResponse로 쉽게 반환**해준다.
+- 복잡한 화면이 렌더링 되니 기본적인 Http Response와 뭔가 다른가 싶겠지만, 본질은 같은 것이다. Http 요청에 대한 응답을 리턴하는 것이다. 
+
 - context에는, View에서 사용하던 변수(dictionary 자료형)을 html 템플릿에 전달. 
+- 인수인 context로 표현 된 템플릿의 Http Response 객체가 반환된다. 
 - key값이 템플릿에서 사용할 변수 이름, value값이 파이썬 변수가 된다.
 
 
@@ -147,6 +161,8 @@ render(request(필수), template_name(필수), context=None, content_type=None, 
 - **template을 context와 엮어 HttpResponse로 쉽게 반환**해준다.
 - context에는, View에서 사용하던 변수(dictionary 자료형)을 html 템플릿에 전달. 
 - key값이 템플릿에서 사용할 변수 이름, value값이 파이썬 변수가 된다.
+
+
 
 
 ###  JsonReponse 
