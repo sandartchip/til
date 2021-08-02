@@ -80,7 +80,20 @@ HttpResponseRedirect(url)
 ```
 render(request(필수), template_name(필수), context=None, content_type=None, status=None, using=None)
 ```
-- template 에 context 를 채워넣어 표현한 결과를 HttpResponse 객체와 함께 돌려준다. 구문은 자주 쓰는 용법입니다. 따라서 Django 는 이런 표현을 쉽게 표현할 수 있도록 단축 기능(shortcuts)을 제공합니다. index() view 를 단축 기능으로 작성하면 다음과 같습니다.
+- template 에 context 를 채워넣어 표현한 결과를 HttpResponse 객체와 함께 돌려준다. 
+
+```python
+
+views.py 
+
+def index(request):
+    template = loader.get_template('index.html')
+    context = {'text': '하이룽'}
+    
+    return HttpResponse(template.render(context, request))
+```
+
+- 자주 쓰는 용법이다. 따라서 Django 는 이런 표현을 쉽게 표현할 수 있도록 단축 기능(shortcuts)을 제공합니다. index() view 를 단축 기능으로 작성하면 다음과 같습니다.
 
 - render는 **HttpResponse 객체를 반환**하는 함수.
 - **template을 context와 엮어 HttpResponse로 쉽게 반환**해준다.
