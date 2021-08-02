@@ -71,7 +71,7 @@ if __name__ == "__main__":
 
 ```
 
-## 결과
+### 결과
 
 ![image](https://user-images.githubusercontent.com/15938354/127849926-9fe7e9e1-ee5f-42ff-b74d-deadfac35e7b.png)
 ![image](https://user-images.githubusercontent.com/15938354/127854483-901012bf-74ca-4ed3-be7c-3970c41d360a.png)
@@ -79,31 +79,13 @@ if __name__ == "__main__":
 
 - 첫 번째 pop 적용 할 때, 현재 쓰레드풀에 thread2를 제거 했는데, 
 - 다음 phase의 현재 쓰레드풀에 thread2이 남아 있음. 
-- 쓰레드1, 쓰레드2, 쓰레드3은 끝나는 시점이 거의 동일하기 때문에, **거의 동시에**  . 
+- 쓰레드1, 쓰레드2, 쓰레드3은 끝나는 시점이 거의 동일하기 때문에, **거의 동시에** 쓰레드풀의 finish_new_thread 를 호출함.
+- 따라서, 첫 번째 제거 phase의  현재도 쓰레드 풀에 쓰레드가 3개 있었고 두 번째 제거 phase의 쓰레드 풀에도 쓰레드가 3개 있음.
+- 동시에 쓰레드 여러개에서 thread_list 변수에 접근 하기 때문에 쓰레드 리스트의 변화가 이상하게 보임.
+ 
 
-
-```python 
-import threading
-MAXTHREAD = 2
-from queue import Queue
-import threading
-import time
-
-class WorkerThread(threading.Thread):
-    def __init__(self, parent, second): # 여기서 parent는, worker thread를 생성한 쓰레드 풀 객체 .
-        super().__init__()
-        self.second = second
-        self.parent = parent
-
-    def run(self):
-        print("sub thread start {}".format(self.second))
-        print(" --processing!!!!----- {}".format(self.second))
-        time.sleep(self.second) # 각 쓰레드에서 처리하는 함수 적어주기.
-        print("sub thread end ")
-
-        self.parent.finish_new_thread(self) # 쓰레드 풀 pool 객체에 자신을 전달해서, 쓰레드 풀의 working queue에서 remove 시킴
-```
-
+## lock 사용 
+ 
 ```python
 class WorkingThreadPool(object):
     def __init__(self):
@@ -119,10 +101,10 @@ class WorkingThreadPool(object):
         print("job submit 요청에 대응하는 새로운 쓰레드 만들기")
         new_thread = WorkerThread(self, second) # 새로운 스레드 생성.
 
-        # self.lock.acquire()
+        self.lock.acquire()
         self.thread_list.append(new_thread)
         print("현재 쓰레드풀:[[", self.thread_list, "]] 추가 할 쓰레드:",  new_thread)
-        # self.lock.release()
+        self.lock.release()
 
         new_thread.start()
 
