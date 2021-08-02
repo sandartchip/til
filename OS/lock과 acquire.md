@@ -73,7 +73,6 @@ if __name__ == "__main__":
 
 ### 결과
 
-![image](https://user-images.githubusercontent.com/15938354/127849926-9fe7e9e1-ee5f-42ff-b74d-deadfac35e7b.png)
 ![image](https://user-images.githubusercontent.com/15938354/127854483-901012bf-74ca-4ed3-be7c-3970c41d360a.png)
 
 
@@ -122,7 +121,6 @@ if __name__ == "__main__":
 ```
 ## 결과
 
-![image](https://user-images.githubusercontent.com/15938354/127850138-b1c540b2-4db1-4dd8-abf1-74b706759d8e.png)
 ![image](https://user-images.githubusercontent.com/15938354/127858113-93520051-3c20-49bb-a3a1-8b1bbf90d550.png)
 
 
