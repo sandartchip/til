@@ -74,7 +74,12 @@ if __name__ == "__main__":
 ## 결과
 
 ![image](https://user-images.githubusercontent.com/15938354/127849926-9fe7e9e1-ee5f-42ff-b74d-deadfac35e7b.png)
+![image](https://user-images.githubusercontent.com/15938354/127854483-901012bf-74ca-4ed3-be7c-3970c41d360a.png)
 
+
+- 첫 번째 pop 적용 할 때, 현재 쓰레드풀에 thread2를 제거 했는데, 
+- 다음 phase의 현재 쓰레드풀에 thread2이 남아 있음. 
+- 쓰레드1, 쓰레드2, 쓰레드3은 끝나는 시점이 거의 동일하기 때문에, **거의 동시에**  . 
 
 
 ```python 
