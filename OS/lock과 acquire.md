@@ -108,8 +108,9 @@ if __name__ == "__main__":
         self.thread_list.remove(finished_thread)
 
         print("연산후 쓰레드풀:", self.thread_list)
-        self.lock.release()
-
+        self.lock.release() # release를 하지 않으면,  처음 제거 작업 수행 한 쓰레드가 해당 코드를 점유하여, 다음 phase로 나가지 않음.
+        
+        
 
 if __name__ == "__main__":
     pool = WorkingThreadPool()
@@ -119,7 +120,14 @@ if __name__ == "__main__":
     pool.make_and_run_new_thread(4)
 
 ```
-## 결과
+
+## release 하지 않으면
+![image](https://user-images.githubusercontent.com/15938354/127859271-5f7d40d3-5a04-485f-90c0-253e8375d326.png)
+
+이 상태에서 무한 대기.
+
+
+## 정상 작동 결과
 
 ![image](https://user-images.githubusercontent.com/15938354/127858113-93520051-3c20-49bb-a3a1-8b1bbf90d550.png)
 
