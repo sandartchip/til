@@ -1,5 +1,10 @@
 
 - lock과 acquire를 사용해서, Blocking 큐를 구현함.
+- working 쓰레드를 새로 생성 후, 쓰레드 리스트에 추가 함. 
+- 각 working 쓰레드에서 연산을 수행하고 나면, 쓰레드 풀 객체에서, 해당 쓰레드를 쓰레드 리스트에서 제거함.  
+- 현재 쓰레드 "큐"가 아닌 이유는, FIFO구조가 아님.
+- First In된게 First out되는게 아니라, 어떤 Job이 큐에 먼저 들어왔더라도 먼저 끝나면 먼저 빠짐.
+- 따라서, FIFO나 LIFO와 같은 특정한, 순서가 없는 자료구조라고 할 수 있음.
 - 
 
 ```python 
@@ -38,10 +43,10 @@ class WorkingThreadPool(object):
         print("job submit 요청에 대응하는 새로운 쓰레드 만들기")
         new_thread = WorkerThread(self, second) # 새로운 스레드 생성.
 
-        #self.lock.acquire()
+        # self.lock.acquire()
         self.thread_list.append(new_thread)
         print("현재 쓰레드풀:[[", self.thread_list, "]] 추가 할 쓰레드:",  new_thread)
-        #self.lock.release()
+        # self.lock.release()
 
         new_thread.start()
 
