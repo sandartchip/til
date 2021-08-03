@@ -42,7 +42,7 @@ public class Car {
 	<bean id="userBean" class="kr.or.connect.diexam01.UserBean"></bean>
 	<bean id="e" class="kr.or.connect.diexam01.Engine"></bean>
 	<bean id="c" class="kr.or.connect.diexam01.Car">
-		<property name="engine" ref="e"></property> <!-- property는 함수와 대응 -->
+		<property name="engine" ref="e"></property> <!-- property는 getter, setter 메소드 -->
 	</bean>
 </beans>
 ```
