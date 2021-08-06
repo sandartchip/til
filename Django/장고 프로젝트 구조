@@ -1,0 +1,18 @@
+
+BASE_DIR -> 
+
+settings.py 
+
+```python
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+```
+os.path.abspath(__file__)은 settings.py 있는 위치.
+
+- settings.py는 프로젝트명/프로젝트명/settings.py 로 들어가 있음.
+- manage.py 있는 위치 는, 프로젝트 명/manage.py 임.
+
+os.path.dirname 1번-> settings.py 위치 , 그걸 os.path.dirname으로 한 번 더 감싸면 settings.py가 위치한 폴더(프로젝트명)의 상위 폴더 (프로젝트명)로 연결 됨.
+
+
+
