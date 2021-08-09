@@ -35,5 +35,16 @@ runserver는, settings.py에 등록된 STATIC_URL과 STATICFILES_DIR을
 - 배포 할 때만 사용함. 
  
 
+
+## collectstatic
+
+명령어는 Django 프로젝트의 여러 app에서 사용하는 static 파일을 한 곳(프로젝트 폴더의 statics)으로 모아주는 역할을 한다.
+(물리적으로 파일을 copy함)
+
+collectstatic을 수행하면, 장고의 앱 안에 있는 모든 static 파일들을 settings.py의 STATIC_ROOT 변수에 지정된 경로로 옮김.
+
+
+https://crynut84.github.io/2016/11/14/django-static-file/
+
 https://cupjoo.tistory.com/116
 
