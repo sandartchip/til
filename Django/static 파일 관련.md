@@ -29,14 +29,14 @@ STATIC_URL = '/static/'
 ```html
 {% load static %}
 <img src="{% static 'my_app/example.jpg' %}" alt="My image">
-
+```
 
 4. 앱 디렉토리 하위 static 폴더 안에, 정적 파일 저장 
 ex) my_app/static/my_app/example.jpg.
 
 myapp모듈에서 사용할 Static파일들을 저장하는 디렉토리는 myapp/static/**myapp** 이다. 
 
-myapp/static 디렉토리에 바로 static 파일들을 위치시키면, 
+- myapp/static 디렉토리에 바로 static 파일들을 위치시키면, 
 - 여러 개 앱에 같은 이름의 static파일(예시: myapp/static/style.css, myapp2/static/style.css) 이 있을 때 
 1. 템플릿에서 {% static 'style.css' %} 으로 했을 때, 어느 앱인지 알 수가 없다. 
 2. collectstatic으로 통합 static 디렉토리 생성할 때 이름이 중복이므로, 충돌. 
