@@ -1,4 +1,8 @@
 
+# Djangos와 static파일
+
+- settings.py에서, INSTALLED_APPS에 staticfiles을 추가함 (디폴트)
+- 장고는 django.contrib.staticfiles를 제공하여 파일 관리를 돕는다.
 
 settings.py에 
 
@@ -11,6 +15,10 @@ STATIC_URL = '/static/'
 클라이언트로부터 페이지에 대한 요청이 왔을 때, 
 
 즉, 템플릿에서 이렇게 요청한 경우 
+
+## STATIC 템플릿 태그
+
+- 템플릿 태그는 정적 파일의 절대 URL을 생성한다. 
 
 ```html
 {% static 'STATUC URL 이후의 경로' %}
@@ -54,4 +62,5 @@ collectstatic을 수행하면, 장고의 앱 안에 있는 모든 static 파일�
 https://crynut84.github.io/2016/11/14/django-static-file/
 https://www.opentutorials.org/module/4034/24663
 https://cupjoo.tistory.com/116
-
+https://docs.djangoproject.com/ko/3.2/intro/tutorial06/
+https://docs.djangoproject.com/en/3.2/ref/contrib/staticfiles/
