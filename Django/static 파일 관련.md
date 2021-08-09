@@ -52,13 +52,14 @@ runserver는, settings.py에 등록된 STATIC_URL과 STATICFILES_DIR을
 
 
 ## collectstatic
-- Files are searched by using the enabled finders. 
-- The default is to look in **all locations defined in STATICFILES_DIRS** and **in the 'static' directory of apps specified by the INSTALLED_APPS setting.**
 
-
-- static root 경로의 폴더 사용.
 - Django 프로젝트의 여러 app에서 사용하는 static 파일을 한 곳(프로젝트 폴더의 statics)으로 모아주는 역할을 한다.
-(물리적으로 파일을 copy함)
+
+**어디서?**
+- STATICFILES_DIR에 있는 파일과, INSTALLED_APPS의 static 디렉토리의 파일을 찾아서
+
+**어디로?**
+- static root 경로의 폴더에 물리적으로 파일을 copy함
 
 collectstatic을 수행하면, 장고의 앱 안에 있는 모든 static 파일들을 settings.py의 STATIC_ROOT 변수에 지정된 경로로 옮김.
 
