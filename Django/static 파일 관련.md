@@ -20,12 +20,15 @@
 STATIC_URL = '/static/'
 ```
 
-3. 
+
+3. 클라이언트에서 HTML 요청
+
 클라이언트로부터 페이지에 대한 요청이 왔을 때, 즉, 템플릿에서 이렇게 요청한 경우 
 
 ```html
 {% load static %}
 <img src="{% static 'my_app/example.jpg' %}" alt="My image">
+
 
 4. 앱 디렉토리 하위 static 폴더 안에, 정적 파일 저장 
 ex) my_app/static/my_app/example.jpg.
