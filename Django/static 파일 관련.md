@@ -10,6 +10,13 @@ STATIC_URL = '/static/'
 
 클라이언트로부터 페이지에 대한 요청이 왔을 때, 
 
+즉, 템플릿에서 이렇게 요청한 경우 
+
+```html
+{% static 'STATUC URL 이후의 경로' %}
+```
+
+예를 들어 
 {% static 'img/sample.jpg' %}로, 태그가 있으면, 
 
 runserver는 STATIC_URL + '경로'로 바꾸어 렌더링
