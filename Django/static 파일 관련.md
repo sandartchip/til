@@ -36,15 +36,13 @@ ex) my_app/static/my_app/example.jpg.
 
 myapp모듈에서 사용할 Static파일들을 저장하는 디렉토리는 myapp/static/**myapp** 이다. 
 
-- myapp/static 디렉토리에 바로 static 파일들을 위치시키면, 
+- (귀찮다고 해서) myapp/static 디렉토리에 바로 static 파일들을 위치시키면, 
 - 여러 개 앱에 같은 이름의 static파일(예시: myapp/static/style.css, myapp2/static/style.css) 이 있을 때 
 1. 템플릿에서 {% static 'style.css' %} 으로 했을 때, 어느 앱인지 알 수가 없다. 
 2. collectstatic으로 통합 static 디렉토리 생성할 때 이름이 중복이므로, 충돌. 
 
 
-귀찮다고 해서 그냥 myapp/static디렉토리에 바로 myapp에서 사용할 Static파일들을 위치시키면, 다른 모듈에 같은 이름의 Static파일이 존재하는 경우 요청에 대해 잘못된 Static파일이 전달되는 충돌이 발생할 수 있습니다. 또한, 운영 서버에서 collectstatic명령으로 통합 static디렉토리를 생성할 때 어느 한쪽 파일이 다른 파일에 의해 덮어씌워져 누락되는 문제가 발생합니다.
-
-이제 myapp/static/myapp/mypage.css파일을 다음과 같이 작성합니다. 간단한 예제로, 본문의 글자 색을 모두 파란색으로 바꿔 보도록 하겠습니다. (여기서는 예시를 위해 myapp디렉토리에 바로 CSS파일을 위치시켰지만, 실제 프로젝트에서는 css, js, image등과 같이 Static파일의 종류별 하위 디렉토리를 따로 구성하는 것이 좋습니다.)
+- 결국, static 파일 위치는 static 밑에 폴더 하나 더 만들어서...myapp/static/**myapp**/mypage.css
 
  
 
