@@ -48,8 +48,15 @@ runserver는 STATIC_URL + '경로'로 바꾸어 렌더링
 
 
 
-- Static 파일은 기본적으로 앱 아래에 있는 static 폴더를 탐색한다.
-추가적인 경로를 탐색하게 하려면 이렇게 리스트를 추가해야한다.
+- Django에서는 Static 파일들을 모듈별 Local영역과 Global영역 두 단계로 나누어서 관리를 한다. 
+
+
+- Local영역에는 각 모듈에서 독자적으로 사용되는 Static파일들이 위치한다. (기본적으로 앱 아래에 있는 static 폴더를 탐색한다.)
+
+추가적인 경로를 탐색하게 하려면 Global 영역의 리스트를 추가해야한다.
+- Global영역(STATICFILES_DIRS)에는 사이트 전역에서 공통적으로 사용하는 Static파일들이 위치한다.
+
+
 
 ## STATICFILES_DIRS
 
@@ -84,7 +91,7 @@ https://docs.djangoproject.com/en/3.2/howto/static-files/deployment/
 
 collectstatic을 수행하면, 장고의 앱 안에 있는 모든 static 파일들을 settings.py의 STATIC_ROOT 변수에 지정된 경로로 옮김.
 
-
+https://www.tuwlab.com/ece/26424
 https://crynut84.github.io/2016/11/14/django-static-file/
 https://www.opentutorials.org/module/4034/24663
 https://cupjoo.tistory.com/116
