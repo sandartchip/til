@@ -47,6 +47,10 @@ runserver는 STATIC_URL + '경로'로 바꾸어 렌더링
 -> /static/img/sample.jpg 
 
 
+
+- Static 파일은 기본적으로 앱 아래에 있는 static 폴더를 탐색한다.
+추가적인 경로를 탐색하게 하려면 이렇게 리스트를 추가해야한다.
+
 ## STATICFILES_DIRS
 
 STATICFILES_DIRS = [
