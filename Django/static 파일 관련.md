@@ -76,8 +76,24 @@ STATICFILES_DIRS = [
  os.path.join(BASE_DIR, 'soyeon_pj', 'static')
 ]
 
-- 특정 앱에 연결되지 않은 static 파일들.  (이라고 하는 데도 있고, 앱/static 등 앱 내의 static 폴더도 등록해야 한다는 문서도 있음..-ㅁ-)
+- 특정 앱에 연결되지 않은 static 파일들.  (이라고 하는 데도 있고, 앱/static 등 앱 내의 static 폴더도 등록해야 한다는 문서도 있음..-ㅁ-??)
 - 개발할 때 STATICFILES_DIR에 등록된 실제 경로에서 해당 정적파일 탐색. 
+
+햇갈려서 공식문서를 찾아봄.
+
+- 아무 생각 없이 추가 한 django.staticfiles.finders에 FileSystemFinder와 AppDirectoriesFinder가 있는데, 이 객체들이 참조 할 static 폴더 경로를 찾는다. 
+ 
+## 공식문서
+
+- The list of finder backends that know **how to find static files in various locations.**
+
+- The default will find files **stored in the STATICFILES_DIRS setting** (using django.contrib.staticfiles.finders.FileSystemFinder) and in a **static subdirectory of each app (using django.contrib.staticfiles.finders.AppDirectoriesFinder).**
+ 
+- If multiple files with the same name are present, the first file that is found will be used. 
+
+- One finder is disabled by default: django.contrib.staticfiles.finders.DefaultStorageFinder. 
+
+- If added to your STATICFILES_FINDERS setting, it will look for static files in the default file storage as defined by the DEFAULT_FILE_STORAGE setting.
 
 
 STATICFILES 
