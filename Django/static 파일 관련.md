@@ -95,6 +95,10 @@ STATICFILES_DIRS = [
 
 - If added to your STATICFILES_FINDERS setting, it will look for static files in the default file storage as defined by the DEFAULT_FILE_STORAGE setting.
 
+그러니까 STATIC_URL이 /static/이고
+{% static 'js/test/' %} 라는 태그가 html에 있으면
+
+장고, static finder의 finder는 appdirectory finder는 앱 디렉토리/static/..을 찾아보고 STATICFILES_DIRS에 선언된 디렉토리들/static도  찾음
 
 STATICFILES 
 runserver는, settings.py에 등록된 STATIC_URL과 STATICFILES_DIR을 
