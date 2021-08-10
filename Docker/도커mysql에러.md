@@ -8,6 +8,9 @@ Authentication plugin ‘caching_sha2_password’ cannot be loaded:
 
 - 그러나, 현재 대부분의 MYSQL Client는 caching_sha2_password 모듈이 존재 X
 
+
+도커 생성 시 
+
 ```
 --default-authentication-plugin=mysql_native_password
 ```
