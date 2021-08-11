@@ -19,7 +19,7 @@
 원래 있던 외래키 필드명을 참조하게 하려면, db_column="컬럼명"을 하면 해결.
 
 
-ex)
+ex1)
 ```python
 
 class Folder(models.Model):
@@ -38,6 +38,19 @@ migrate시키면
 
 내가 원하는 folder필드가 아닌, folder_id를 참조하였다. 
 
+
+ex2)
+```
+class WholeGenome(models.Model):
+    species_id = models.IntegerField(default=0) # Species ID의 foreign key임. TODO::나중에 species_name 없애고 species id만 남겨놓음 됨..-a
+```
+-> 마이그레이션 하면 
+![image](https://user-images.githubusercontent.com/15938354/129115814-74fe877e-82e0-4cf3-acfe-0727108eb595.png)
+
+이렇게 붙음..;;;
+
+
+```
 
 ```
 class Upload(models.Model):
