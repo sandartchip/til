@@ -2,9 +2,16 @@
 
 # width 속성
 
+## width : auto 
 - width 지정 안하면, default가 auto 
 - auto : 요소의 너비를 브라우저가 계산. 내용
 
+### block 요소의 width auto 
+- ** width auto ** : **부모 요소 너비**까지 최대값. 내용물에 맞게 자동으로 너비 조정
+
+### inline-block 요소의 width auto
+- 내용물의 크기와 자동 맞춤 
+- 
 
 
 text-align: center는 하위 element에 상속된다.
