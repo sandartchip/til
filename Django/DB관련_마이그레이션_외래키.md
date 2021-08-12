@@ -40,15 +40,23 @@ migrate시키면
 
 
 ex2)
-```
-class WholeGenome(models.Model):
+```python
+class Genome(models.Model):
     species_id = models.IntegerField(default=0) # Species ID의 foreign key임. TODO::나중에 species_name 없애고 species id만 남겨놓음 됨..-a
 ```
 -> 마이그레이션 하면 
 ![image](https://user-images.githubusercontent.com/15938354/129115814-74fe877e-82e0-4cf3-acfe-0727108eb595.png)
-
 이렇게 붙음..;;;
 
+## solution
+```python
+    species = models.ForeignKey(Species, on_delete=models.CASCADE, default=-1)
+```
+마이그레이션 하면 
+-> 
+![image](https://user-images.githubusercontent.com/15938354/129115910-41318d93-f1dc-4bd6-9692-e77f44c1fa78.png)
+
+원하는 결과가 나온다. PK가 
 
 ```
 
