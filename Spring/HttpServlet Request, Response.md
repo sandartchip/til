@@ -7,7 +7,7 @@
 - WAS는 웹 브라우저로부터 Servlet요청을 받으면,
 **요청올 때 가지고 있던 정보를 HttpServletRequest객체를 생성하여 저장**함.
 
-- 웹 브라우저에게 응답을 보낼 때 사용하기 위하여 HttpServletResponse객체를 생성함.
+- 웹 브라우저에게 **응답을 보낼 때 사용하기 위하여 HttpServletResponse객체를 생성**함.
 
 - WAS는 생성한 HttpServletRequest, HttpServletResponse 객체를 서블릿에게 전달함.
  
