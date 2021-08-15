@@ -33,7 +33,7 @@ public class Car {
 		v8.exec();
 ```
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -49,7 +49,7 @@ public class Car {
 
 위의 XML 설정은,
 
-```
+```java
 
 Engine e = new Engine();
 Car c = new Car();
