@@ -10,7 +10,9 @@ git config --global --unset credential.helper
 로 git 계정 세팅 초기화 
 
 2. ~/.git-credential의 비밀번호 정보를 token 정보로 바꿔둠
+```
 http://github id:access%20token@github.com/
+```
 
 3. 
 ```
