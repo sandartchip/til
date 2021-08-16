@@ -115,7 +115,8 @@ https://docs.djangoproject.com/en/3.2/howto/static-files/deployment/
 - Django 프로젝트의 여러 app에서 사용하는 static 파일을 한 곳(프로젝트 폴더의 statics)으로 모아주는 역할을 한다.
 
 **어디서?**
-- STATICFILES_DIR에 있는 파일과, INSTALLED_APPS의 static 디렉토리의 파일을 찾아서
+- STATICFILES_DIR에 명시된 경로에 있는 모든 정적 파일들과, INSTALLED_APPS 목록에 등록된 앱이 사용하는 모든 정적파일들(static 디렉토리의 파일)
+
 
 **어디로?**
 - static root 경로의 폴더에 물리적으로 파일을 copy함
