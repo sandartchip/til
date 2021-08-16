@@ -24,12 +24,9 @@ urlpatterns += static(settings.STATIC_URL, document_root = settings.STATIC_ROOT)
 {% static 'STATUC URL 이후의 경로' %}
 ```
 
-예를 들어 
-{% static 'img/sample.jpg' %}로, 태그가 있으면, 
+예를 들어 ```{% static 'img/sample.jpg' %}```로, 태그가 있으면, 
 
-runserver는 STATIC_URL + '경로'로 바꾸어 렌더링
-
--> /static/img/sample.jpg 
+runserver는 ```/static/img/sample.jpg``` (STATIC_URL + '경로')로 바꾸어 렌더링
 
 
 
