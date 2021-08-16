@@ -3,12 +3,12 @@
 
 - 아파치, nginx 등에 deploy하지 않은 개발 환경에서는
 - settings.py에 STATIC_ROOT로 collectstatic 경로 지정해주고,
-- urls.py에
+- (앱의) urls.py에
  
 ```python
 urlpatterns += static(settings.STATIC_URL, document_root = settings.STATIC_ROOT)
 ```
-추가.
+추가하면, url:포트/(앱의 url에 등록한 경우, 앱 명)/static/```collected static으로 모은 폴더의 하위 경로..``` 으로 static 파일들 사용 가능 .
 
 # Djangos와 static파일
 
