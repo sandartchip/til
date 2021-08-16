@@ -1,4 +1,14 @@
 
+## url 에서 요청
+
+- 아파치, nginx 등에 deploy하지 않은 개발 환경에서는
+- settings.py에 STATIC_ROOT로 collectstatic 경로 지정해주고,
+- urls.py에
+ 
+```python
+urlpatterns += static(settings.STATIC_URL, document_root = settings.STATIC_ROOT)
+```
+추가.
 
 # Djangos와 static파일
 
@@ -7,7 +17,22 @@
 
 ## STATIC 템플릿 태그
 
-- 템플릿 태그는 정적 파일의 절대 URL을 생성한다. 
+- {% static %} 템플릿 태그는, **정적 파일의 절대 URL을 생성한다.**
+
+예시) 
+```html
+{% static 'STATUC URL 이후의 경로' %}
+```
+
+예를 들어 
+{% static 'img/sample.jpg' %}로, 태그가 있으면, 
+
+runserver는 STATIC_URL + '경로'로 바꾸어 렌더링
+
+-> /static/img/sample.jpg 
+
+
+
 
 
 #### 템플릿 태그 사용법
@@ -45,20 +70,6 @@ myapp모듈에서 사용할 Static파일들을 저장하는 디렉토리는 myap
 - 결국, static 파일 위치는 static 밑에 폴더 하나 더 만들어서...myapp/static/**myapp**/mypage.css
 
  
-
-```html
-{% static 'STATUC URL 이후의 경로' %}
-```
-
-예를 들어 
-{% static 'img/sample.jpg' %}로, 태그가 있으면, 
-
-runserver는 STATIC_URL + '경로'로 바꾸어 렌더링
-
--> /static/img/sample.jpg 
-
-
-
 - Django에서는 Static 파일들을 모듈별 Local영역과 Global영역 두 단계로 나누어서 관리를 한다. 
 
 
