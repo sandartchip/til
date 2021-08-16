@@ -28,7 +28,7 @@ urlpatterns += static(settings.STATIC_URL, document_root = settings.STATIC_ROOT)
 
 ```{% static 'img/sample.jpg' %}```로, 태그가 있으면, 
 
-runserver는 ```/static/img/sample.jpg``` (STATIC_URL + '경로')로 바꾸어 렌더링
+runserver는 해당 템플릿 태그를 ```/static/img/sample.jpg``` (STATIC_URL + '경로')로 바꾸어 렌더링
 
 
 
