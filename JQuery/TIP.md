@@ -9,7 +9,7 @@
 <head>
 <script src="jquery.js"></script>
 <script>
-$(document).ready(function(){
+$(document).ready(function(){ // 문서가 로딩되면 실행 
 
 ... jQuery 메소드, 액션을 입력 ...
 
