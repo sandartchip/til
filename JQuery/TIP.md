@@ -1,3 +1,32 @@
+
+
+###  $(function(){ } );
+
+- ```$(document).ready( function() {}; );``` 와 ``` $(function(){ };```는 동일한 의미이다.
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery.js"></script>
+<script>
+$(document).ready(function(){
+
+... jQuery 메소드, 액션을 입력 ...
+
+});
+</script>
+```
+
+```
+<script>
+
+$(function(){
+... jQuery 메서드, 액션을 입력 ...
+});
+</script>
+```
+
 ### click()과 .on("click")의 차이?
 
 - click() 이벤트는 최초에 페이지를 로딩할 때 선언되어 있던 element에 이벤트를 바인딩하고 나서 더 이상 동적 바인딩 X. 
@@ -5,8 +34,6 @@
 - on("click") 이벤트는, 부모의 이벤트를 자식 태그에 delegate시킴. 
  
 - 동적으로 추가된 태그에게 이벤트를 바인딩 시킬 수 있다. 
-
-
 
 
 
