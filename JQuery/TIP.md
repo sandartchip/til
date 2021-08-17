@@ -4,8 +4,7 @@
 
 - ```$(document).ready( function() {}; );``` 와 ``` $(function(){ };```는 동일한 의미이다.
 
-```
-<!DOCTYPE html>
+```html
 <html>
 <head>
 <script src="jquery.js"></script>
@@ -18,7 +17,7 @@ $(document).ready(function(){
 </script>
 ```
 
-```
+```html
 <script>
 
 $(function(){
