@@ -1,4 +1,5 @@
 
+![image](https://user-images.githubusercontent.com/15938354/130358757-f238e45e-28a5-40ba-8fbe-9747003bc9f8.png)
 
 
 - jbrowser 라이브러리에서 static 폴더에 있는 Query.db로 ajax 요청 했을 때 못 찾는 문제 
