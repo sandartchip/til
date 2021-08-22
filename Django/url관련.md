@@ -7,7 +7,7 @@ ajax 요청은, 브라우저에 치는거랑 똑같고, urls.py의 경로 따름
 템플릿 디렉토리 몰라ㅠㅠ
 
 
-- 뷰 에서-> template 렌더링은, settings.py에 template 경로 정해진거 보고 찾아가는 거임.
+- 뷰 에서-> template render은, settings.py에 template 경로 정해진거 보고 찾아가는 거임.
 
 
 ```python
