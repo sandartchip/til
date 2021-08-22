@@ -2,13 +2,20 @@
 
 
 ```javascript
+    $.ajax({
+            type:'POST',
+            url: "/soyeon_pj/upload_file/", // uploadForm은 현재 파일 업로드가 있는 폼 객체. action은 upload file 뷰로 이동.
+            enctype: 'multipart/form-data',
+            data: input_form_data, // ajax 요청 시 함께 보내는 데이터. html에 바인딩된 파일 객체를 보내야 함.
+            beforeSend: function(){
 
-xhr: function(){
-        const xhr = new window.XMLHttpRequest();
-        
-        xhr.upload.addEventListener('progress', e=>{
-            console.log(e);
-        });
+            },
+            xhr: function(){
+                const xhr = new window.XMLHttpRequest(); //XML HttpRequest 객체를 만든다.
+
+                xhr.upload.addEventListener('progress', e=>{
+                    console.log(e);
+                });
         
 ```
 
