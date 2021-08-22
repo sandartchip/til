@@ -32,7 +32,7 @@ middleware는 다음과 같이 app을 감싸고 있으면서, request가 들어�
 
 
 ### HttpResponse 
-예시)
+예시) index.html을 렌더하는 컨트롤러의 Response 객체
 
 ![image](https://user-images.githubusercontent.com/15938354/130352748-773fa2c2-ff86-4784-bba5-57a29756f785.png)
 
