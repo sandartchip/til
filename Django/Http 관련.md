@@ -8,24 +8,26 @@
 
 - WAS(장고 자체 wsgi 웹서버)는 웹 브라우저로부터 (특정 url로 온) 요청을 받으면, 요청올 때 가지고 있던 정보를 HttpRequest객체를 생성하여 저장함.
 
+![image](https://user-images.githubusercontent.com/15938354/130352776-7ea9ebee-017f-4735-b274-200d7f90a174.png)
 
-- 장고 wsgi 웹서버는, 웹 브라우저에게 응답을 보낼 때 사용하기 위하여 HttpResponse객체를 생성함.
+- 이걸, 각 컨트롤러에서 매개변수로 받음
 
-- WAS는 생성한 HttpServletRequest, HttpServletResponse 객체를 서블릿에게 전달함.
+![image](https://user-images.githubusercontent.com/15938354/130352999-7db40b21-3cba-40fa-8d9f-013f8e79d493.png)
 
+
+- 장고의 컨트롤러에서 웹 브라우저에게 응답을 보낼 때 사용하기 위하여 HttpResponse객체를 생성함. (<-맞나..컨트롤러에서 만드는거)
+
+![image](https://user-images.githubusercontent.com/15938354/130353077-d575c685-63eb-4cd9-af93-06810f604df0.png)
+
+- 모든 컨트롤러는 HttpResponse 객체를 리턴해야 함.
+(서블릿과의 차이인가..? HttpResponse객체를 서블릿은 WAS가 생성하고, 장고는 컨트롤러에서 만드는게..<-맞나?)
 
 **urls.py
 - 서블릿의 RequestMapping(디스패처 서블릿(?))같은 역할을 장고의 urls.py에서 하는게 아닐까?
 - 브라우저의 url요청을 컨트롤러와 매핑시켜주는 역할. 
 
-**HttpServletResponse**
-
-- WAS는 어떤 클라이언트가 요청을 보냈는지 알고 있고, 해당 클라이언트에게 응답을 보내기 위한 HttpServletResponse객체를 생성하여 서블릿에게 전달함.
-- 서블릿은 해당 객체를 이용하여 content type, 응답코드, 응답 메시지등을 전송합니다.
-
 
 ### Request와 Response 객체
-
 
 - Django의 view (컨트롤러)는 두 가지중 하나를 하도록 되어 있다. 
 - 요청된 페이지의 내용이 담긴 HttpResponse 객체를 반환하거나
