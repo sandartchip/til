@@ -1,4 +1,32 @@
 
+**참고) Tomcat**
+
+- WAS(장고 자체 웹서버)는 웹 브라우저로부터 (특정 url로 요청 온) (Servlet요청)을 받으면, 요청올 때 가지고 있던 정보를 HttpServletRequest객체를 생성하여 저장함.
+
+- 웹 브라우저에게 응답을 보낼 때 사용하기 위하여 HttpServletResponse객체를 생성함.
+
+- WAS는 생성한 HttpServletRequest, HttpServletResponse 객체를 서블릿에게 전달함.
+
+**서블릿-HttpServletRequest**
+
+- http프로토콜의 request정보를 서블릿에게 전달하기 위한 목적으로 사용
+- 헤더정보, 파라미터, 쿠키, URI, URL 등의 정보를 읽어 들이는 메소드를 가지고 있음.
+- Body의 Stream을 읽어 들이는 메소드도 가지고 있다.
+
+**장고-HttpRequest**
+- Django로 치면 뷰의 함수 혹은 클래스
+
+
+**urls.py
+- 서블릿의 RequestMapping(디스패처 서블릿)같은 역할을 장고의 urls.py에서 하는게 아닐까?
+- 부라우저의 url요청을 컨트롤러와 매핑시켜주는 역할. 
+
+**HttpServletResponse**
+
+- WAS는 어떤 클라이언트가 요청을 보냈는지 알고 있고, 해당 클라이언트에게 응답을 보내기 위한 HttpServletResponse객체를 생성하여 서블릿에게 전달함.
+- 서블릿은 해당 객체를 이용하여 content type, 응답코드, 응답 메시지등을 전송합니다.
+
+
 ### Request와 Response 객체
 
 
@@ -7,16 +35,18 @@
 - 혹은 Http404 같은 예외를 발생하게 해야한다. 
 
 
+- 아파치 등 사용 안하고 그냥 runserver로 동작 시, 장고 내부의 자체 웹서버가 톰캣 같은 기능을 수행 함. 
+
+- 마치 브라우저에서 서블릿 프로젝트의 url로 요청을 보낼 때 HttpRequest로 url, 인코딩 등 정보를 받고,  톰캣이 해당 리퀘스트를 처리하고 HttpResponse 객체를 생성해서  처럼. 
 
 
-장고는 request와 response 객체로 
-서버와 클라이언트가 주고 받는다. 
+- 장고는 request와 response 객체로 서버와 클라이언트가 정보를 주고 받는다. 
+- 이를위해 장고는 **django.http 모듈에서 HttpRequest와 HttpResponse API를 제공한다.**
 
-이를위해 장고는 django.http 모듈에서 HttpRequest와 HttpResponse API를 제공한다.
 
 서버-클라이언트 통신 시 아래와 같은 절차로 데이터가 오고 간다.
 
-1) 특정 페이지가 요청(리퀘스트)되면, 장고는 메타데이터를 포함하는 HttpRequest 객체를 생성한다.
+1) 특정 페이지가 요청(리퀘스트)되면, 장고(의 runserver)는 메타데이터를 포함하는 HttpRequest 객체를 생성한다.
 2) 장고는 urls.py에서 정의한 특정 View 클래스/함수에 첫 번째 인자로 해당 객체(request)를 전달한다. 
 3) 해당 view는, 결과값을 HttpResponse 혹은 JsonResponse 객체에 담아 전달한다.
 
