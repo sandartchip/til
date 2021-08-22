@@ -2,25 +2,21 @@
 - 장고 runserver에서 너무 아무렇지 않게 해주던 내용들을 찬찬히 정리해보자 =ㅂ=;;
 
 
-- WAS(장고 자체 wsgi 웹서버)는 웹 브라우저로부터 (특정 url로 온) 요청을 받으면, 요청올 때 가지고 있던 정보를 HttpRequest객체를 생성하여 저장함.
+- 장고에는 자체 WAS가 내장되어 있음.
 
-예) 컨트롤러(views.py)에서 리퀘스트 왔을 때 request를 찍어보면 다음과 같다
+- 그래서 Tomcat 등을 굳이 연동안해도 화면에서 볼 수 있는거임! 하지만 장고 자체 WAS로 배포는 하면 안됨..(보안 이슈 등등)
+
+- WAS(장고 자체 wsgi 웹서버)는 웹 브라우저로부터 (특정 url로 온) 요청을 받으면, 요청올 때 가지고 있던 정보를 HttpRequest객체를 생성하여 저장함.
 
 
 - 장고 wsgi 웹서버는, 웹 브라우저에게 응답을 보낼 때 사용하기 위하여 HttpResponse객체를 생성함.
 
 - WAS는 생성한 HttpServletRequest, HttpServletResponse 객체를 서블릿에게 전달함.
 
-**서블릿-HttpServletRequest**
-
-
-**장고-HttpRequest**
-- Django로 치면 뷰의 함수 혹은 클래스
-
 
 **urls.py
-- 서블릿의 RequestMapping(디스패처 서블릿)같은 역할을 장고의 urls.py에서 하는게 아닐까?
-- 부라우저의 url요청을 컨트롤러와 매핑시켜주는 역할. 
+- 서블릿의 RequestMapping(디스패처 서블릿(?))같은 역할을 장고의 urls.py에서 하는게 아닐까?
+- 브라우저의 url요청을 컨트롤러와 매핑시켜주는 역할. 
 
 **HttpServletResponse**
 
