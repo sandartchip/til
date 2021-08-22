@@ -9,7 +9,7 @@ html파일, 이미지 등 다양한 응답을 해줄 수 있다.
 
 이는 views에서 검사하는게 아니라 middleware에서 검사하게 된다. 
 
-```
+```python
 # config/settings.py
 
 MIDDLEWARE = [
