@@ -37,13 +37,13 @@ middleware는 다음과 같이 app을 감싸고 있으면서, request가 들어�
 ![image](https://user-images.githubusercontent.com/15938354/130352748-773fa2c2-ff86-4784-bba5-57a29756f785.png)
 
 
-```
+```python
 HttpResponse(data, content_type)
 ```
 - response를 반환하는 가장 기본적인 함수
 - 주로 html을 반환
 
-```
+```python
 # string 전달하기
 HttpResponse("Here is the text of the Web page.")
 
@@ -53,7 +53,7 @@ response = HttpResponse()
 ```
 
 ### HttpRedirect 
-```
+```python
 HttpResponseRedirect(url)
 ```
 - 별다른 response를 하지 않고, 지정된 url페이지로 redirect함.
@@ -62,7 +62,7 @@ HttpResponseRedirect(url)
 
 ### Render
 
-```
+```python
 render(request(필수), template_name(필수), context=None, content_type=None, status=None, using=None)
 ```
 - template 에 context 를 채워넣어 표현한 결과를 HttpResponse 객체와 함께 돌려준다. 
@@ -112,7 +112,7 @@ HttpReqeust.get_port()
 ### HttpResponse 
  
  
-```
+```python
 HttpResponse(data, content_type)
 
 ```
@@ -120,7 +120,7 @@ HttpResponse(data, content_type)
 - response를 반환하는 가장 기본적인 함수
 - 주로 html을 반환
 
-```
+```python
 
 # string 전달하기
 HttpResponse("Here is the text of the Web page.")
@@ -137,7 +137,7 @@ response = HttpResponse()
 ### HttpRedirect 
 
 
-```
+```python
 
 HttpResponseRedirect(url)
 
@@ -149,7 +149,7 @@ HttpResponseRedirect(url)
 
 ### Render
 
-```
+```python
 
 render(request(필수), template_name(필수), context=None, content_type=None, status=None, using=None)
 
