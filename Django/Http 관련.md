@@ -6,7 +6,6 @@
 
 예) 컨트롤러(views.py)에서 리퀘스트 왔을 때 request를 찍어보면 다음과 같다
 
-![image](https://user-images.githubusercontent.com/15938354/130351963-8af857af-7a9a-4695-8417-787ddb1f24f3.png)
 
 - 장고 wsgi 웹서버는, 웹 브라우저에게 응답을 보낼 때 사용하기 위하여 HttpResponse객체를 생성함.
 
@@ -54,6 +53,10 @@
 
 ### HttpRequest 객체  
 
+예시) 장고에서 리턴한 HttpRequest 객체
+![image](https://user-images.githubusercontent.com/15938354/130352776-7ea9ebee-017f-4735-b274-200d7f90a174.png)
+
+
 #### 주요 속성(Attribute)
 ```
 HttpRequest.body      # request의 body 객체
@@ -84,6 +87,11 @@ HttpReqeust.get_port()
 ```
 
 ### HttpResponse 
+예시)
+
+![image](https://user-images.githubusercontent.com/15938354/130352748-773fa2c2-ff86-4784-bba5-57a29756f785.png)
+
+
 ```
 HttpResponse(data, content_type)
 ```
