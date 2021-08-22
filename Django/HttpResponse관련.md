@@ -109,29 +109,7 @@ HttpRequest.get_host()
 HttpReqeust.get_port()
 ``` 
 
-### HttpResponse 
- 
- 
-```python
-HttpResponse(data, content_type)
 
-```
-
-- response를 반환하는 가장 기본적인 함수
-- 주로 html을 반환
-
-```python
-
-# string 전달하기
-HttpResponse("Here is the text of the Web page.")
-
-
-# html 태그 전달하기 
-
-response = HttpResponse()
->>> response.write("<p>Here's the text of the Web page/</p>")
-
-```
 
 
 ### HttpRedirect 
