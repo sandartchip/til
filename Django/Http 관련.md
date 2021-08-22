@@ -10,6 +10,18 @@
 
 ![image](https://user-images.githubusercontent.com/15938354/130352776-7ea9ebee-017f-4735-b274-200d7f90a174.png)
 
+
+#### 주요 속성(Attribute)
+```
+HttpRequest.body      # request의 body 객체
+HttpRequest.headers   # request의 headers 객체
+HttpRequest.COOKIES   # 모든 쿠키를 담고 있는 딕셔너리 객체 
+HttpRequest.method    # request의 메소드 타입 
+HttpRequest.GET       #  GET 파라미터를 담고 있는 딕셔너리 같은(?) 객체
+HttpRequest.POST      # POST 파라미터를 담고 있는 딕셔너리 같은 객체 
+```
+
+
 - 이걸, 각 컨트롤러에서 매개변수로 받음
 
 ![image](https://user-images.githubusercontent.com/15938354/130352999-7db40b21-3cba-40fa-8d9f-013f8e79d493.png)
@@ -52,18 +64,7 @@
 ### HttpRequest 객체  
 
 예시) 장고에서 리턴한 HttpRequest 객체
-![image](https://user-images.githubusercontent.com/15938354/130352776-7ea9ebee-017f-4735-b274-200d7f90a174.png)
 
-
-#### 주요 속성(Attribute)
-```
-HttpRequest.body      # request의 body 객체
-HttpRequest.headers   # request의 headers 객체
-HttpRequest.COOKIES   # 모든 쿠키를 담고 있는 딕셔너리 객체 
-HttpRequest.method    # request의 메소드 타입 
-HttpRequest.GET       #  GET 파라미터를 담고 있는 딕셔너리 같은(?) 객체
-HttpRequest.POST      # POST 파라미터를 담고 있는 딕셔너리 같은 객체 
-```
 
 #### 사용 사례 
 - request.method
