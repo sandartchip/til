@@ -1,17 +1,19 @@
 
-**참고) Tomcat**
+- 장고 runserver에서 너무 아무렇지 않게 해주던 내용들을 찬찬히 정리해보자 =ㅂ=;;
 
-- WAS(장고 자체 웹서버)는 웹 브라우저로부터 (특정 url로 요청 온) (Servlet요청)을 받으면, 요청올 때 가지고 있던 정보를 HttpServletRequest객체를 생성하여 저장함.
 
-- 웹 브라우저에게 응답을 보낼 때 사용하기 위하여 HttpServletResponse객체를 생성함.
+- WAS(장고 자체 wsgi 웹서버)는 웹 브라우저로부터 (특정 url로 온) 요청을 받으면, 요청올 때 가지고 있던 정보를 HttpRequest객체를 생성하여 저장함.
+
+예) 컨트롤러(views.py)에서 리퀘스트 왔을 때 request를 찍어보면 다음과 같다
+
+![image](https://user-images.githubusercontent.com/15938354/130351963-8af857af-7a9a-4695-8417-787ddb1f24f3.png)
+
+- 장고 wsgi 웹서버는, 웹 브라우저에게 응답을 보낼 때 사용하기 위하여 HttpResponse객체를 생성함.
 
 - WAS는 생성한 HttpServletRequest, HttpServletResponse 객체를 서블릿에게 전달함.
 
 **서블릿-HttpServletRequest**
 
-- http프로토콜의 request정보를 서블릿에게 전달하기 위한 목적으로 사용
-- 헤더정보, 파라미터, 쿠키, URI, URL 등의 정보를 읽어 들이는 메소드를 가지고 있음.
-- Body의 Stream을 읽어 들이는 메소드도 가지고 있다.
 
 **장고-HttpRequest**
 - Django로 치면 뷰의 함수 혹은 클래스
@@ -30,14 +32,14 @@
 ### Request와 Response 객체
 
 
-- Django의 view 는 두 가지중 하나를 하도록 되어 있다. 
+- Django의 view (컨트롤러)는 두 가지중 하나를 하도록 되어 있다. 
 - 요청된 페이지의 내용이 담긴 HttpResponse 객체를 반환하거나
 - 혹은 Http404 같은 예외를 발생하게 해야한다. 
 
 
 - 아파치 등 사용 안하고 그냥 runserver로 동작 시, 장고 내부의 자체 웹서버가 톰캣 같은 기능을 수행 함. 
 
-- 마치 브라우저에서 서블릿 프로젝트의 url로 요청을 보낼 때 HttpRequest로 url, 인코딩 등 정보를 받고,  톰캣이 해당 리퀘스트를 처리하고 HttpResponse 객체를 생성해서  처럼. 
+- 마치 브라우저에서 서블릿 프로젝트의 url로 요청을 보내면-> 톰캣이, HttpServletRequest라는, 요청의 url, 인코딩 등 정보를 저장하는 객체를 생성하고, 그걸 url mapping에 일치하는 컨트롤러에게 매개변수로 전달하고, 컨트롤러가 해당 리퀘스트를 처리하고 매개변수로 받은 HttpResponse 객체에 다시 클라이언트(브라우저)에 돌려주는 것 처럼. 
 
 
 - 장고는 request와 response 객체로 서버와 클라이언트가 정보를 주고 받는다. 
