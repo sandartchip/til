@@ -1,3 +1,5 @@
+- upload는, xml http request 객체의 **프로퍼티**임.
+
 
 ```javascript
 
