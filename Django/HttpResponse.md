@@ -4,7 +4,9 @@
 
 html파일, 이미지 등 다양한 응답을 해줄 수 있다. 
 
-하나의 함수는 최소 하나의 HttpResponse를 반환해야 한다. 이는 views에서 검사하는게 아니라 middleware에서 검사하게 된다. 
+하나의 함수는 **최소 하나의 HttpResponse를 반환해야 한다. **
+
+이는 views에서 검사하는게 아니라 middleware에서 검사하게 된다. 
 
 ```
 # config/settings.py
