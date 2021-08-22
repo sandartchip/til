@@ -34,7 +34,7 @@ HttpRequest.POST      # POST 파라미터를 담고 있는 딕셔너리 같은 �
 - 모든 컨트롤러는 HttpResponse 객체를 리턴해야 함.
 (서블릿과의 차이인가..? HttpResponse객체를 서블릿은 WAS가 생성하고, 장고는 컨트롤러에서 만드는게..<-맞나?)
 
-**urls.py
+**urls.py**
 - 서블릿의 RequestMapping(디스패처 서블릿(?))같은 역할을 장고의 urls.py에서 하는게 아닐까?
 - 브라우저의 url요청을 컨트롤러와 매핑시켜주는 역할. 
 
