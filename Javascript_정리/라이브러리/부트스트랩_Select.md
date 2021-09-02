@@ -2,7 +2,7 @@
 # Select
 
 ```html
-    <select class="custom-select" id="friend_select">
+    <select class="custom-select" id="species_select">
         <option selected>Select Friend</option>
         <option value="1">Minsus</option>
         <option value="2">JENNI</option>
