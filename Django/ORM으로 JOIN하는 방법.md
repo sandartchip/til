@@ -51,6 +51,8 @@ FilteredRelation()[사용불가] # JOIN이 안되니 ON절 제어 옵션도 당�
 
 ```
 
+![image](https://user-images.githubusercontent.com/15938354/136784601-f72d26ee-3915-4165-8ded-058752cc9113.png)
+
 주의: RawQuerySet 사용시 애트리뷰트 이름들과
 모델의 프로퍼티 이름들이 반드시 매칭되어야 한다.
 만약 매칭되지 않으면 해당 프로퍼티가 비어버리게되고
