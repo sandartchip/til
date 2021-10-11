@@ -12,3 +12,4 @@
 - https://russwest.tistory.com/43
 - https://itinerant.tistory.com/27
 - https://076923.github.io/posts/Python-Django-11/
+- https://medium.com/deliverytechkorea/django%EC%97%90%EC%84%9C%EB%8A%94-queryset%EC%9D%B4-%EB%8B%B9%EC%8B%A0%EC%9D%84-%EB%A7%8C%EB%93%AD%EB%8B%88%EB%8B%A4-2-5f6f8c6cd7e3
