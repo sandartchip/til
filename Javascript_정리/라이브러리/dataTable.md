@@ -1,3 +1,26 @@
+
+## columnDefs, render 할 때 row의 사용 
+- 각 컬럼별로 넘어온  row 의 특정 값 렌더링 시킬 필요 있을 때 
+ 
+```javascript 
+    var columnDefs = [
+        {
+        "targets" : 4,
+        "orderable" : false,
+        "render" : function(data, type, row, meta) {
+            console.log(row);
+            var detail_html = "";
+            
+            detail_html += "<a href='/soyeon_pj/show_detail_result/" + row["result_folder_name"] + "/NONE/Dynamic/'>CLICK</a>";
+
+            return detail_html;
+        }
+      }
+```
+## row 출력 결과 
+![image](https://user-images.githubusercontent.com/15938354/136940953-79842f0c-b880-4e6a-83fd-647c3c8b0ad1.png)
+
+
 # 컬럼명
 - 현재 html상의 컬럼 명으로 필터 검.
 - html(javascript상의 컬럼명, 테이블의 스키마 일치 해야 함) => 맞나..
