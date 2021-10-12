@@ -1,3 +1,8 @@
+![image](https://user-images.githubusercontent.com/15938354/136945410-2d35c332-05e6-45a3-8302-204ed542f2e5.png)
+
+
+https://zamezzz.tistory.com/310
+
 
 ## columnDefs, render 할 때 row의 사용 
 - 각 컬럼별로 넘어온  row 의 특정 값 렌더링 시킬 필요 있을 때 
