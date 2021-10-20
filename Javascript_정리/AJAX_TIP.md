@@ -1,5 +1,21 @@
 
+### 부분리로드
 
+```javascript
+     $("#file_list").load(location.href + " #input_file_table");
+
+```
+### $.load() 하기 전
+![image](https://user-images.githubusercontent.com/15938354/138017786-ea6eca40-5b2a-48ad-ae44-32016f1ee7f3.png)
+
+
+### $.load() 한 후 
+![image](https://user-images.githubusercontent.com/15938354/138017719-7af25c4b-285c-4776-9cd7-b17a6bde0c7f.png)
+
+이렇게 부분 리로드를 하고 나면, GET방식으로 해당 페이지 재요청함 
+
+- AJAX 부분 리로드라서 GET 방식 리로드 안 될 줄 알았는데 다시 함 -ㅁ-;;;
+ 
 ### Question
 
 한 페이지에서 ajax 여러개를 호출할 때,
