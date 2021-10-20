@@ -10,11 +10,10 @@
 
 
 ### $.load() 한 후 
-![image](https://user-images.githubusercontent.com/15938354/138017719-7af25c4b-285c-4776-9cd7-b17a6bde0c7f.png)
+![image](https://user-images.githubusercontent.com/15938354/138017907-9ce89931-8d7a-4a99-b60b-22e7f3c0fb0f.png)
+이렇게 부분 리로드를 하고 나면, GET방식으로 **해당 페이지 재요청**함 
 
-이렇게 부분 리로드를 하고 나면, GET방식으로 해당 페이지 재요청함 
-
-- AJAX 부분 리로드라서 GET 방식 리로드 안 될 줄 알았는데 다시 함 -ㅁ-;;;
+- AJAX로 부분페이지 리로드라서 GET 방식 리로드 안 될 줄 알았는데 다시 함 -ㅁ-;;;
  
 ### Question
 
