@@ -1,6 +1,6 @@
 
 - 모든 ModelForm은 save() 메소드를 가지고 있다.
-- 이 함수는, form에 bound된 데이터로부터 데이터베이스 Object를 생성하고 저장한다.
+- 이 함수는, form에 bound된 form 데이터로부터 데이터베이스 Object를 생성하고 저장한다.
 
 ```python
 
