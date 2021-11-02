@@ -22,8 +22,9 @@
 (참고) https://nerogarret.tistory.com/47
 
 #### mysql 설치 에러 발생 시
--> https://velog.io/@sandartchip/Command-errored-out-with-exit-status-1-python-setup.py-egginfo-Check-the-logs-for-full-command-output
--> https://mirae-kim.tistory.com/73
+- https://velog.io/@sandartchip/Command-errored-out-with-exit-status-1-python-setup.py-egginfo-Check-the-logs-for-full-command-output
+- https://mirae-kim.tistory.com/73
+
 
 
 #### Django 프로젝트 실행 
@@ -34,3 +35,5 @@ django.db.utils.OperationalError: (1698, "Access denied for user 'root'@'localho
 ```
 에러 발생 -> 원인: mysql의 비번과 django에서 설정한 db 비번이 다름
 
+##### 해결
+- https://velog.io/@hong_tae/mysqlclient-ubuntu20.04-%EC%8B%A4%ED%96%89-%EC%B0%A9%EC%98%A4-NameError-name-mysql-is-not-defined
