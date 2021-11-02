@@ -28,7 +28,7 @@
 
 
 #### Django 프로젝트 실행 
-python3 manage.py runserver 0:8000
+python3 manage.py runserver 0:8000  (주의: 0으로 안하면 에러남. 127.0.0.1 이 인식안되는듯)
 
 ```
 django.db.utils.OperationalError: (1698, "Access denied for user 'root'@'localhost'")
