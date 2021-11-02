@@ -43,3 +43,5 @@ django.db.utils.OperationalError: (1698, "Access denied for user 'root'@'localho
 - Command 'uwsgi' not found, but can be installed with:
 에러발생원인: uwsgi 설치가 안되있었음 -ㅁ-;; pip install uwsgi !!
 
+#### nginx 에러 발생 시 
+https://stackoverflow.com/questions/35868976/nginx-service-failed-because-the-control-process-exited-nginx
