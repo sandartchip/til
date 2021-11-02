@@ -37,3 +37,9 @@ django.db.utils.OperationalError: (1698, "Access denied for user 'root'@'localho
 
 ##### 해결
 - https://velog.io/@hong_tae/mysqlclient-ubuntu20.04-%EC%8B%A4%ED%96%89-%EC%B0%A9%EC%98%A4-NameError-name-mysql-is-not-defined
+
+
+#### 설치 도중
+- Command 'uwsgi' not found, but can be installed with:
+
+
