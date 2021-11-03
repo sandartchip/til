@@ -30,6 +30,9 @@ apt-get install python3-virtualenv
 #### mysql 비번 policy 
 https://kamang-it.tistory.com/entry/MySQL%ED%8C%A8%EC%8A%A4%EC%9B%8C%EB%93%9C-%EC%A0%95%EC%B1%85-%ED%99%95%EC%9D%B8-%EB%B3%80%EA%B2%BD%ED%95%98%EA%B8%B0
 
+MYSQL8) 
+https://www.lesstif.com/dbms/mysql-8-password-policy-89555994.html
+
 #### mysql 설치 에러 발생 시
 - https://velog.io/@sandartchip/Command-errored-out-with-exit-status-1-python-setup.py-egginfo-Check-the-logs-for-full-command-output
 
