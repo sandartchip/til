@@ -24,9 +24,12 @@ apt-get install python3-virtualenv
 - 기존 프로젝트의 requirements.txt 패키지 설치 
 (참고) https://nerogarret.tistory.com/47
 
+#### AWS에 Mysql 설치 
+- https://mirae-kim.tistory.com/73
+
+
 #### mysql 설치 에러 발생 시
 - https://velog.io/@sandartchip/Command-errored-out-with-exit-status-1-python-setup.py-egginfo-Check-the-logs-for-full-command-output
-- https://mirae-kim.tistory.com/73
 
 
 
