@@ -14,6 +14,9 @@
 ## 접속
 - EC2 퍼블릭 ip4 주소로 접속 
 
+## 의존성 모듈 설치 
+apt-get update
+apt-get install python3-virtualenv
 
 ## Django와 연결
 - 장고는 웹 서버와 직접 통신할 수 없어서 둘 사이에 WSGI를 두어야 한다.
