@@ -22,5 +22,5 @@ __pycache__/
 - 이미 git에서 트래킹하는 파일은 재적용 시키기 
 https://github.com/sandartchip/TIL/blob/main/GIT/gitignore%20%EC%A0%81%EC%9A%A9.md
 
-# 참고자료)
+### 참고자료)
 - https://opentutorials.org/course/3666/24539
