@@ -1,3 +1,4 @@
+![image](https://user-images.githubusercontent.com/15938354/140238406-0edcab15-b641-4a07-b81d-c61ab7912031.png)
 
 
 # WSGI
@@ -11,3 +12,6 @@
 
 ## uWSGI
 - wsgi 서버 중 하나 
+
+
+이미지 출처: https://www.appdynamics.com/blog/engineering/an-introduction-to-python-wsgi-servers-part-1/
