@@ -56,6 +56,7 @@ git config core.ignorecase false
 #### 이미 push된 프로젝트 .gitignore 재적용 시키기 
 
 ```
+git init
 git rm -r --cached .
 git add . 
 git commit -m "커밋메세지"
