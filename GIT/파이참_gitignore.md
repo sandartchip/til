@@ -19,8 +19,9 @@ __pycache__/
 ```
 
 # step 3
-- 이미 git에서 트래킹하는 파일은 재적용 시키기 
-- 기존에 커밋 안된 내용 있으면 커밋시키고
+- 이미 git에서 트래킹하는 파일이 있으면 gitignore 재적용 시켜야 함
+- 기존에 커밋 안된 내용 있으면 (add, 커밋)시킴
+ 
 - git pull 로 리모트 git 리포지토리에 추가된 gitignore 파일 pull로 가져옴 
 
 - 기존의 git 에서 트래킹 중인 파일들 목록 캐시 제거 (git https://github.com/sandartchip/TIL/blob/main/GIT/gitignore%20%EC%A0%81%EC%9A%A9.md )
