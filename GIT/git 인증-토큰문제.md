@@ -17,6 +17,8 @@ git push 자동로그인하고싶은저장소주소
 -https://daechu.tistory.com/33
 
 # 2번 방법 (잘안됨)
+- AWS에 git-credential 파일이 안보임..
+
 1. 
 ```
 git config --global --unset credential.helper
