@@ -9,7 +9,8 @@
 ex)
 
 안되는 경우
-```
+
+```python
 f = form.save(commit=False)
 kind = VacationKind.objects.get(kind=request.POST['kind'])
 f.kind = kind
@@ -17,7 +18,8 @@ f.save()
 ```
 
 save_m2m을 사용해 저장시킴
-```
+
+```python
 f = form.save(commit=False)
 kind = VacationKind.objects.get(kind=request.POST['kind'])
 f.kind = kind
