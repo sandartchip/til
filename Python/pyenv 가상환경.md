@@ -8,7 +8,13 @@
 - 하나의 컴퓨터에 다양한 파이썬 버전을 설치하고 관리.
 - pyenv로 여러 버전 파이썬 설치, pyenv-virtualenv로 여러 버전의 가상 환경 만들기, autoenv로 가상환경 자동 실행, pip로 가상환경에 파이썬 패키지 설치.
 - 삼각형 위쪽의 커맨드부터 순서대로 읽힌다.
- 
+
+#### 설치 명령어 
+```shell
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+```
 
 ### pyenv-virtualenv
 - virtualenv은 파이썬 환경을 격리하는 툴.
@@ -16,9 +22,10 @@
 - 파이썬 버전과 라이브러리의 완전한 격리 환경을 제공.
 - pyenv를 pyenv-installer로 설치할 때 pyenv-virtualenv 설치가 포함됨. 이후 bashrc에서 초기화시킴 
 
-bashrc
+#### 설치 명령어 
+- bashrc
 ```
-eval "$(pyenv virtualenv-init -)"
+eval "$(pyenv virtualenv-init -)" 
 
 ```
 
