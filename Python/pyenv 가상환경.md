@@ -1,4 +1,6 @@
 
+![image](https://user-images.githubusercontent.com/15938354/144147393-c1422462-162c-490a-8119-e51c6ec14a3c.png)
+
 - pyenv로 여러 버전 파이썬 설치, pyenv-virtualenv로 여러 버전의 가상 환경 만들기, autoenv로 가상환경 자동 실행, pip로 가상환경에 파이썬 패키지 설치.
 
 ### pyenv
