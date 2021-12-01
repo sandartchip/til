@@ -1,11 +1,14 @@
 
-![image](https://user-images.githubusercontent.com/15938354/144147393-c1422462-162c-490a-8119-e51c6ec14a3c.png)
 
-- pyenv로 여러 버전 파이썬 설치, pyenv-virtualenv로 여러 버전의 가상 환경 만들기, autoenv로 가상환경 자동 실행, pip로 가상환경에 파이썬 패키지 설치.
 
 ### pyenv
+![image](https://user-images.githubusercontent.com/15938354/144147393-c1422462-162c-490a-8119-e51c6ec14a3c.png)
+
 - 파이썬 버전을 관리하는 툴.
 - 하나의 컴퓨터에 다양한 파이썬 버전을 설치하고 관리.
+- pyenv로 여러 버전 파이썬 설치, pyenv-virtualenv로 여러 버전의 가상 환경 만들기, autoenv로 가상환경 자동 실행, pip로 가상환경에 파이썬 패키지 설치.
+- 삼각형 위쪽의 커맨드부터 순서대로 읽힌다.
+ 
 
 ### pyenv-virtualenv
 - virtualenv은 파이썬 환경을 격리하는 툴.
