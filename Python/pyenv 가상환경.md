@@ -8,6 +8,7 @@
 - 하나의 컴퓨터에 다양한 파이썬 버전을 설치하고 관리.
 - pyenv로 여러 버전 파이썬 설치, pyenv-virtualenv로 여러 버전의 가상 환경 만들기, autoenv로 가상환경 자동 실행, pip로 가상환경에 파이썬 패키지 설치.
 - 삼각형 위쪽의 커맨드부터 순서대로 읽힌다.
+- 공식 깃허브 : https://github.com/pyenv/pyenv-installer
 
 #### 의존 라이브러리들 
 ```
