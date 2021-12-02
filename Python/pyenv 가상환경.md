@@ -1,5 +1,5 @@
 
-
+https://wikidocs.net/10936
 
 ### pyenv
 ![image](https://user-images.githubusercontent.com/15938354/144147393-c1422462-162c-490a-8119-e51c6ec14a3c.png)
