@@ -9,6 +9,12 @@
 - pyenv로 여러 버전 파이썬 설치, pyenv-virtualenv로 여러 버전의 가상 환경 만들기, autoenv로 가상환경 자동 실행, pip로 가상환경에 파이썬 패키지 설치.
 - 삼각형 위쪽의 커맨드부터 순서대로 읽힌다.
 
+#### 의존 라이브러리들 
+```
+sudo yum install -y zlib-devel bzip2 bzip2-devel \
+  readline-devel sqlite sqlite-devel openssl-devel xz xz-devel curl git
+```
+
 #### 설치 명령어 
 ```shell
 export PYENV_ROOT="$HOME/.pyenv"
