@@ -24,23 +24,33 @@ libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
 xz-utils tk-dev libffi-dev liblzma-dev python-openssl git
 ```
 
-#### 설치 명령어 
-```shell
+#### 설치 
+.profile
+```
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
+
 ```
+알아서 들어간다.
+
+그런데 ubuntu에서 pyenv 명령어로 시스템 python 버전이 안바뀌는 문제가 생겨서..
+여러개의 파이썬 버전은 shims폴더에 있음.
+따라서 그 폴더도 profile상의 PATH에 넣어줘야함
+export PATH="$PYENV_ROOT/shims:$PATH"
+
+.bashrc
+```
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
+```
+
 
 ### pyenv-virtualenv
 - virtualenv은 파이썬 환경을 격리하는 툴.
 - pyenv-virtualenv은 virtualenv의 pyenv 확장 플러그인.
 - 파이썬 버전과 라이브러리의 완전한 격리 환경을 제공.
 - pyenv를 pyenv-installer로 설치할 때 pyenv-virtualenv 설치가 포함됨. 이후 bashrc에서 초기화시킴 
-
-#### 설치 명령어 
-- bashrc
-```
-eval "$(pyenv virtualenv-init -)" 
 
 ```
 
