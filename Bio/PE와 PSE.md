@@ -7,5 +7,7 @@
 
 - Single-end, Paired-end와 Stranded, Unstranded는 별개의 개념이라는 것을 알아야 한다. Single-end이더라도 Stranded일 수도 있고 Unstranded일 수도 있으며 Paired-end도 마찬가지이다
 
+## Depth of coverage 
+- depth of coverage는 시퀀싱 중 유전체의 특정 위치가 시퀀싱되는 횟수를 나타낸다. 예를 들어 Exome sequencing을 하는데 목표 coverage를 60X라고 한다면, 그 뜻은 목표로 하는 각 염기들이 평균적으로 60번 정도 시퀀싱된다는 것이다. 
 
 https://bgreat.tistory.com/100
