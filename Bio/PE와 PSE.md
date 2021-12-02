@@ -4,3 +4,8 @@
 
 ## Strand Specific
 - Strand-specific은 양 말단의 adapter sequence를 다르게 붙임으로써 reads의 앞뒤를 구분해주는 방식. 
+
+- Single-end, Paired-end와 Stranded, Unstranded는 별개의 개념이라는 것을 알아야 한다. Single-end이더라도 Stranded일 수도 있고 Unstranded일 수도 있으며 Paired-end도 마찬가지이다
+
+
+https://bgreat.tistory.com/100
