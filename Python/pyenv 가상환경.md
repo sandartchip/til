@@ -1,5 +1,4 @@
 
-https://wikidocs.net/10936
 
 ### pyenv
 ![image](https://user-images.githubusercontent.com/15938354/144147393-c1422462-162c-490a-8119-e51c6ec14a3c.png)
@@ -65,3 +64,8 @@ eval "$(pyenv virtualenv-init -)"
 
 #### 참고
 - pyenv가 python을 올바르게 설치하려면 Python 빌드 종속성을 설치해야 합니다. 새로운 파이썬 버전. python 또는 pip와 같은 명령을 실행할 때 운영 체제는 디렉터리 목록을 검색하여 해당 이름의 실행 파일을 찾습니다. 이 디렉토리 목록은 PATH라는 환경 변수에 있으며 목록의 각 디렉토리는 콜론으로 구분됩니다.
+
+
+### 참고자료 
+https://wikidocs.net/10936
+http://taewan.kim/post/python_virtual_env/
