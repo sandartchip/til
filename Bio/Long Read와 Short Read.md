@@ -38,3 +38,4 @@
 
 
 참고 자료 :https://2wordspm.com/2019/04/28/pacbio-smrt-sequencing-long-reads-sequencing%EC%9D%98-%EC%9B%90%EB%A6%AC%EC%99%80-%EC%9E%A5%EB%8B%A8%EC%A0%90/
+https://www.ibric.org/myboard/read.php?Board=report&id=3637
