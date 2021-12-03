@@ -1,6 +1,7 @@
 # NGS 데이터
 -  현재 NCBI, EBI, DDBJ의 Sequence 데이터 저장 서비스인 SRA(Sequence Read Archieve)에서 공개된 NGS 데이터를 받을 수 있다. 
--  
+
+
 ### Reference Assembly 
 - 원본 사진을 보고 퍼즐을 맞추는 것. 말 그대로 reference가 되는 원본 서열에 read들을 mapping 시켜 만들어지는 consensus 서열을 얻는 것. 
 - ex) 한우의 유전체를 시퀀싱하여 얻어낸 read 데이터를 NCBI에 공개된 소의 reference 서열에 mapping 시켜서 한우의 유전체와 어떠한 차이가 있는지 비교하는 분석을 수행 가능. 
