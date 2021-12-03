@@ -3,6 +3,7 @@
 
 ![image](https://user-images.githubusercontent.com/15938354/144561118-b636ff3c-ea44-44ef-bbe0-d66cc2f8cf7a.png)
 
+
 # Short Read와 Long Read 
 
 ## Read 
@@ -27,3 +28,11 @@
 - PacBio: Long Read Sequencing 기계 생산.  
 - Illumina : Short read sequencing 기계 생산. 
 
+## 현재의 동향
+- 현재의 시퀀싱 시장은, 높은 정확도와 가성비를 장점으로 하는 Short Read 시퀀싱이 대세임. 그러나 Human Genome Reference 수립을 위한 De novo assembly를 하기 위해서 Long read 시퀀싱은 필수로 이용되고 있다. Short Read는 Depth가 높아서 Error Rate가 낮고, 같은 Read를 읽을 때 가격적으로 훨씬 저렴하다.
+
+- 반복 서열이 많거나, Polymorphism이 많이 존재하는 영역, GC 비율이 높아서 시퀀싱이 어려운 영역, 구조 변이 검출 등에서는 Long read 시퀀싱이 훨씬 우수함. 
+
+
+
+참고 자료 :https://2wordspm.com/2019/04/28/pacbio-smrt-sequencing-long-reads-sequencing%EC%9D%98-%EC%9B%90%EB%A6%AC%EC%99%80-%EC%9E%A5%EB%8B%A8%EC%A0%90/
