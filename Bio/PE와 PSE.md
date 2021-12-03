@@ -22,6 +22,9 @@
 
 
 ## paired-end squencing
+- Paired end Sequencing의 결과로, 두 개의 FASTQ 파일을 얻을 수 있다. (예를 들어, SRS1234_1.fastq와 SRS1234_2.fastq) 각각이 forward와 reverse read를 나타낸다. 
+- sequence를 확인해 보면 모두 5' -> 3' 으로 되어 있는 것을 확인할 수 있다. 즉 두 reads를 합칠 때는 reverse reads를 reverse compliment 시킨 후 overlap 되는 부분을 합치면 된다. 또한 각각의 read 앞쪽에 primer가 붙어 있을 수도 있다. 
+
 - 우선 한쪽 끝에서 특정 길이까지 읽고, 그다음 다른 쪽 끝에서 서열을 읽는다. Paired-end sequencing은 유전체 상에서 다양한 read들의 상대적인 위치를 찾는데 더 용이하다.
 - 원본 없이 하나하나 맞춰 보면서 연결되는 것 끼리 쭉 잇는다. 이어서 원래의 genome 서열을 알아내야 한다. 따라서 한 종류의 read들만 가지고 assemble을 하기란 쉽지 않다. 그래서, short, long, paired-end, mate-paired-end 등 여러 종류의 read들을 가지고 assembly를 해야 결과가 좋아진다. 
 - repetitive한 지역의 assembly를 향상시킬 수 있다. 그러나 Paired end는 Single End보다 더 비싸고, 더 많은 시간이 소요된다. 또한 모든 실험이 높은 수준의 정확도를 필요로 하지 않을 수도 있다. 
@@ -29,7 +32,6 @@
 - DNA 또는 RNA를 양쪽 끝에서 시퀀싱(sequencing machine이 양쪽 끝에서부터 읽어 나가게 되고, 두 reads는 5/ 3으로 읽힌다.) 하는 방법을 말한다. paired-end sequencing은 게놈 재배열 및 반복적인 서열, 유전자 융합, 새로운 전사체의 발견에 용이하다. 또한 single-end sequencing으로 불가능한 insertion/deletion 변이도 검출할 수 있다.
 - Illumina에서는 약 500bps 길이의 페어드 엔드 리드를 제공하는데, 페어드 엔드 리드의 길이는 달라질 수 있으므로 오차율을 설정해 줄 필요가 있다. 
 - 한 페어드 엔드의 오차율을 100bps로 설정하였다면, 한 페어드 엔드의 길이는 400~600bps 정도이다. 전체 염기 서열에서 임의의 영역을 선택한 후 그곳에서부터 연속된 400 ~ 600bps 영역을 추출하고, 추출된 영역에서의 양 끝의 75bps를 잘라내어 페어드 엔드 리드를 생성한다. 이러한 과정으로 생성된 리드 길이의 합이 전체 염기서열의 n배가 될 때까지 반복한다. 이러한 n을 커버리지(coverage)라 하고, 생성된 리드들을 테스트 쿼리라고 한다. 커버리지가 높아질 수록 보다 정확한 정보를 얻을 수 있으나 비용이 많이 소요된다.
-- Paired end Sequencing의 결과로, 두 개의 FASTQ 파일을 얻을 수 있다. (예를 들어, SRS1234_1.fastq와 SRS1234_2.fastq) 각각이 forward와 reverse read를 나타낸다. sequence를 확인해 보면 모두 5' -> 3' 으로 되어 있는 것을 확인할 수 있다. 즉  두 reads를 합칠 때는 reverse reads를 reverse compliment 시킨 후 overlap 되는 부분을 합치면 된다. 또한 각각의 read 앞쪽에 primer가 붙어 있을 수도 있다. 
 
 
 ## Sequence Read Length 
