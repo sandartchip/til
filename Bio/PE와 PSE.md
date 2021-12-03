@@ -1,3 +1,7 @@
+
+
+
+
 # NGS 데이터
 -  현재 NCBI, EBI, DDBJ의 Sequence 데이터 저장 서비스인 SRA(Sequence Read Archieve)에서 공개된 NGS 데이터를 받을 수 있다. 
 
@@ -19,6 +23,11 @@
 ## paired-end squencing
 - 우선 한쪽 끝에서 특정 길이까지 읽고, 그다음 다른 쪽 끝에서 서열을 읽는다. Paired-end sequencing은 유전체 상에서 다양한 read들의 상대적인 위치를 찾는데 더 용이하다.
 - 원본 없이 하나하나 맞춰 보면서 연결되는 것 끼리 쭉 잇는다. 이어서 원래의 genome 서열을 알아내야 한다. 따라서 한 종류의 read들만 가지고 assemble을 하기란 쉽지 않다. 그래서, short, long, paired-end, mate-paired-end 등 여러 종류의 read들을 가지고 assembly를 해야 결과가 좋아진다. 
+
+
+## Sequence Read Length 
+- Read Length: 시퀀싱을 할 때 read의 염기쌍(base pair, bp) 수를 결정할 수 있다. 
+- 예를 들어 하나의 read를 50bp로 할 수 있고, 100bp로 할 수 있고, 그 이상으로도 할 수 있다. 더 긴 read들은 특정 염기쌍의 상대적인 위치에 대한 더 정확한 정보를 제공해준다. 그러나 긴 read를 생선하는 데는 더 많은 비용이 든다. 
 
 
 ## Strand Specific
