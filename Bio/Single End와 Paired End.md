@@ -1,8 +1,4 @@
 
-![image](https://user-images.githubusercontent.com/15938354/144561118-b636ff3c-ea44-44ef-bbe0-d66cc2f8cf7a.png)
-
-
-
 
 # NGS 데이터
 -  현재 NCBI, EBI, DDBJ의 Sequence 데이터 저장 서비스인 SRA(Sequence Read Archieve)에서 공개된 NGS 데이터를 받을 수 있다. 
