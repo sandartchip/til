@@ -30,4 +30,6 @@
 
 
 
+#### 참고자료 
 https://bgreat.tistory.com/100
+https://www.insilicogen.com/blog/106
