@@ -11,6 +11,7 @@
 - ex) 한우의 유전체를 시퀀싱하여 얻어낸 read 데이터를 NCBI에 공개된 소의 reference 서열에 mapping 시켜서 한우의 유전체와 어떠한 차이가 있는지 비교하는 분석을 수행 가능. 
 
 
+
 ## 종류
 -  Roche 454 장비에서 만들어진 Long read 데이터와 Illumina 장비에서 만들어진 Paired End Read데이터가 있다.
 
@@ -23,7 +24,8 @@
 ## paired-end squencing
 - 우선 한쪽 끝에서 특정 길이까지 읽고, 그다음 다른 쪽 끝에서 서열을 읽는다. Paired-end sequencing은 유전체 상에서 다양한 read들의 상대적인 위치를 찾는데 더 용이하다.
 - 원본 없이 하나하나 맞춰 보면서 연결되는 것 끼리 쭉 잇는다. 이어서 원래의 genome 서열을 알아내야 한다. 따라서 한 종류의 read들만 가지고 assemble을 하기란 쉽지 않다. 그래서, short, long, paired-end, mate-paired-end 등 여러 종류의 read들을 가지고 assembly를 해야 결과가 좋아진다. 
-
+- repetitive한 지역의 assembly를 향상시킬 수 있다. 그러나 Paired end는 Single End보다 더 비싸고, 더 많은 시간이 소요된다. 또한 모든 실험이 높은 수준의 정확도를 필요로 하지 않을 수도 있다. 
+- 유전체 재배열, 반복 서열, 유전자 융합, 새로운 전사물 발견에 용이하다. 같은 시간과 노력으로 두 배의 read 수를 생성할 수 있을 뿐만 아니라, read pairs로 정렬된 서열들로 더 정확한 alignment를 할 수 있고, single-end 데이터로는 불가능한 insertion-deletion variant도 찾을 수 있다.
 
 ## Sequence Read Length 
 - Read Length: 시퀀싱을 할 때 read의 염기쌍(base pair, bp) 수를 결정할 수 있다. 
