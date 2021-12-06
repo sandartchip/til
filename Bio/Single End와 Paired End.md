@@ -14,15 +14,22 @@
 -  Roche 454 장비에서 만들어진 Long read 데이터와 Illumina 장비에서 만들어진 Paired End Read데이터가 있다.
 
 
-
 ##  Single End Sequencing
 - 시퀀싱 기계가 서열의 조각을 오직 한 쪽 끝에서부터 읽어서 염기쌍 서열을 생성한다.
 
 
+![image](https://user-images.githubusercontent.com/15938354/144770502-1b92a70e-777f-43ef-b729-a83f0f89b318.png)
+
 ## paired-end squencing
+
+![image](https://user-images.githubusercontent.com/15938354/144773200-f515e62a-3b65-4bcf-99a8-fcd0ca3a75c4.png)
+
+- For each cluster that passes filter, a single sequence is written to the corresponding sample’s R1 FASTQ file, and, for a paired-end run, a single sequence is also written to the sample’s R2 FASTQ file. Each entry in a FASTQ files consists of 4 lines.
+- 필터를 통과한 각 클러스터에 대해 단일 시퀀스가 ​​해당 샘플의 R1 FASTQ 파일에 작성되고, paired-end 실행의 경우 단일 시퀀스도 샘플의 R2 FASTQ 파일에 작성됩니다. FASTQ 파일의 각 항목은 4줄로 구성됩니다.
 - Paired end Sequencing의 결과로, 두 개의 FASTQ 파일을 얻을 수 있다. (예를 들어, SRS1234_1.fastq와 SRS1234_2.fastq) 각각이 forward와 reverse read를 나타낸다. 
 - sequence를 확인해 보면 모두 5' -> 3' 으로 되어 있는 것을 확인할 수 있다. 즉 두 reads를 합칠 때는 reverse reads를 reverse compliment 시킨 후 overlap 되는 부분을 합치면 된다. 또한 각각의 read 앞쪽에 primer가 붙어 있을 수도 있다. 
 
+### 원리 
 - 우선 한쪽 끝에서 특정 길이까지 읽고, 그다음 다른 쪽 끝에서 서열을 읽는다. Paired-end sequencing은 유전체 상에서 다양한 read들의 상대적인 위치를 찾는데 더 용이하다.
 - 원본 없이 하나하나 맞춰 보면서 연결되는 것 끼리 쭉 잇는다. 이어서 원래의 genome 서열을 알아내야 한다. 따라서 한 종류의 read들만 가지고 assemble을 하기란 쉽지 않다. 그래서, short, long, paired-end, mate-paired-end 등 여러 종류의 read들을 가지고 assembly를 해야 결과가 좋아진다. 
 - repetitive한 지역의 assembly를 향상시킬 수 있다. 그러나 Paired end는 Single End보다 더 비싸고, 더 많은 시간이 소요된다. 또한 모든 실험이 높은 수준의 정확도를 필요로 하지 않을 수도 있다. 
@@ -51,3 +58,4 @@
 https://bgreat.tistory.com/100
 https://www.insilicogen.com/blog/106
 https://brunch.co.kr/@davidseo97/13
+https://sapac.support.illumina.com/bulletins/2016/04/fastq-files-explained.html
