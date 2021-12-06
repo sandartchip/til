@@ -8,6 +8,16 @@
 SPAdes는 온라인에서 사용할 수 있습니다( http://bioinf.spbau.ru/spades ). 오픈 소스 소프트웨어로 배포됩니다.
 
 
+## SPAdes output
+SPAdes stores all output files in <output_dir> , which is set by the user.
+
+<output_dir>/corrected/ directory contains reads corrected by BayesHammer in *.fastq.gz files; if compression is disabled, reads are stored in uncompressed *.fastq files
+<output_dir>/scaffolds.fasta contains resulting scaffolds (recommended for use as resulting sequences)
+<output_dir>/contigs.fasta contains resulting contigs
+<output_dir>/assembly_graph_with_scaffolds.gfa contains SPAdes assembly graph and scaffolds paths in GFA 1.0 format
+<output_dir>/assembly_graph.fastg contains SPAdes assembly graph in FASTG format
+<output_dir>/contigs.paths contains paths in the assembly graph corresponding to contigs.fasta (see details below)
+<output_dir>/scaffolds.paths contains paths in the assembly graph corresponding to scaffolds.fasta (see details below)
 
 http://bioip.co.kr/Analysis/56
 
