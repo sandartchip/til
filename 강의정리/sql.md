@@ -1,5 +1,14 @@
+
+## DBeaver 사용법
 블럭 지정후 Ctrl + Enter -> 실행 
 Ctrl + Shift + E -> 실행 계획을 볼 수 있다. (dbeaver만)
+
+```sql
+SELECT ---3
+  FIRST_NAME ---4
+FROM ---1
+  CUSTOMER ---2
+```
 
 ### ALIAS
 SELECT * FROM CUSTOMER A 이렇게 쓰는거.
