@@ -11,7 +11,14 @@ FROM ---1
 ```
 
 ### ALIAS
-SELECT * FROM CUSTOMER A 이렇게 쓰는거.
+
+```sql
+SELECT ---3
+  A.FIRST_NAME ---4
+FROM ---1
+  CUSTOMER A---2
+```
+이렇게 쓰는거.
 ALIAS를 쓰면 코드의 가독성이 좋아지고 SQL 성능이 좋아짐
 
 ### DBMS
