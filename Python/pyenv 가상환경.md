@@ -51,11 +51,21 @@ eval "$(pyenv virtualenv-init -)"
 - 파이썬 버전과 라이브러리의 완전한 격리 환경을 제공.
 - pyenv를 pyenv-installer로 설치할 때 pyenv-virtualenv 설치가 포함됨. 이후 bashrc에서 초기화시킴 
 
+### autoenv
+- 특정 폴더에 들어오면 특정 가상환경 실행하도록 자동 세팅
+- .env파일에 다음과 같은 내용을 작성함
+
+```shell
+echo “***********************************”
+echo “Python Virtual Env > dero_env”
+echo “***********************************”
+
+pyenv shell dero_env 
+pyenv activate
 ```
 
-### autoenv
-- pyenv-virtualenv 사용 시 불편한 수작업을 자동화.
 - 특정 프로젝트 폴더로 들어가면 .env파일 실행하여 가상환경 활성화.
+
 
 
 ## 현재 
