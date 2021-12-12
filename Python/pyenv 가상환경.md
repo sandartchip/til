@@ -1,6 +1,6 @@
 
 
-### pyenv
+# pyenv
 ![image](https://user-images.githubusercontent.com/15938354/144147393-c1422462-162c-490a-8119-e51c6ec14a3c.png)
 
 - 파이썬 버전을 관리하는 툴.
