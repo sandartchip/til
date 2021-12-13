@@ -92,8 +92,7 @@ source ~/.bashrc
 ```shell
 source ~/.autoenv/activate.sh 
 ```
-- .env파일에 다음과 같은 내용을 작성함
-
+- .env파일에 다음과 같은 내용을 작성함(autoenv 활성화 bash)
 
 ```shell
 echo “***********************************”
