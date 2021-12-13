@@ -89,3 +89,6 @@ pyenv activate
 ### 참고자료 
 https://wikidocs.net/10936
 http://taewan.kim/post/python_virtual_env/
+
+### OpenSuse 에서 설치
+https://gist.github.com/antivanov/01ed4eac2d7486a170be598b5a0a4ac7
