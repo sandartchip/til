@@ -88,7 +88,7 @@ echo 'source ~/.autoenv/activate.sh' >> ~/.bashrc
 source ~/.bashrc
 ```
 
-- bashrc에 다음과 같이 작성
+- bashrc에 다음과 같이 작성해서 autoenv 프로그램을 활성화시킴
 ```shell
 source ~/.autoenv/activate.sh 
 ```
