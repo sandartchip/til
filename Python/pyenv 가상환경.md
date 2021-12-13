@@ -24,6 +24,12 @@ xz-utils tk-dev libffi-dev liblzma-dev python-openssl git
 ```
 
 #### 설치 
+
+- github에서 다운로드 후 bash로 실행
+```
+curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
+```
+
 .bash_profile
 - profile에 넣어도 되지만, bash 쉘이 쓰이기 때문에 bash_profile에 
 - profile파일에 환경변수 관련 세팅, alias는 bashrc에 주로 넣으므로, .profile에 세팅 
