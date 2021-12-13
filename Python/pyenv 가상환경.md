@@ -47,11 +47,6 @@ eval "$(pyenv virtualenv-init -)" # 쉘에 virtualenv를 로드하는 과정
 둘을 초기화하지 않으면 쉘에서 pyenv와 virtualenv를 사용 불가
 
 
-### 최종 파일
--> 
-```
-
-```
 
 
 ### pyenv-virtualenv
@@ -78,7 +73,6 @@ pyenv shell dero_env
 pyenv activate
 ```
 
-- 
 
 - 특정 프로젝트 폴더로 들어가면 .env파일 실행하여 가상환경 활성화.
 
