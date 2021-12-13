@@ -24,23 +24,30 @@ xz-utils tk-dev libffi-dev liblzma-dev python-openssl git
 ```
 
 #### 설치 
-.profile
+.bash_profile
+- profile에 넣어도 되지만, bash 쉘이 쓰이기 때문에 bash_profile에 
+- profile파일에 환경변수 관련 세팅, alias는 bashrc에 주로 넣으므로, .profile에 세팅 
+ 
 ```
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 
 ```
-알아서 들어간다.
 
 그런데 ubuntu에서 pyenv 명령어로 시스템 python 버전이 안바뀌는 문제가 생겨서..
-여러개의 파이썬 버전은 shims폴더에 있음.
+여러개의 각각 다른 파이썬 버전은 shims폴더에 있음.
 따라서 그 폴더도 profile상의 PATH에 넣어줘야함
 export PATH="$PYENV_ROOT/shims:$PATH"
 
-.bashrc
+마지막으로, pyenv를 초기화 함. 
 ```
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
+eval "$(pyenv init -)"            # 쉘에 pyenv를 로드하는 과정
+eval "$(pyenv virtualenv-init -)" # 쉘에 virtualenv를 로드하는 과정 
+```
+
+### 최종 파일
+-> 
+```
 
 ```
 
