@@ -31,7 +31,7 @@ urlpatterns += static(settings.STATIC_URL, document_root = settings.STATIC_ROOT)
 # Djangos와 static파일
 
 - settings.py에서, INSTALLED_APPS에 staticfiles을 추가함 (디폴트)
-- 장고는 django.contrib.staticfiles를 제공하여 파일 관리를 돕는다.
+- 장고는 **django.contrib.staticfiles**를 제공하여 파일 관리를 돕는다.
 
 ## STATIC 템플릿 태그
 
