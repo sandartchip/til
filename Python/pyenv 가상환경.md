@@ -42,6 +42,10 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 
 그런데 ubuntu에서 pyenv 명령어로 시스템 python 버전이 안바뀌는 문제가 생겨서..
 여러개의 각각 다른 파이썬 버전은 shims폴더에 있음.
+
+- Readme 파일 읽어보면 이런 문구가 있음
+- **pyenv works by inserting a directory of _shims_ at the front of your PATH**
+
 따라서 그 폴더 경로도 profile상의 PATH에 넣어줘야함
 export PATH="$PYENV_ROOT/shims:$PATH"
 
