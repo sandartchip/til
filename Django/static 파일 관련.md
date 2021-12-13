@@ -112,7 +112,7 @@ STATICFILES_DIRS = [
 - 아무 생각 없이 추가 한 django.staticfiles.finders에 FileSystemFinder와 AppDirectoriesFinder가 있는데, 이 객체들이 참조 할 static 폴더 경로를 찾는다. 
  
 ## 공식문서
-
+#### STATICFILES_DIR
 - The list of finder backends that know **how to find static files in various locations.**
 
 - The default will find files **stored in the STATICFILES_DIRS setting** (using django.contrib.staticfiles.finders.FileSystemFinder) and in a **static subdirectory of each app (using django.contrib.staticfiles.finders.AppDirectoriesFinder).**
