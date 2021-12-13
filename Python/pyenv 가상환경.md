@@ -83,7 +83,9 @@ pyenv activate <vertualenv-name>
 
 #### 설치 
 ```
-pip install autoenv
+git clone git://github.com/kennethreitz/autoenv.git ~/.autoenv
+echo 'source ~/.autoenv/activate.sh' >> ~/.bashrc
+source ~/.bashrc
 ```
 
 - bashrc에 다음과 같이 작성
