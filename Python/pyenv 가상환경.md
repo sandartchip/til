@@ -39,6 +39,7 @@ export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 ```
 
+
 그런데 ubuntu에서 pyenv 명령어로 시스템 python 버전이 안바뀌는 문제가 생겨서..
 여러개의 각각 다른 파이썬 버전은 shims폴더에 있음.
 
@@ -84,9 +85,10 @@ pyenv activate <vertualenv-name>
 #### 설치 
 ```
 git clone git://github.com/kennethreitz/autoenv.git ~/.autoenv
-echo 'source ~/.autoenv/activate.sh' >> ~/.bashrc
-source ~/.bashrc
+echo 'source ~/.autoenv/activate.sh' >> ~/.bash_profile
 ```
+
+autoenv 실행 옵션을 bash_profile에 넣어줘서 로그인 할때마다  한번 실행시키도록 설정.
 
 - bashrc에 다음과 같이 작성해서 autoenv 프로그램을 활성화시킴
 ```shell
