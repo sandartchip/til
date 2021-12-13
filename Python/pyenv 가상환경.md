@@ -80,12 +80,18 @@ pyenv activate <vertualenv-name>
 
 ### autoenv
 - 특정 폴더에 들어오면 특정 가상환경 실행하도록 자동 세팅
+
+#### 설치 
+```
+pip install autoenv
+```
+
 - bashrc에 다음과 같이 작성
 ```shell
-
 source ~/.autoenv/activate.sh 
 ```
-- .env파일에 다음과 같은 내용을 작성함d
+- .env파일에 다음과 같은 내용을 작성함
+
 
 ```shell
 echo “***********************************”
