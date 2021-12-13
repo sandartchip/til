@@ -34,10 +34,9 @@ curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer 
 - profile에 넣어도 되지만, bash 쉘이 쓰이기 때문에 bash_profile에 
 - profile파일에 환경변수 관련 세팅, alias는 bashrc에 주로 넣으므로, .profile에 세팅 
  
-```
+```shell
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
-
 ```
 
 그런데 ubuntu에서 pyenv 명령어로 시스템 python 버전이 안바뀌는 문제가 생겨서..
@@ -57,13 +56,27 @@ eval "$(pyenv virtualenv-init -)" # 쉘에 virtualenv를 로드하는 과정
 둘을 초기화하지 않으면 쉘에서 pyenv와 virtualenv를 사용 불가
 
 
-
-
 ### pyenv-virtualenv
 - virtualenv은 파이썬 환경을 격리하는 툴.
 - pyenv-virtualenv은 virtualenv의 pyenv 확장 플러그인.
 - 파이썬 버전과 라이브러리의 완전한 격리 환경을 제공.
 - pyenv를 pyenv-installer로 설치할 때 pyenv-virtualenv 설치가 포함됨. 이후 bashrc에서 초기화시킴 
+
+#### 사용법 
+- 만들기
+```shell
+$ pyenv virtualenv <vertualenv-name>
+```
+- 가상환경 활성화
+```shell
+pyenv activate <vertualenv-name>
+```
+
+- 가상환경 비활성화 
+```shell
+ pyenv deactivate
+```
+
 
 ### autoenv
 - 특정 폴더에 들어오면 특정 가상환경 실행하도록 자동 세팅
@@ -72,7 +85,7 @@ eval "$(pyenv virtualenv-init -)" # 쉘에 virtualenv를 로드하는 과정
 
 source ~/.autoenv/activate.sh 
 ```
-- .env파일에 다음과 같은 내용을 작성함
+- .env파일에 다음과 같은 내용을 작성함d
 
 ```shell
 echo “***********************************”
@@ -83,14 +96,16 @@ pyenv shell dero_env
 pyenv activate
 ```
 
-
 - 특정 프로젝트 폴더로 들어가면 .env파일 실행하여 가상환경 활성화.
 
 
 
-## 현재 
-- 안됨..-ㅁ-
+## Bug 상황  
 - pyenv gloal local 명령어로 파이썬 버전이 바껴야하는데 안 바뀜.
+
+### 원인 
+- shims 디렉토리 path에 추가 안해서.
+- 뻘짓 하지 말고, 제공하는 readme를 잘 읽자. 
 
 #### 참고
 - pyenv가 python을 올바르게 설치하려면 Python 빌드 종속성을 설치해야 합니다. 새로운 파이썬 버전. python 또는 pip와 같은 명령을 실행할 때 운영 체제는 디렉터리 목록을 검색하여 해당 이름의 실행 파일을 찾습니다. 이 디렉토리 목록은 PATH라는 환경 변수에 있으며 목록의 각 디렉토리는 콜론으로 구분됩니다.
