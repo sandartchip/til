@@ -9,7 +9,7 @@
 - 삼각형 위쪽의 커맨드부터 순서대로 읽힌다.
 - 공식 깃허브 : https://github.com/pyenv/pyenv-installer
 
-#### 의존 라이브러리들 
+### 의존 라이브러리들 
 ```
 sudo apt-get install -y make build-essential \
  libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev \
@@ -23,7 +23,7 @@ libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
 xz-utils tk-dev libffi-dev liblzma-dev python-openssl git
 ```
 
-#### 설치 
+### 설치 
 
 - github에서 다운로드 후 bash로 실행
 ```
