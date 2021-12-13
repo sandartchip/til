@@ -62,6 +62,11 @@ eval "$(pyenv virtualenv-init -)" # 쉘에 virtualenv를 로드하는 과정
 
 ### autoenv
 - 특정 폴더에 들어오면 특정 가상환경 실행하도록 자동 세팅
+- bashrc에 다음과 같이 작성
+```shell
+
+source ~/.autoenv/activate.sh 
+```
 - .env파일에 다음과 같은 내용을 작성함
 
 ```shell
@@ -72,6 +77,8 @@ echo “***********************************”
 pyenv shell dero_env 
 pyenv activate
 ```
+
+- 
 
 - 특정 프로젝트 폴더로 들어가면 .env파일 실행하여 가상환경 활성화.
 
