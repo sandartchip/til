@@ -16,5 +16,10 @@ from .base import *
 set DJANGO_SETTINGS_MODULE=config.settings.local
 ```
 
+- 원격에서 실행할 때
+```
+set DJANGO_SETTINGS_MODULE=config.settings.prod
+```
 
+쉘에서 실행
 https://wikidocs.net/75560
