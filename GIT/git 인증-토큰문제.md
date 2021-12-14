@@ -7,12 +7,14 @@ git config credential.helper store
 # 로그인 정보를 등록하기 위한 push, 변경점이 없어도 push가 됨
 git push 자동로그인하고싶은저장소주소
 
+
 # ex. 내가 자동 로그인을 하고싶은 git 주소가 https://example.github.com 이라면
 # git push https://example.github.com 라고 입력
 
 # 나오는 과정을 따라하면 됨, email, password를 입력
 # 모든 과정이 끝나면 아래의 사진같은 모습이 나오며 push를 할때마다 로그인을 할 필요가 없어짐
 ```
+- credential.helper store 옵션을 주면 인증 절차를 생략할 수 있어 한결 편리하다. 물론 최초 한번의 인증 절차는 필요하다.
 
 -https://daechu.tistory.com/33
 
