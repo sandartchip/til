@@ -13,7 +13,8 @@ from .base import *
 
 - 로컬에서 실행할 때
 ```
-set DJANGO_SETTINGS_MODULE=config.settings.local
+set DJANGO_SETTINGS_MODULE=config.settings.local (윈도우)
+
 ```
 
 - 원격에서 실행할 때
