@@ -1,4 +1,13 @@
+# python -m 
 
+- 파이썬에서 모듈을 실행한다.
+
+- 보통 pip를 python3 또는 python2에서 적절하게 실행하고자 할 때 사용함. 
+
+```
+python2 -m pip install pycrypto 
+python3 -m pip install pycrypto 
+```
 
 # print 함수
 
