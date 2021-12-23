@@ -17,7 +17,7 @@ services:
     volumes:
     - 호스트의 폴더 경로:컨테이너의 폴더 경로 
     environment:
-      -MYSQL_ROOT_PASSWORD= ???
+      -MYSQL_ROOT_PASSWORD=test
       -TZ="Asia/Seoul"
     
     
