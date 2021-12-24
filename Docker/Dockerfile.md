@@ -2,7 +2,7 @@
 ## WORKDIR
 
 ```WORKDIR <경로>```
-- WORKDIR 뒤에 오는 모든 RUN, CMD, ENTRYPOINT 명령이 실행 될 디렉토리를 적용 함.
+- WORKDIR 뒤에 오는 모든 RUN, CMD, ENTRYPOINT **명령이 실행 될 디렉토리를 적용** 함.
 
 
 
