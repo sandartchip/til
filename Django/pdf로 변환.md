@@ -7,5 +7,7 @@
 ### 참고자료 
 - https://github.com/divanov11/django-html-2-pdf/blob/master/htmltopdf/app/views.py
 
+- https://github.com/xhtml2pdf/xhtml2pdf/blob/master/demo/djangoproject/views.py
+
 - https://davidfischer.name/2015/08/generating-pdfs-with-and-without-python/
 
