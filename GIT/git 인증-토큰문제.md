@@ -7,6 +7,7 @@ git config credential.helper store
 # 로그인 정보를 등록하기 위한 push, 변경점이 없어도 push가 됨
 git push 자동로그인하고싶은저장소주소
 
+- 꼭 push 아니라도, pull이나 fetch 등 원격서버 접속 필요한 작업 하면 됨
 
 # ex. 내가 자동 로그인을 하고싶은 git 주소가 https://example.github.com 이라면
 # git push https://example.github.com 라고 입력
