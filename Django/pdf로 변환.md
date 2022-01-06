@@ -2,7 +2,7 @@
 - 문서에 따르면 Reportlab이 가장 보편적이라고 함. 
 - 그러나, django의 html to pdf 예제는 조회수가 가장 많은 예시가 전부 xhtml2pdf 였음.
 
-## xhtml2pd
+## xhtml2pdf
 - 제약 : 쓸 수 있는 css 속성에 제약 있음(webkit 등 안됨)
 - javascript 렌더링이 안 됨..
 
