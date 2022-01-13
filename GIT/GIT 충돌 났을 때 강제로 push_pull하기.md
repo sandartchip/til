@@ -9,3 +9,7 @@ git pull origin main
 ```
 
 
+강제로 push하려면
+```
+git push -u origin master --force
+```
