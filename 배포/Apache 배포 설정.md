@@ -21,3 +21,9 @@ os.environ.setdefault("DJANGO_SETTINGS_MODULE", "[project_name].settings")
  
 application = get_wsgi_application()
 ```
+## 3. default.conf 수정
+```
+cd /etc/apache2/sites-available
+sudo vi 000-default.conf
+```
+여기서 WSGI 파일의 위치 설정
