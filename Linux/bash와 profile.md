@@ -29,7 +29,6 @@ done
  
 
 2./etc/bashrc
-
  
 
 3. ~/.bash_profile OR ~/.profile (.bash_profile 이 없으면 .profile을 실행. .bash_profile 이 1순위이고, 우선순위에 따라 1개만 실행된다.)
