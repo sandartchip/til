@@ -1,4 +1,9 @@
- 
+
+### SHELL 
+```yml
+SHELL ["executable", "parameters"]
+```
+- 커맨드들이 실행 될 기본 쉘의 모양을 지정한다.
  
  ### CMD 
  
