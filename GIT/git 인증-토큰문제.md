@@ -1,5 +1,5 @@
 
-# 1번 방법
+# 1번 방법 (잘됨)
 
 ```
 git config credential.helper store
