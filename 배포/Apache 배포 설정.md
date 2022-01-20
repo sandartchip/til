@@ -10,7 +10,7 @@ apt-get install apache2
 import os, sys
 
 # 추가해야 할 부분 
-path = os.path.abspath(__file__+'/../..')
+path = os.path.abspath(__file__+'/../..') # 장고 프로젝트 경로. 
 if path not in sys.path:
 	sys.path.append(path) 
 # 여기까지
