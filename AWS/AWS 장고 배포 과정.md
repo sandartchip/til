@@ -27,7 +27,11 @@ apt-get install python3-virtualenv
 #### AWS에 Mysql 설치 
 - https://mirae-kim.tistory.com/73
 
+#### MYSQL 인코딩 설정
+ALTER  DATABASE  db명 DEFAULT CHARACTER SET utf8 ;
+
 #### mysql 비번 policy 
+
 https://kamang-it.tistory.com/entry/MySQL%ED%8C%A8%EC%8A%A4%EC%9B%8C%EB%93%9C-%EC%A0%95%EC%B1%85-%ED%99%95%EC%9D%B8-%EB%B3%80%EA%B2%BD%ED%95%98%EA%B8%B0
 
 MYSQL8) 
