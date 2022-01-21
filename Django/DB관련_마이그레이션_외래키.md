@@ -45,6 +45,18 @@ class Genome(models.Model):
 이렇게 붙음..;;;
 
 ## solution
+
+
+
+```python
+class Upload(models.Model):
+    file = models.FileField(upload_to='images_test')
+    folder = models.ForeignKey(Folder, on_delete=models.CASCADE, default=-1, **db_column="folder"**)
+```
+
+![image](https://user-images.githubusercontent.com/15938354/116502072-83fc5600-a8ed-11eb-996f-d1873a6744d4.png)
+
+
 ```python
     species = models.ForeignKey(Species, on_delete=models.CASCADE, default=-1)
 ```
@@ -54,13 +66,3 @@ class Genome(models.Model):
 ![image](https://user-images.githubusercontent.com/15938354/129115910-41318d93-f1dc-4bd6-9692-e77f44c1fa78.png)
 
 원하는 결과가 나온다. 
-
-
-```
-class Upload(models.Model):
-    file = models.FileField(upload_to='images_test')
-    folder = models.ForeignKey(Folder, on_delete=models.CASCADE, default=-1, **db_column="folder"**)
-```
-
-![image](https://user-images.githubusercontent.com/15938354/116502072-83fc5600-a8ed-11eb-996f-d1873a6744d4.png)
-
