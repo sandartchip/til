@@ -28,6 +28,7 @@ class Upload(models.Model):
 
 migrate시키면
 
+--Upload 테이블--
 ![image](https://user-images.githubusercontent.com/15938354/116501977-354ebc00-a8ed-11eb-8f5b-e443b21da78c.png)
 
 내가 원하는 folder필드가 아닌, folder_id를 참조하였다. 
