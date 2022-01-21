@@ -55,10 +55,7 @@ class Upload(models.Model):
 
 ![image](https://user-images.githubusercontent.com/15938354/116502072-83fc5600-a8ed-11eb-996f-d1873a6744d4.png)
 
-
-```python
-    species = models.ForeignKey(Species, on_delete=models.CASCADE, default=-1)
-```
+ 
 마이그레이션 하면 
 -> 
 
