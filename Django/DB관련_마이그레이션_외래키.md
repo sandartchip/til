@@ -33,18 +33,7 @@ migrate시키면
 
 내가 원하는 folder필드가 아닌, folder_id를 참조하였다. 
 
-
-ex2)
-```python
-class Genome(models.Model):
-    species_id = models.IntegerField(default=0) # Species ID의 foreign key임. TODO::나중에 species_name 없애고 species id만 남겨놓음 됨..-a
-```
--> 마이그레이션 하면 
-
-![image](https://user-images.githubusercontent.com/15938354/129115814-74fe877e-82e0-4cf3-acfe-0727108eb595.png)
-
-이렇게 붙음..;;;
-
+ 
 ## solution
 
 
@@ -57,9 +46,4 @@ class Upload(models.Model):
 ![image](https://user-images.githubusercontent.com/15938354/116502072-83fc5600-a8ed-11eb-996f-d1873a6744d4.png)
 
  
-마이그레이션 하면 
--> 
-
-![image](https://user-images.githubusercontent.com/15938354/129115910-41318d93-f1dc-4bd6-9692-e77f44c1fa78.png)
-
 원하는 결과가 나온다. 
