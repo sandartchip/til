@@ -47,7 +47,6 @@ class Genome(models.Model):
 ## solution
 
 
-
 ```python
 class Upload(models.Model):
     file = models.FileField(upload_to='images_test')
