@@ -2,7 +2,8 @@
 ## Git hook
 - 특정 상황에 특정 스크립트 실행 
 
-Installing a Hook
+#### Installing a Hook
+
 The hooks are all stored in the hooks subdirectory of the Git directory. 
 git hook은 Git 디렉토리의 하위 디렉토리로 저장된다.
 
