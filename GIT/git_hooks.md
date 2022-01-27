@@ -10,9 +10,11 @@ git hook은 Git 디렉토리의 하위 디렉토리로 저장된다.
 In most projects, that’s .git/hooks. When you initialize a new repository with git init, Git populates the hooks directory with a bunch of example scripts, 
 many of which are useful by themselves; 
 
-but they also document the input values of each script. All the examples are written as shell scripts, with some Perl thrown in, but any properly named executable scripts will work fine – you can write them in Ruby or Python or whatever language you are familiar with. If you want to use the bundled hook scripts, you’ll have to rename them; their file names all end with .sample.
+but they also document the input values of each script. 
+All the examples are written as shell scripts, with some Perl thrown in, but any properly named executable scripts will work fine – you can write them in Ruby or Python or whatever language you are familiar with. If you want to use the bundled hook scripts, you’ll have to rename them; their file names all end with .sample.
 
-To enable a hook script, put a file in the hooks subdirectory of your .git directory that is named appropriately (without any extension) and is executable.
+To enable a hook script, put a file in the hooks subdirectory of your .git directory 
+that is named appropriately (without any extension) and is executable.
 From that point forward, it should be called. We’ll cover most of the major hook filenames here.
 
 ## Client-Side Hooks
@@ -29,10 +31,12 @@ After the entire commit process is completed, the post-commit hook runs. It does
 
 
 
-
 ## Server-Side Hooks
 
-In addition to the client-side hooks, you can use a couple of important server-side hooks as a system administrator to enforce nearly any kind of policy for your project. These scripts run before and after pushes to the server. The pre hooks can exit non-zero at any time to reject the push as well as print an error message back to the client; you can set up a push policy that’s as complex as you wish.
+In addition to the client-side hooks, you can use a couple of important server-side hooks as a system administrator to enforce nearly any kind of policy for your project. 
+These scripts run before and after pushes to the server.
+The pre hooks can exit non-zero at any time to reject the push as well as print an error message back to the client; 
+you can set up a push policy that’s as complex as you wish.
 
 #### post-receive
 
