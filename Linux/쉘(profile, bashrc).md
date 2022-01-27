@@ -19,6 +19,7 @@
 - root로 로그인을 하면 먼저 /etc/profile을 읽어들여서 적용하고, 그 다음 root의 홈 디렉토리 아래있는 root의 .bash_profile을 읽어들  인다. 
 
 - root가 아닌 scott 계정으로 로그인 한다면 /etc/profile을 읽어들이고 scott 계정의 홈 디렉토리에 있는 .bash_profile을 읽어들인다. 
+(/etc/profile이 수행된다음 바로 수행된다.)
 
 - 환경설정은 profile에, 다른 함수나 alias 설정은 bashrc에 저장하도록 권장한다. (bash 쉘을 사용할 경우)
 
