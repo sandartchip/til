@@ -28,11 +28,11 @@
 
 ![](https://images.velog.io/images/sandartchip/post/697aecd9-2513-4243-b1e7-f8a792fbfe89/%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8.png)
   ### 2.1 Login shell
-   - Login shell은 사용자가 로그인 했을때 적용되는 shell을 의미한다.
+   - Login shell은 사용자가 로그인 했을때 적용되는 shell을 의미한다. **로그인할 때만 적용됨!!!!**
    - 로그인은 계정과 암호를 입력해서 Shell을 실행하는 것을 말한다. 따라서 ssh로 접속하거나 로컬에서 GUI를 통해 Shell을 실행하는 것은 Login Shell 이다.
    - .profile, .bash_profile 이 두 파일은 Login할 때 로드되는 파일이다. 
    
-   * .profile'은 꼭 bash가 아니더라도 로그인하면 로드되며, '.bash_profile'은 꼭 bash로 로그인 할 때만 실행된다.
+   * .profile은 꼭 bash가 아니더라도 로그인하면 로드되며, '.bash_profile'은 꼭 bash로 로그인 할 때만 실행된다. (리눅스의 기본 쉘은 bash이다)
 
 
    ### 2.2 Non Login shell
