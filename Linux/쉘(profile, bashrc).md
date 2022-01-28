@@ -43,7 +43,7 @@
    - ​.bashrc은 이미 로그인 한 상태에서, bash 에서 작업할 때마다 실행되어 터미널에 python을 타이핑하면 python3과 연결되게 함.
    - bashrc에는 alias, profile에는 환경변수 설정
 
-   * 만약 새 터미널 창을 열 때마다 .bashrc를 로드하고 싶다면 .bash_profile 에서 .bashrc를 로드하면 된다.
+   * 만약 새 터미널 창을 열 때마다 .bashrc를 로드하고 싶다면 .bash_profile 에서 .bashrc를 로드하면 된다. (-> 아님)
 
 
 ### 3. 환경 설정 스크립트 작성및 적용 방법
