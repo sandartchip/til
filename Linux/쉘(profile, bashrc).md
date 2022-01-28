@@ -23,6 +23,7 @@
 
 - 환경설정은 profile에, 다른 함수나 alias 설정은 bashrc에 저장하도록 권장한다. (bash 쉘을 사용할 경우)
 
+
 ​
 ### 스크립트 실행 순서
 
@@ -39,7 +40,8 @@
     
    - Non-Login Shell은 로그인 없이 실행하는 Shell을 말한다. ssh로 접속하고 나서 다시 bash를 실행하는 경우나,    GUI 세션에서 터미널을 띄우는 것도 여기 해당한다. ('sudo bash'나  'su'같은 것도 해당)
 
-   - ​.bashrc은 이미 로그인 한 상태에서 새 터미널 창을 열 때마다 실행된다. (non-login shell에서 실행)
+   - ​.bashrc은 이미 로그인 한 상태에서, bash 에서 작업할 때마다 실행된다. 
+   - 터미널에 python을 타이핑하면 python3과 연결되는 (non-login shell에서 실행)
    - bashrc에는 alias, profile에는 환경변수 설정
 
    * 만약 새 터미널 창을 열 때마다 .bashrc를 로드하고 싶다면 .bash_profile 에서 .bashrc를 로드하면 된다.
