@@ -54,6 +54,9 @@ you can set up a push policy that’s as complex as you wish.
 #### post-receive
 
 The post-receive hook runs **after the entire process is completed** and can be used to **update other services or notify users.** 
+
+post-receive 훅은 모든 과정들이 완료 되었을 때 그리고 다른 서비스가 업데이트 되었을 때 실행된다. 
+
 It takes the same stdin data as the pre-receive hook. 
 
 Examples include emailing a list, notifying a continuous integration server, 
@@ -77,9 +80,11 @@ You can use this hook to do things / like make sure none of the updated referenc
 
 
 This hook is invoked by git-receive-pack[1] when it reacts to git push and updates reference(s) in its repository. 
-이 훅은, git-receive-pack 으로부터 유발된다. 그 repository의 push와 updates 에 대응할 때
+이 훅은, git-receive-pack 으로부터 유발된다. 그 저장소의 push와 updates 에 반응할 때 . 
 
 Just before starting to update refs on the remote repository, the pre-receive hook is invoked. 
+리모트 리파지토리에 update ref를 하기 전에, pre-receive 훅이 발생한다. 
+
 
 Its exit status determines the success or failure of the update.
 
