@@ -2,9 +2,15 @@
 
 - 브라우저에서 요청할 때 / 붙으나 안 붙으나 상관 없다.
 - (http://localhost/api , http://localhost/api/)
+(**get 요청일 때만.** POST요청일 때는 
+You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data.)
+에러 발생함.
 
-장고 url에 슬래시 안 붙인 경우 -> 장고가 알아서 클라이언트에게 301 HTTP response(영구적인 URL 리디렉션)를 보내고 슬래시 붙인 주소로 자동 리다이렉트, 
+
+장고의 urls.py에 슬래시 안 붙인 경우 -> 장고가 알아서 클라이언트에게 301 HTTP response(영구적인 URL 리디렉션)를 보내고 슬래시 붙인 주소로 자동 리다이렉트, 
 그에 대한 HTTP response를 다시 클라이언트에게 보내준다.
+
+
 
 
 
