@@ -2,13 +2,77 @@
 ## Git hook
 - 특정 상황에 특정 스크립트 실행 
 
-#### Installing a Hook
+### 개요 (About Webhooks)
+- 웹훅을 사용하면 GitHub.com의 특정 이벤트를 구독하는 GitHub Apps 또는 OAuth Apps와 같은 통합을 구축하거나 설정할 수 있다. 
+- 이러한 **이벤트 중 하나가 트리거되면 HTTP POST 페이로드를 웹훅의 구성된 URL로 보낸다. **
+- 웹훅을 사용하여 외부 문제 추적기를 업데이트하거나 CI 빌드를 트리거하거나 백업 미러를 업데이트하거나 프로덕션 서버에 배포할 수 있다. 당신은 상상력에 의해 제한될 뿐입니다.
 
-The hooks are all stored in the hooks subdirectory of the Git directory. 
-git hook은 Git 디렉토리의 하위 디렉토리로 저장된다.
+#### Event
+- 웹 후크를 구성할 때 UI 또는 API를 사용하여 페이로드를 보낼 이벤트를 선택할 수 있다. 
+- 기본적으로 웹훅은 푸시 이벤트에만 가입된다. 구독 이벤트 목록은 언제든지 변경할 수 있다.
+- 각 이벤트는 조직 및/또는 리포지토리에서 발생할 수 있는 특정 작업 집합에 해당한다. 
+- 예를 들어 이슈 이벤트를 구독하는 경우 이슈를 열거나 닫거나 레이블을 지정하는 등의 작업을 수행할 때마다 세부 페이로드를 받게 된다.
 
-In most projects, that’s .git/hooks. When you initialize a new repository with git init, Git populates the hooks directory with a bunch of example scripts, 
-many of which are useful by themselves; 
+### 이벤트 
+
+### Ping 이벤트 
+- 새 웹 후크를 만들면 웹 후크를 올바르게 설정했음을 알리는 간단한 핑 이벤트를 보낸다. 
+- 이 이벤트는 저장되지 않으므로, 이벤트 API endpoint을 통해 검색할 수 없다.
+
+ping 이벤트 webhook 페이로드에 대한 자세한 내용은 ping 이벤트를 참조하십시오.
+
+
+### Webhook 만들기 
+- 웹훅을 구축하는 방법과 GitHub에서 웹훅이 청취할 이벤트를 선택하고 웹훅 페이로드를 수신하고 관리할 서버를 설정하는 방법을 배우십시오.
+
+- 웹훅을 만드는 과정은 두 단계로 이루어진다. 
+- 먼저 GitHub를 통해 웹훅이 어떻게 동작하기를 원하는지 설정할 필요가 있다: 어떤 이벤트를 청취해야 하는지. 그런 다음 페이로드를 수신하고 관리하도록 서버를 설정합니다.
+
+- 웹 후크 REST API를 사용하면 리포지토리, 조직 및 앱 웹 후크를 관리할 수 있다. 
+- 이 API를 사용하여 웹훅에 대한 웹훅 delivery을 나열하거나 외부 앱이나 서비스에 통합될 수 있는 웹훅에 대한 개별 delivery을 가져와 다시 전송할 수 있다. 
+- REST API를 사용하여 웹 후크의 구성을 변경할 수도 있다. 예를 들어 페이로드 URL, 컨텐츠 유형, SSL 확인 및 암호를 수정할 수 있다. 자세한 내용은 다음을 참조하십시오.
+
+### 로컬호스트를 인터넷에 노출하기 
+- 이 자습서의 목적을 위해 로컬 서버를 사용하여 GitHub에서 메시지를 수신합니다. 
+- 따라서 먼저 로컬 개발 환경을 인터넷에 노출해야 합니다. 
+- 이를 위해 ngrok을 사용할 것입니다. ngrok은 모든 주요 운영 체제에서 무료로 사용할 수 있습니다. 자세한 내용은 ngrok 다운로드 페이지를 참조하세요.
+
+#### STEP 1
+- ngrok을 설치한 후, 4567 포트를 개방한다. 4567 포트는 서버가 메세지를 받을 포트 번호이다. 
+- 
+
+----------------------------------------
+
+### Webhook 이벤트 그리고 페이로드 
+- 각 웹 후크 이벤트에 대해 이벤트 발생 시기, 페이로드 예제 및 페이로드 개체 매개 변수에 대한 설명을 검토할 수 있다.
+
+- 웹 후크를 구성할 때 UI 또는 API를 사용하여 페이로드를 보낼 이벤트를 선택할 수 있다. 
+- 처리할 특정 이벤트만 구독하면 서버에 대한 HTTP 요청 수가 제한된다. 
+- 또한 모든 현재 및 미래 이벤트를 구독할 수 있다. 기본적으로 웹훅은 푸시 이벤트에만 가입됩니다. 구독 이벤트 목록은 언제든지 변경할 수 있습니다.
+
+#### Webhook 페이로드 개체 공통 속성
+- 각 웹훅 이벤트 페이로드에는 이벤트에 고유한 속성도 포함된다. 
+- 개별 이벤트 유형 섹션에서 고유한 속성을 찾을 수 있다
+
+## Key        | Type   | Description 
+action	      string	   Most webhook payloads contain an action property that contains the specific activity that triggered the event.
+sender	      object	   The user that triggered the event. This property is included in every webhook payload.
+repository	  object	   The repository where the event occurred. Webhook payloads contain the repository property when the event occurs from activity in a repository.
+organization	object	  Webhook payloads contain the organization object when the webhook is configured for an organization or the event occurs from activity in a repository owned by an organization.
+installation	object	The GitHub App installation. Webhook payloads contain the installation property when the event is configured for and sent to a GitHub App. For more information, see "Building GitHub App."
+
+- 웹 후크 이벤트의 고유 속성은 이벤트 API를 사용할 때 페이로드 속성에서 찾을 수 있는 것과 동일합니다. 
+- 한 가지 예외는 푸시 이벤트입니다. 푸시 이벤트 webhook 페이로드와 이벤트 API의 페이로드 속성은 서로 다릅니다. 웹훅 페이로드에는 더 자세한 정보가 포함되어 있습니다.
+
+#### Delivery headers 
+- 웹 후크의 구성된 URL endpoint으로 전달되는 HTTP POST 페이로드에는 다음과 같은 특수 헤더가 포함됩니다.
+
+#### 헤더, 설명
+X-GitHub-Event	     : Name of the event that triggered the delivery.
+X-GitHub-Delivery	   : A GUID to identify the delivery.
+X-Hub-Signature	     : This header is sent if the webhook is configured with a secret. This is the HMAC hex digest of the request body, and is generated using the SHA-1 hash function and the secret as the HMAC key. X-Hub-Signature is provided for compatibility with existing integrations, and we recommend that you use the more secure X-Hub-Signature-256 instead.
+X-Hub-Signature-256	 : This header is sent if the webhook is configured with a secret. This is the HMAC hex digest of the request body, and is generated using the SHA-256 hash function and the secret as the HMAC key.
+
 
 but they also document the input values of each script. 
 All the examples are written as shell scripts, with some Perl thrown in, but any properly named executable scripts will work fine – you can write them in Ruby or Python or whatever language you are familiar with. If you want to use the bundled hook scripts, you’ll have to rename them; their file names all end with .sample.
