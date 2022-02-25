@@ -1,3 +1,5 @@
+# JOIN 구문 
+- select related로 연결하면 JOIN 조건으로 다른 테이블을 연결해서 가져 옴.
 
 # search 
 ```python
