@@ -1,2 +1,2 @@
 
-- 쿼리셋을 Page object로 분리한다. 
+- **쿼리셋**을 Page object로 분리한다. 
