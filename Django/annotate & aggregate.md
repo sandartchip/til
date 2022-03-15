@@ -23,6 +23,7 @@ class Book(models.Model):
     pubdate = models.DateField()
 ```
 
+#### 예시 1 - 각 항목에 대한 집계 생성
 ```python
 >>> from django.db.models import Count
 >>> q = Book.objects.annotate(Count('authors'))
@@ -32,4 +33,11 @@ class Book(models.Model):
 2
 >>> q[1].authors__count
 1
+```
+
+#### 예시2  - 가장 책을 많이 출간한 출판사 TOP5
+
+```python
+>>> pubs = Publisher.objects.annotate(num_books=Count('book')).order_by('-num_books')[:5]
+>>> pubs[0].num_books
 ```
