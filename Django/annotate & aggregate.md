@@ -41,3 +41,6 @@ class Book(models.Model):
 >>> pubs = Publisher.objects.annotate(num_books=Count('book')).order_by('-num_books')[:5]
 >>> pubs[0].num_books
 ```
+
+
+https://docs.djangoproject.com/en/4.0/topics/db/aggregation/
