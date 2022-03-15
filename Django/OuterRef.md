@@ -9,7 +9,7 @@
 ```python
 class Base(models.Model):
     no = models.BigAutoField(primary_key=True)
-	cnt = models.IntegerField()
+    cnt = models.IntegerField()
     name = models.CharField(max_length=100)
 
 
