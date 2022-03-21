@@ -1,3 +1,29 @@
+## select_related
+
+- 쿼리를 실행했을 때에 지정된 외래 키의 개체도 함께 가져온다. 
+- 이를 통해 DB에 접근하는 횟수를 줄일 수 있다. 
+- 사용 예에 대해서 살펴보자면, 첫 번째 코드를 두 번째로 코드로 변경할 수 있다.
+- 
+```python
+# DB에 접근
+e = Entry.objects.get(id=5)
+```
+
+```python
+# 아직 DB를 건들이고 있다.
+b = e.blog
+``` 
+
+```python
+# DB에 접근
+e = Entry.objects.select_related('blog').get(id=5)
+```
+
+```python
+# 미리 DB에서 얻어낸 객체를 참고하므로 DB를 계속해서 접근하지 않는다.
+b = e.blog
+```
+
 
 ## Raw 쿼리
 
