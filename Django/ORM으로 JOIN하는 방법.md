@@ -3,7 +3,8 @@
 - 쿼리를 실행했을 때에 지정된 외래 키의 개체도 함께 가져온다. 
 - 이를 통해 DB에 접근하는 횟수를 줄일 수 있다. 
 - 사용 예에 대해서 살펴보자면, 첫 번째 코드를 두 번째로 코드로 변경할 수 있다.
-- 
+
+#### case1
 ```python
 # DB에 접근
 e = Entry.objects.get(id=5)
@@ -14,6 +15,7 @@ e = Entry.objects.get(id=5)
 b = e.blog
 ``` 
 
+#### case2
 ```python
 # DB에 접근
 e = Entry.objects.select_related('blog').get(id=5)
