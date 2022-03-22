@@ -1,3 +1,23 @@
+
+## 테이블이 외래키로 연결되어 있을 경우 
+
+```python
+# models.py 
+
+class Company(models.Model):    
+    group = models.ForeignKey(Group, blank=True, null=True, on_delete=models.SET_NULL, related_name="company")
+
+class Group(models.Model):
+   name = models.CharField()
+```
+
+```python
+Company.objects.filter(pk=1).values('group__name')
+```
+
+이런 식으로 연결할 수 있다.
+
+
 ## select_related
 
 - 쿼리를 실행했을 때에 지정된 외래 키의 개체도 함께 가져온다. 
