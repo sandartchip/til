@@ -15,7 +15,7 @@ class Group(models.Model):
 Company.objects.filter(pk=1).values('group__name')
 ```
 
-이런 식으로 연결할 수 있다.
+이런 식으로, 굳이 select related 안써도 연결할 수 있다.
 
 
 ## select_related
