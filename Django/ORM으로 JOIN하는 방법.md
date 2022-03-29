@@ -1,3 +1,34 @@
+## 역참조 (span relationships)
+- Django offers a powerful and intuitive way to “follow” relationships in lookups
+- taking care of the SQL JOINs for you automatically, behind the scenes. 
+- To span a relationship, just use the field name of related fields across models, separated by double underscores, until you get to the field you want.
+
+
+```python
+class Blog(models.Model):
+    name = models.CharField(max_length=100)
+    tagline = models.TextField()
+
+    def __str__(self):
+        return self.name
+
+class Entry(models.Model):
+    blog = models.ForeignKey(Blog, on_delete=models.CASCADE)
+    headline = models.CharField(max_length=255)
+    body_text = models.TextField()
+    pub_date = models.DateField()
+    mod_date = models.DateField()
+    authors = models.ManyToManyField(Author)
+    n_comments = models.IntegerField()
+    n_pingbacks = models.IntegerField()
+    rating = models.IntegerField()
+```
+
+- Blog에서 Entry로 접근
+```python
+    Blog.objects.filter(entry__authors__name='Lennon')
+    Blog.objects.filter(entry__headline__contains='Lennon')
+```
 
 ## 테이블이 외래키로 연결되어 있을 경우 
 
