@@ -15,7 +15,8 @@ class Group(models.Model):
 Company.objects.filter(pk=1).values('group__name')
 ```
 
-이런 식으로, 굳이 select related 안써도 연결할 수 있다.
+이런 식으로, 굳이 select related 안써도 연결할 수 있다. (참조: queryset filter)
+https://docs.djangoproject.com/en/2.1/topics/db/queries/#lookups-that-span-relationships
 
 
 ## select_related
@@ -123,3 +124,4 @@ list(raw_queryset) # 애트리뷰트와 프로퍼티가 매칭되지 못해서 s
 - https://076923.github.io/posts/Python-Django-11/
 - https://medium.com/deliverytechkorea/django%EC%97%90%EC%84%9C%EB%8A%94-queryset%EC%9D%B4-%EB%8B%B9%EC%8B%A0%EC%9D%84-%EB%A7%8C%EB%93%AD%EB%8B%88%EB%8B%A4-2-5f6f8c6cd7e3
 - https://docs.djangoproject.com/en/3.2/topics/db/queries/
+https://docs.djangoproject.com/en/2.1/topics/db/queries/#lookups-that-span-relationships
