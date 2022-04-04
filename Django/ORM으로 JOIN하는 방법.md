@@ -1,4 +1,4 @@
-## 역참조 (span relationships)
+## span relationships
 - Django offers a powerful and intuitive way to “follow” relationships in lookups
 - taking care of the SQL JOINs for you automatically, behind the scenes. 
 - To span a relationship, just use the field name of related fields across models, separated by double underscores, until you get to the field you want.
