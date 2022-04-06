@@ -1,7 +1,8 @@
 ## client side & server side?
 - serverside와 동시에 안되는건 -> 하나의 동작에 대해서 안되는거임. 
 - search 자체를 serverside와 client side에서 동시에 수행할 수 없는 것.
-- 반면에 search해서 이미 테이블에 렌더링된 결과를 client side로 재필터링하는건 가능.
+- 반면에 search된 이후 테이블(dom tree)에 렌더링된 결과는 client side 렌더링 되었다고 할 수 있음.
+- 이미 검색을 통해 렌더링된 데이터를 client side로 재필터링하는건 가능.
 
 ![image](https://user-images.githubusercontent.com/15938354/136945410-2d35c332-05e6-45a3-8302-204ed542f2e5.png)
 
