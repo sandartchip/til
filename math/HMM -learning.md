@@ -1,5 +1,5 @@
 
-![image](https://user-images.githubusercontent.com/15938354/167174373-65c1cf2f-f681-4dce-898b-280e731b691a.png){: width="50%" height="50%"}
+![image](https://user-images.githubusercontent.com/15938354/167174373-65c1cf2f-f681-4dce-898b-280e731b691a.png =400x200}
 
 - 감마와 크사이를 가지고 A(hidden의 상태전이 matrix), B(hidden에 observed가 종속될 확률 matrix), 파이를 업데이트, 업데이트 된 A, B, 파이로 크사이와 감마를 다시 업데이트한다.
 
