@@ -26,5 +26,11 @@
 - ex. 정박사가 오늘 산책, 내일 산책, 글피 쇼핑했다면, 각 날들의 날씨는?
 - O = (o1=산책, o2=산책, o3=연구 o4=쇼핑)이 주어졌을 때, Find the hidden state
 
+### 예시
 
+![image](https://user-images.githubusercontent.com/15938354/167173780-815cb487-8ef3-4fa1-8b86-27017d5f7e24.png)
+- 관측 sequence를 가지고, hidden state sequence를 알 수 있다.
+- 즉, 어느 부분이 wake이고 어느 부분이 REM인지 알 수 있다. 
+- 각각의 time point에 hidden state가 assign 된다.
+- 
 https://www.youtube.com/watch?v=P02Lws57gqM
