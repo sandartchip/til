@@ -2,6 +2,8 @@
 ### Hidden Markov Model
 ![image](https://user-images.githubusercontent.com/15938354/167157178-2284abc0-afba-48cc-a269-debec6a61137.png)
 
+- Markov 모델이란, State(s)로 이루어진 Sequence를 상태 전이 확률 행렬로 표현하는 것.
+ 
 ### A
 -State Transition Matrix : hidden state가 서로 전환될 확률. Hidden State Transition Matrix라고 생각하면 된다. 
 
@@ -17,6 +19,11 @@
 ![image](https://user-images.githubusercontent.com/15938354/167161867-b7ee17a6-3615-428f-addc-ed01a168372c.png)
 - 각 hidden state의 초기 확률.
 - ex) state에 비, 해, 눈이 있으면 처음에 비가 올 확률, 해가 뜰 확률, 눈이 올 확률을 말한다.
+
+
+## Forwad & Backward
+c1![image](https://user-images.githubusercontent.com/15938354/167178305-00969cba-70ca-4c07-bf84-e5e08f866330.png)
+![image](https://user-images.githubusercontent.com/15938354/167178344-7e385f94-b3a8-4c75-9f27-6bf95a1d92bf.png)
 
 
 ### 2. Decoding 
