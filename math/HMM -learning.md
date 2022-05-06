@@ -4,8 +4,8 @@
 
 ![image](https://user-images.githubusercontent.com/15938354/167166644-651cadd3-de6a-41ad-9370-3f9de652fe7d.png)
 
-- 감마와 크사이를 가지고 A(hidden의 상태전이 matrix), B(hidden에 observed가 종속될 확률 matrix), 파이를 업데이트, 업데이트 된 A, B, 파이로 크사이와 감마를 다시 업데이트한다.
-
+- A(hidden의 상태전이 matrix), B(hidden에 observed가 종속될 확률 matrix), π(초기 hidden matrix)로 크사이와 감마를 다시 업데이트한다.
+- 업데이트된 감마와 크사이를 가지고 A, B, π를 업데이트함.
 - 감마는,  t시점에서 hidden state i에 있음.
 - observation matrix O가 주어졌을 때 t시점의 상태가 (hidden state)Si일 확률
 
