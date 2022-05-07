@@ -25,7 +25,8 @@
 c1![image](https://user-images.githubusercontent.com/15938354/167178305-00969cba-70ca-4c07-bf84-e5e08f866330.png)
 ![image](https://user-images.githubusercontent.com/15938354/167178344-7e385f94-b3a8-4c75-9f27-6bf95a1d92bf.png)
 
-
+- observable state의 sequence가 나올 확률(ex.산책->산책->연구->쇼핑 이 나올 확률)를 찾는다. 
+- 
 ### 2. Decoding 
 - 모델(파라미터)이 주어지고, Observable sequence가 주어졌을 때, 각 시점에서의 hidden state 를 예측하는 것. 
 - 이걸 찾는방법: Viterbi algorithm 
