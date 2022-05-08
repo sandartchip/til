@@ -1,3 +1,6 @@
+* 윈도우에선 이 방법)
+https://firstquarter.tistory.com/entry/Git-%ED%86%A0%ED%81%B0-%EC%9D%B8%EC%A6%9D-%EB%A1%9C%EA%B7%B8%EC%9D%B8-remote-Support-for-password-authentication-was-removed-on-August-13-2021-Please-use-a-personal-access-token-instead
+
 
 # 1번 방법 (잘됨)
 
