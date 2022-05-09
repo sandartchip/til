@@ -15,5 +15,5 @@
 - 해당 서비스의 데이터 갯수? 
 -> 하루에 1000개가 한계인데, 전체가 몇 개인지 모르겠음. ㅎㅎ
 
-- http://openapi.foodsafetykorea.go.kr/api/sample/I0030/xml/1/5
+- 예시 ) http://openapi.foodsafetykorea.go.kr/api/sample/I0030/xml/1/5
 
