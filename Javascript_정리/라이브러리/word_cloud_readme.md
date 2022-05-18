@@ -29,6 +29,10 @@ from the layout.
 특정한 리스너를 등록한다.
 
 Currently, only "word" and "end" events are supported.
+**현재, "word"와 "end" 이벤트만 지원된다.**
+-> 이 버전 word cloud에서는, click 이벤트가 지원 안되는듯..???
+clickable한건 어떻게 한거징 ㅇ0ㅇ;;
+
 
 A "word" event is dispatched / every time / a word is successfully placed.
 
