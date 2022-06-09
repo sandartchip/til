@@ -2,20 +2,13 @@
 ## energy function 
 
 energy function 
--> 
+-> penalizing? 주어진 dataset의 label과, 분석 결과의 label이 match가 되지 않는걸 penalizing함. 
 
-penalizing하는 
-match가 되지 않는걸 penalizing함. 
+- penalizing 할 떄 고려가 되는 부분이, data term 그리고 smoothness term.
 
-penalizing 할 떄 고려가 되는 부분이,
-data term 그리고 smoothness term.
+- pixel이 foreground 맞는데 레이블링이 맞음-> penalize 안함.
 
-pixel이 foreground 맞는데 레이블링이 맞음-> penalize 안함.
-
-energy function에 대해서,
-
-잘못 분류되면
-penalty를 얼마나 줘야할까.? 
+energy function에 대해서, 잘못 분류되면 penalty를 얼마나 줘야할까.? 
 
 --각 point마다 data term, smoothness term을 계산함.
 
@@ -40,7 +33,7 @@ dot 나오는 그림 -> pairwise cost.
 
 두 개의 임의의 연결된 pixel에 대해서, function으로 표현. 둘 사이에 pairwise cost를 계산.
 
-Edaa
+
 각 location에 label을 assign했을 때 (non negative) penalty를 어떻게 정의해야 할까.
 
 neighbor 관계에 있는 p와 q를 봤을 때, 그 때 assign되는 Lable fp, fq를 비교를 해서, non negative penalty를 assign함.
