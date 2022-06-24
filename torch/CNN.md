@@ -15,3 +15,7 @@ subsampling을 한 뒤 linear layer로 이어져서, classification을 수행한
 
 
 ![image](https://user-images.githubusercontent.com/15938354/175478511-8314e840-fb75-4674-9807-082900126862.png)
+
+- 위의 예에서, 전체 이미지의 크기는 3x3x1이고 필터의 크기는 2x2x1이다.
+- convolution은 필터를 사용해서 그 크기만큼 보고, 필터를 움직이면서 결국 전체 이미지를 본다. 
+
