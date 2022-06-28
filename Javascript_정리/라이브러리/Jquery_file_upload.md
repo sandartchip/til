@@ -7,8 +7,8 @@ https://github.com/blueimp/jQuery-File-Upload/wiki/Basic-plugin
 
 ```html
 <div id="upload_file">
-	파일 업로드
-	<input id="fileupload" type="file" name="files" multiple data-url="{% url 'main:upload_file' %}" data-form-data='{"csrfmiddlewaretoken": "{{ csrf_token }}"}'>
+  파일 업로드
+  <input id="fileupload" type="file" name="files" multiple data-url="{% url 'main:upload_file' %}" data-form-data='{"csrfmiddlewaretoken": "{{ csrf_token }}"}'>
 </div>
 ```
 
