@@ -13,11 +13,12 @@ The first defense against CSRF attacks is to ensure that GET requests (and other
 ### How to use it
 To take advantage of CSRF protection in your views, follow these steps:
 
-1. The CSRF middleware is activated by default in the MIDDLEWARE setting. If you override that setting, remember that 'django.middleware.csrf.CsrfViewMiddleware' should come before any view middleware that assume that CSRF attacks have been dealt with.
-
+1. The **CSRF middleware is activated by default** in the MIDDLEWARE setting. 
+2. If you override that setting, remember that 'django.middleware.csrf.CsrfViewMiddleware' should come before any view middleware that assume that CSRF attacks have been dealt with.
+3. 
 If you disabled it, which is not recommended, you can use csrf_protect() on particular views you want to protect (see below).
 
-2. In any template that uses a POST form, use the csrf_token tag inside the <form> element if the form is for an internal URL, e.g.:
+2. In **any template that uses a POST form**, **use the csrf_token tag inside the <form> element** if the form is for an internal URL, e.g.:
 
 ```html
   <form method="post">{% csrf_token %}
@@ -28,7 +29,6 @@ This should not be done for POST forms that target external URLs, since that wou
 3. In the corresponding view functions, ensure that RequestContext is used to render the response so that {% csrf_token %} will work properly. If you’re using the render() function, generic views, or contrib apps, you are covered already since these all use RequestContext.
     
   
-
 - CSRF 공격을 방어하기 위한 다양한 방법 존재
 - Django는 기본적으로 Csrf Token 사용 
 - POST에 대해서만 csrf token 발급 및 체크 
