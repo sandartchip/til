@@ -6,6 +6,16 @@ https://github.com/blueimp/jQuery-File-Upload/wiki/Basic-plugin
 ### API 설명
 (https://github.com/blueimp/jQuery-File-Upload/wiki/API)
 
+### Adding additional form data programmatically
+
+```javscript 
+$('#fileupload').fileupload({
+    formData: {example: 'test'}
+});
+```
+
+- formData는, form field의 key와 value를 쉽게 구성하는 인터페이스를 제공한다. 
+
 ### Data attributes
 
 It is possible to pass options to the initialization method as HTML5 data attributes:
@@ -30,6 +40,7 @@ It is possible to pass options to the initialization method as HTML5 data attrib
 
 $('#fileupload').fileupload();
 ```
+
 
 ### csrf 토큰 넘기기 
 
