@@ -8,7 +8,7 @@ https://github.com/blueimp/jQuery-File-Upload/wiki/Basic-plugin
 
 ### Adding additional form data programmatically
 
-```javscript 
+```javascript 
 $('#fileupload').fileupload({
     formData: {example: 'test'}
 });
