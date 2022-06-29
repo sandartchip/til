@@ -1,4 +1,21 @@
 
+# FormData
+
+- FormData objects can help with that. As you might have guessed, it’s the object to represent HTML form data.
+- (FormData는, HTML formdata를 표현하기 위한 객체이다.)
+
+The constructor is:
+```javascript
+ let formData = new FormData([form]);
+```
+
+If HTML form element is provided, it automatically captures its fields.
+
+The special thing about FormData is that network methods, such as fetch, can accept a FormData object as a body. 
+
+From the server point of view, that looks like a usual form submission.
+
+
 
 - FormData 인터페이스는 양식 필드와 해당 값을 나타내는 키/값 쌍 집합을 쉽게 구성할 수 있는 방법을 제공
 
