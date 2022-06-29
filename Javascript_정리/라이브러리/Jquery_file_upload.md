@@ -20,13 +20,14 @@ It is possible to pass options to the initialization method as HTML5 data attrib
 ```
 
 ```javascript
-/* Initializes the File Upload widget with
+/* Initializes the File Upload widget with*/
+
 {
     url: '/path/to/upload/handler.json',
     sequentialUploads: true,
     formData: {script: true}
 }
-*/
+
 $('#fileupload').fileupload();
 ```
 
