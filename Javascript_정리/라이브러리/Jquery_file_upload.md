@@ -4,8 +4,31 @@ https://github.com/blueimp/jQuery-File-Upload/wiki/Basic-plugin
 
 
 ### API 설명
-- 
+(https://github.com/blueimp/jQuery-File-Upload/wiki/API)
 
+### Data attributes
+
+It is possible to pass options to the initialization method as HTML5 data attributes:
+
+```html
+
+<input id="fileupload" type="file" name="files[]" multiple
+    data-url="/path/to/upload/handler.json"
+    data-sequential-uploads="true"
+    data-form-data='{"script": "true"}'>
+
+```
+
+```javascript
+/* Initializes the File Upload widget with
+{
+    url: '/path/to/upload/handler.json',
+    sequentialUploads: true,
+    formData: {script: true}
+}
+*/
+$('#fileupload').fileupload();
+```
 
 ### csrf 토큰 넘기기 
 
