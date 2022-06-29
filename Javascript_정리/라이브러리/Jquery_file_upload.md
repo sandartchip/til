@@ -1,3 +1,13 @@
+### AJAX Options
+The jQuery File Upload plugin makes use of jQuery.ajax() for the file upload requests. 
+This is true even for browsers without support for XHR, thanks to the Iframe Transport plugin.
+
+The options set for the File Upload plugin are passed to jQuery.ajax() and allow to define any ajax settings or callbacks.
+- 파일 업로드 플러그인 옵션은, jQuery.ajax()로 전달된다. 
+
+The ajax options processData, contentType and cache are set to false for the file uploads to work and should not be changed.
+
+
 
 ### 기본 플러그인 
 https://github.com/blueimp/jQuery-File-Upload/wiki/Basic-plugin
