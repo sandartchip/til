@@ -2,7 +2,10 @@
 # FormData
 
 - FormData objects can help with that. As you might have guessed, it’s the object to represent HTML form data.
-- (FormData는, HTML formdata를 표현하기 위한 객체이다.)
+- FormData는, HTML formdata를 표현하기 위한 객체이다.
+- The FormData interface provides a way to easily construct a set of key/value pairs representing form fields and their values, 
+which can then be easily sent using the fetch() or XMLHttpRequest.send() method. 
+- It uses the same format a form would use if the encoding type were set to "multipart/form-data".
 
 The constructor is:
 ```javascript
