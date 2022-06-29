@@ -3,7 +3,11 @@
 https://github.com/blueimp/jQuery-File-Upload/wiki/Basic-plugin
 
 
-## csrf 토큰 넘기기 
+### API 설명
+- 
+
+
+### csrf 토큰 넘기기 
 
 ```html
 <div id="upload_file">
@@ -17,4 +21,7 @@ https://github.com/blueimp/jQuery-File-Upload/wiki/Basic-plugin
 ```html 
   <form method="post">{% csrf_token %}
 ```
+
+
+
    
