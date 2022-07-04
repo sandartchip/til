@@ -58,7 +58,7 @@ $('#fileupload').fileupload();
 
 ### 결과)csrf 토큰 넘기기 
 
-- 본래는, django에서 csrf token을 넘길 때 form 태그 안에서 넘긴다. 이 라이브러리에서는, form태그를 쓰지 않고도, form을 쓴 것 처럼 데이터를 넘길 수 있음. 
+- 본래는, django에서 csrf token을 넘길 때 form 태그 안에서 넘긴다. 이 라이브러리에서는, form태그를 쓰지 않고도, form을 쓴 것 처럼, input html만 있어도 form데이터(formdata)를 넘길 수 있음. 
 
 ```html 
   <form method="post">{% csrf_token %}
