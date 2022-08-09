@@ -1,6 +1,7 @@
 
 # Bowtie2 
-- Bowtie는 빠르고 효율적인 short read aligner이다. 
+- Bowtie는 alignment툴이다.
+- 빠르고 효율적인 short read aligner이다. 
 - 이들은 large genome에 short DNA sequence(reads)의 많은 set들을 빠르게 aligning하는 것을 목표로 설계되었다. 
 - Bowtie는 Burrows - Wheeler index와 함께 reference genome을 index 하며, aligning Output Format은 standart SAM format이다. 
 - 따라서, SAM format을 이용할 수 있는 SAMtools와 같은 SNP 그리고 indel caller 등의 다양한 tool들을 함께 사용될 수 있다.
