@@ -30,6 +30,6 @@
 - SNP는 분자 마커임.
 - SNP(Single Nucleotide Polymorphisms)는 DNA 서열에서 일어나는 단일 염기의 변이로 유전체 전체적으로 가장 빈번하게 나타나며, 안정적으로 이용할 수 있는 장점이 있다.
 
-
+http://www.incodom.kr/SNP_genotyping
 http://www.seeders.co.kr/bbs/board.php?bo_table=contents&wr_id=4
 https://blog.naver.com/hyouncho2/60118964893
