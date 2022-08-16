@@ -11,3 +11,11 @@
 
 - 또한, SNP 마커는 품종 식별에도 많이 쓰이는데, 혈액에서 추출한 DNA를 이용하여 SNP genotyping을 실시하고 각 SNP의 Minor Allele Frequency (MAF) difference를 분석한다. 
 품종 별로 차이가 나타나는 마커를 선별해 기준으로 삼고, 어떤 특이적인 대립유전자가 나타나는지 확인해 품종을 식별하는 것이다.  
+
+
+## SNP Molcular Marker
+- SNP는 분자 마커임.
+- SNP(Single Nucleotide Polymorphisms)는 DNA 서열에서 일어나는 단일 염기의 변이로 유전체 전체적으로 가장 빈번하게 나타나며, 안정적으로 이용할 수 있는 장점이 있다.
+
+
+http://www.seeders.co.kr/bbs/board.php?bo_table=contents&wr_id=4
