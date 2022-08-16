@@ -26,3 +26,4 @@
 
 
 http://www.seeders.co.kr/bbs/board.php?bo_table=contents&wr_id=4
+https://blog.naver.com/hyouncho2/60118964893
