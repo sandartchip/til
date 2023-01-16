@@ -1,10 +1,9 @@
 
-
 ## Segmentation
 - 분할
 - Sementic Segmentation, Instance Segmentation으로 나뉨.
 
- 
+![image](https://user-images.githubusercontent.com/15938354/212622496-2cae0f6c-2551-4a78-a791-760f204b4e15.png)
 
 
 ### Sementic Segmentation
@@ -14,4 +13,4 @@
 
 ### Instance Segmentation
 - Mask RCNN
-
+- 동일한 클래스의 객체 끼리도 구분 가능함.
