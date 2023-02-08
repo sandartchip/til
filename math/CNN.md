@@ -1,3 +1,14 @@
+## 필터(Kernel)
+#### 필터의 예시
+-  소벨 필터
+![image](https://user-images.githubusercontent.com/15938354/217468768-12003f28-42f7-4549-9cca-9f4f98ac69df.png)
+
+- 원본 이미지에 위의 필터를 차례대로 적용시키면 가로선, 세로선 feature를 뽑아낼 수 있음. 
+
+
+## CNN 학습
+- CNN은 필터을 학습한다.
+- Feature map은 
 
 
 ## CNN 종류
@@ -10,7 +21,7 @@
 
 - ResNet50이 가장 기본이 되는 모델.
 - torchvision에서는 이미 모델이 다 구현이 되어 있음.
-- 
+
 
 ```python
 import torchvision.models as models
