@@ -1,14 +1,21 @@
 ## 필터(Kernel)
 #### 필터의 예시
 -  소벨 필터
-![image](https://user-images.githubusercontent.com/15938354/217468768-12003f28-42f7-4549-9cca-9f4f98ac69df.png)
+![image](https://user-images.githubusercontent.com/15938354/217469320-cfbabb13-7592-4155-8db7-d9b12adf871a.png)
 
 - 원본 이미지에 위의 필터를 차례대로 적용시키면 가로선, 세로선 feature를 뽑아낼 수 있음. 
 
+- 흑백 이미지의 
 
-## CNN 학습
+# CNN의 학습
 - CNN은 필터을 학습한다.
-- Feature map은 
+
+## Featuer Map 
+- 각각의 특징들을 패턴으로 읽어내는 것이 목적임.
+- 입력으로부터 필터(커널)을 사용하여 합성곱을 취한 결과
+
+![image](https://user-images.githubusercontent.com/15938354/217470269-b9bd9486-7f7c-463f-bc16-3b0d03d5a9a0.png)
+
 
 
 ## CNN 종류
