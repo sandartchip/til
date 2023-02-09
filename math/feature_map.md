@@ -26,10 +26,12 @@
 
 ### Global Average Pooling layer
 ![image](https://user-images.githubusercontent.com/15938354/217681825-3b8702f8-b9c8-4109-978f-05619161c425.png)
+![image](https://user-images.githubusercontent.com/15938354/217681853-a65fb2ed-3926-49f1-b04d-e3612b1090e4.png)
+
 - window size나 stride 지정X
 - global avergage pooling layer는 **각 feature map 상의 노드들의 평균을 뽑아낸다."
 - 급격하게 CNN의 차원을 줄인다.
-![image](https://user-images.githubusercontent.com/15938354/217681853-a65fb2ed-3926-49f1-b04d-e3612b1090e4.png)
+
 
 - 두 Pooling layer은 모두 input의 차원을 줄여준다.
 
