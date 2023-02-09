@@ -15,12 +15,10 @@
 - 이 역할을 CNN에서 해주는 레이어가 pooling layer이다.
 
 
-![image](https://user-images.githubusercontent.com/15938354/217681377-7fd75610-1efd-4f2b-a984-9ff7b0a00d47.png)
-
-
-
 
 ### Max Pooling lyaer
+
+![image](https://user-images.githubusercontent.com/15938354/217681377-7fd75610-1efd-4f2b-a984-9ff7b0a00d47.png)
 ![image](https://user-images.githubusercontent.com/15938354/217681809-9fef184d-2a8b-4945-a51a-cfee8a578a62.png)
 - feature map들이 쌓여 있는 스택을 input으로 받는다.
 - window size와 stride를 필요로 함
