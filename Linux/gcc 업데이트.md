@@ -6,5 +6,5 @@ sudo apt install gcc-9
 ```
 
 
-- gcc, g++ 여러 버전이 있을 경우 update-alternatives로 여러 버전 설정.
+- gcc, g++ 여러 버전이 있을 경우 update-alternatives에 등록하고, priority 설정하여 여러 버전 설정.
 참고 자료) https://promobile.tistory.com/377
