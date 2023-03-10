@@ -3,7 +3,7 @@ scipy.stats.percentileofscore(a, score, kind='rank', nan_policy='propagate')[sou
 ```
 
 
-- Compute the percentile rank of a score, relative to a list of scores.
+- Compute the **percentile rank of a score**, **relative to a list of scores**.
 
 - A percentileofscore of, for example, 80% means that 80% of the scores in a are below the given score. 
 - a: array_like, Array to which score is compared.
