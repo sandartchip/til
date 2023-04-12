@@ -23,15 +23,15 @@
 ## Model 
 ![image](https://user-images.githubusercontent.com/15938354/230805910-d863352a-48b6-48e0-be59-67a79e4c001e.png)
 - Segment Anything 모델은 두 개의 영역으로 나뉘어진다. 
+- 이미지를 강력한 시맨틱 공간으로 featurize하여 downstream 작업에 사용함. 
+
 
 
 ## Dataset 
-- Assisted Manual - 
-- 
+- The SA-1B Dataset 은 11 million licensed and privacy-preserving images들에서 1.1 billion segmentation mask를 포함함. 
 
-## 
 
-- 이미지를 강력한 시맨틱 공간으로 featurize하여 downstream 작업에 사용함. 
+
 
 https://blog.roboflow.com/segment-anything-breakdown/
 https://brunch.co.kr/@f7413a9d5cff457/32
