@@ -25,8 +25,12 @@
 - Segment Anything 모델은 두 개의 영역으로 나뉘어진다. 
 - 이미지를 강력한 시맨틱 공간으로 featurize하여 downstream 작업에 사용함. 
 
-
-
+## 인코더 종류
+- SAM 모델은 3개의 다른 인코더에 로딩 된다 - ViT-B, ViT-L, ViT-H. 
+- ViT-H는 Vit-B를 양적으로 향상시킨 것. 
+- 이 인코더들은 다른 파라미터 갯수를 갖고 있다. 
+- ViT-B having 91M, ViT-L having 308M, and ViT-H having 636M parameters.
+- 
 ## Dataset 
 - The SA-1B Dataset 은 11 million licensed and privacy-preserving images들에서 1.1 billion segmentation mask를 포함함. 
 
