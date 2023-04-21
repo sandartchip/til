@@ -33,8 +33,37 @@
 - 
 ## Dataset 
 - 광범위한 애플리케이션을 지원하고 컴퓨터 비전을 위한 기초 모델에 대한 추가 연구를 촉진하기 위한 일반 Segment Anything 모델(SAM)과 역대 최대 규모의 세분화 데이터세트인 Segment Anything 10억 Mask 데이터세트(SA-1B)을 공개하고 있음.
+- Dataset : https://ai.facebook.com/datasets/segment-anything-downloads/
 - The SA-1B Dataset 은 11 million licensed and privacy-preserving images들에서 1.1 billion segmentation mask를 포함함. 
 
+- 각 이미지 별로 마스크를 이미지로 저장함.
+- 파이썬 에서는 아래의 포맷으로  dictionary 형태로 로드됨.
+- 이미지 정보와 annotation 정보가 로드됨
+ 
+```
+{
+    "image"                 : image_info,
+    "annotations"           : [annotation],
+}
+
+image_info {
+    "image_id"              : int,              # Image id
+    "width"                 : int,              # Image width
+    "height"                : int,              # Image height
+    "file_name"             : str,              # Image filename
+}
+
+annotation {
+    "id"                    : int,              # Annotation id
+    "segmentation"          : dict,             # Mask saved in COCO RLE format.
+    "bbox"                  : [x, y, w, h],     # The box around the mask, in XYWH format
+    "area"                  : int,              # The area in pixels of the mask
+    "predicted_iou"         : float,            # The model's own prediction of the mask's quality
+    "stability_score"       : float,            # A measure of the mask's quality
+    "crop_box"              : [x, y, w, h],     # The crop of the image used to generate the mask, in XYWH format
+    "point_coords"          : [[x, y]],         # The point coordinates input to the model to generate the mask
+}
+```
 
 
 https://discuss.pytorch.kr/t/sa-segment-anything/1362
