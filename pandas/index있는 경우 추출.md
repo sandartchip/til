@@ -1,4 +1,6 @@
-![image](https://user-images.githubusercontent.com/15938354/234776082-82f2dc39-61f6-458b-b0db-8485896f82e1.png)
+
+![image](https://user-images.githubusercontent.com/15938354/234776603-21227cd1-b1f2-474f-a6d5-c87a64a81283.png)
+
 
 ```python
 df_result = pd.DataFrame(index=self.li_new_sample_name, columns=self.li_phenotype)
@@ -12,3 +14,5 @@ df_result = pd.DataFrame(index=self.li_new_sample_name, columns=self.li_phenotyp
 for col in df_result.columns:
   df_result.loc[self.serialnumber, col]
 ```
+
+index, column명으로 추출한다
