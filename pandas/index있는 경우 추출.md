@@ -5,8 +5,10 @@ df_result = pd.DataFrame(index=self.li_new_sample_name, columns=self.li_phenotyp
 ```
 
 바코드번호가  index 일 때
-[바코드번호,질병명] 이렇게 들고오려면
+컬럼별로 [바코드번호,질병명] 이렇게 들고오려면
 
-```
-df_result.loc[self.serialnumber, col]
+```python
+
+for col in df_result.columns:
+  df_result.loc[self.serialnumber, col]
 ```
