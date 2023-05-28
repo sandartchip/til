@@ -6,7 +6,7 @@
 이 때 불러온 전이학습 모델은 가중치를 동결(freeze)해 학습시키지 않고, Classifier 혹은 이후 추가한 fully connected layer의 weight만 학습하여 사용
 3. 2번과 동일하게 진행한 후, 동결해 두었던 전이학습 모델의 가중치를 (일부 또는 전부) Training 가능한 상태로 만들고, 학습하도록 한다.
  (일부 또는 전체) 부분은 정해진 답이 없어 딱 잘라 말할 수 없다. 
- 
+ - 미세 조정은  base_model(ResNet50)모델의 일부(or 전부) 레이어의 학습 동결을 해제하여 좀 더 모델이 학습에 녹아들 수 있도록 한다.
 
 #### Pytorch의 pretrained=True 옵션
 - 모델을 초기화시킬  weight를 기존의 데이터로 트레이닝된 parameter value로 initialize하는 것.
