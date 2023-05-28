@@ -12,5 +12,6 @@
 - 모델을 초기화시킬  weight를 기존의 데이터로 트레이닝된 parameter value로 initialize하는 것.
 - 이후에 모델 구조에 따라 weight가 바뀔 지 안 바뀔지가 결정됨.
 - 만약 모든 layer를 전부 freeze시키면 weight는 ImageNet을 트레이닝 시킨 값 그대로임.
+- 마지막 층만 Freeze시키지 않으면 마지막 층을 제외한 모든 레이어 파라미터는 원래 그대로.
 
 참고: https://velog.io/@dlskawns/Deep-Learning-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%B2%98%EB%A6%AC-%EC%A0%84%EC%9D%B4%ED%95%99%EC%8A%B5Transfer-Learning-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EB%B6%84%EB%A5%98-%EB%AA%A8%EB%8D%B8-%EA%B5%AC%ED%98%84-%EC%8B%A4%EC%8A%B5
