@@ -40,7 +40,7 @@
 
 #### inplanes
 - input channel의 갯수.
-- ResNet50에서 inplanes는 3으로 초기화되어 있음.
+- ResNet50에서 inplanes(input feature map size)는 3으로 초기화되어 있음.
 - ResNet50은 맨 처음에 3개의 채널의 input을 받는다는 얘기.
 - 이후에 컨볼루션 레이어를 거치면서 채널의 갯수는 늘어남. 
 
@@ -51,10 +51,18 @@
 - 따라서 conv3 1, con4 1, conv5 1에서 사용됨. 
 
 ## code로 구현
-![image](https://github.com/sandartchip/TIL/assets/15938354/471ed494-588e-4901-9d64-a10246fbb4e5)
+
+<img src="https://github.com/sandartchip/TIL/assets/15938354/471ed494-588e-4901-9d64-a10246fbb4e5" />
+![image](https://github.com/sandartchip/TIL/assets/15938354/1e736c20-a702-4e9e-8eea-cd16267e8f16)
+
+
 <img src="https://github.com/sandartchip/TIL/assets/15938354/186495ab-fcb6-4967-84c8-2f3a3c841558" />
 
 #### 전체 구조 - code
+
+![image](https://github.com/sandartchip/TIL/assets/15938354/ab7c1415-558e-482c-bf8f-4376959bcafe)
+
+
 
 ![image](https://github.com/sandartchip/TIL/assets/15938354/ffecbed4-6e2b-450f-8d26-308a9e157231)
 
