@@ -128,7 +128,7 @@ def resnet50(pretrained=False, progress=True, **kwargs):
 - 마지막 layer에서 identity mapping
 - Identity Mapping 시 Identity Mapping 후 ReLu를 적용함.
 
-##### 1. conv1x1
+#### 1. conv1x1
 - 
 
 
