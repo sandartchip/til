@@ -1,4 +1,7 @@
 
+- 내가 자꾸 햇갈리는게, 인풋 이미지 크기와 필터 크기(channel size).
+- 
+- 인풋 이미지  
 
 # ResNet50
 - ResNet은 간단한 구조를 가지고,  참신한 아이디어로 현재까지도 많은 network에서 사용되고 있음. 
@@ -27,7 +30,6 @@
 
 #### ResNet50 Layers
 <img src="https://github.com/sandartchip/TIL/assets/15938354/372360b1-3291-4afc-924c-9deccebf41b7" width="700px"/>
-
 
 - 1+1+ 9+12+18+9 = 50
 - 총 50개의 layer를 갖고 있으며, 각각의 conv 청크에 있는 []가 residual Block임을 명시해 줌.
@@ -61,7 +63,8 @@
 - 3개의 layer는 1x1, 3x3, 1x1로 구성됨.
 - 얘가 BottleNeck Block 1개임.
 - 각각의 Residual Block은 conv, batch normalization, relu로 구성
-- 마지막 layer에서 identity mapping 
+- 마지막 layer에서 identity mapping
+- Identity Mapping 시 Identity Mapping 후 ReLu를 적용함. 
 
 
 ##### Batch Normalization 
