@@ -1,5 +1,6 @@
 ## down sampling과 채널 수
 - down sampling과 채널 수 reduction은 **같은 게 아님**
+- down sampling을 채널 수 reduction이랑 자꾸 햇갈려서 혼돈이 오는 중.
 
 - 둘이 동시에 일어날 수는 있지만, 이미지 처리의 다른 측면 임.
 - down sampling은 각 Layer의 첫 번째 블록의 3x3 conv에서만 일어 남. 
