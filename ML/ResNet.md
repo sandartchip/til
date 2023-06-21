@@ -52,18 +52,17 @@
 ![image](https://github.com/sandartchip/TIL/assets/15938354/471ed494-588e-4901-9d64-a10246fbb4e5)
 <img src="https://github.com/sandartchip/TIL/assets/15938354/186495ab-fcb6-4967-84c8-2f3a3c841558">
 
+
+#### BottleNeck Architecture 
+<img src="https://github.com/sandartchip/TIL/assets/15938354/bed30c51-17c1-4ca7-94ac-e61b71c30a67" width="400px"/>
+<img src="https://github.com/sandartchip/TIL/assets/15938354/381a66e3-1885-4777-b5b0-a1f5d6cdce84">
+
 - 각 residual 함수 F에 관하여, 3개의 Bottle Neck Block으로 구현하게 됨.
 - 3개의 layer는 1x1, 3x3, 1x1로 구성됨.
 - 얘가 BottleNeck Block 1개임.
 - 각각의 Residual Block은 conv, batch normalization, relu로 구성
 - 마지막 layer에서 identity mapping 
 
-<br>
-<img src="https://github.com/sandartchip/TIL/assets/15938354/262a9c12-ee88-4f24-a95a-d5693f1dbeb4" width="300px"/>
-
-#### BottleNeck Architecture 
-<img src="https://github.com/sandartchip/TIL/assets/15938354/bed30c51-17c1-4ca7-94ac-e61b71c30a67" width="400px"/>
-<img src="https://github.com/sandartchip/TIL/assets/15938354/381a66e3-1885-4777-b5b0-a1f5d6cdce84">
 
 ##### Batch Normalization 
 - 처음 input을 normalize한 다음 CNN을 통과하면 normalize상태가 무너짐. 걔가 normal distribution을 따른다는 보장이 없음
