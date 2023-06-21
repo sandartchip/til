@@ -103,9 +103,12 @@
 #### _make_layer함수
 ![image](https://github.com/sandartchip/TIL/assets/15938354/64468c2e-5d61-4ca5-aa63-8ad362e4b814)
 - conv2X, conv3_x, conv4_x, conv5_x을 구현하며 각 층에 해당하는 block을 갯수에 맞게 생성 및 연결해주는 역할을 함.
-- 블록을 몇 개 생성할건지는
-<img src="https://github.com/sandartchip/TIL/assets/15938354/c402043e-3d33-48d2-bea1-2b25cb15648f" width="300px">
-<br>
+- 한 레이어 당 블록을 몇 개 생성할건지는
+```python
+
+def resnet50(pretrained=False, progress=True, **kwargs):
+  return _resnet('resnet50', Bottleneck, [3, 4, 6, 3], pretrained, progress, **kwargs)
+```
 여기서 정했음
 
 - self.inplanes=64에서 self.inplanes= planes * block.expansion 으로 inplanes가 업데이트 됨.
