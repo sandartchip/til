@@ -141,6 +141,8 @@
 
 #### _make_layer함수
 ![image](https://github.com/sandartchip/TIL/assets/15938354/64468c2e-5d61-4ca5-aa63-8ad362e4b814)
+<img src="https://github.com/sandartchip/TIL/assets/15938354/0f41224e-b503-4dc5-a2cb-34ce72890f4f" />
+
 - 레지듀얼 블록 여러개 연결해주는 애.
 - 블록에 1x1이랑 3x3이랑 1x1 이런 애들 들어있음. 
 - conv2_x, conv3_x, conv4_x, conv5_x을 구현하며 각 층에 해당하는 block을 갯수에 맞게 생성 및 연결해주는 역할을 함.
