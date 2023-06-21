@@ -52,9 +52,9 @@
 ![image](https://github.com/sandartchip/TIL/assets/15938354/471ed494-588e-4901-9d64-a10246fbb4e5)
 <img src="https://github.com/sandartchip/TIL/assets/15938354/186495ab-fcb6-4967-84c8-2f3a3c841558">
 
-
-- 각 residual 함수 F에 관하여, 3개의 Layer stack으로 구현하게 됨.
+- 각 residual 함수 F에 관하여, 3개의 Bottle Neck Block으로 구현하게 됨.
 - 3개의 layer는 1x1, 3x3, 1x1로 구성됨.
+- 얘가 BottleNeck Block 1개임. 
 
 <br>
 <img src="https://github.com/sandartchip/TIL/assets/15938354/262a9c12-ee88-4f24-a95a-d5693f1dbeb4" width="300px"/>
