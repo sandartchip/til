@@ -27,10 +27,11 @@
 
 #### ResNet50 Layers
 <img src="https://github.com/sandartchip/TIL/assets/15938354/372360b1-3291-4afc-924c-9deccebf41b7" width="700px"/>
+![image](https://github.com/sandartchip/TIL/assets/15938354/2f767cb8-f7ed-45bb-bd66-9890e87ffdc5)
+
 
 - 1+1+ 9+12+18+9 = 50
 - 총 50개의 layer를 갖고 있으며, 각각의 conv 청크에 있는 []가 residual Block임을 명시해 줌.
-![image](https://github.com/sandartchip/TIL/assets/15938354/471ed494-588e-4901-9d64-a10246fbb4e5)
 
 
 #### 필터
@@ -48,7 +49,10 @@
 - ResNet에서는 차원이 바뀌는 블록의 첫 번째 convolutional layer에서 stride를 2로 사용하여 feature map 크기를 줄여 줌.
 - 따라서 conv3 1, con4 1, conv5 1에서 사용됨. 
 
-#### code로 구현
+## code로 구현
+![image](https://github.com/sandartchip/TIL/assets/15938354/471ed494-588e-4901-9d64-a10246fbb4e5)
+-  
+
 - 각 residual 함수 F에 관하여, 3개의 Layer stack으로 구현하게 됨.
 - 3개의 layer는 1x1, 3x3, 1x1로 구성됨.
 <img src="https://github.com/sandartchip/TIL/assets/15938354/262a9c12-ee88-4f24-a95a-d5693f1dbeb4" width="200px"/>
