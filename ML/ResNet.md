@@ -44,7 +44,7 @@
 - Vanishing Gradient Problem은 딥러닝 중 Backpropagation 시 발생되는 어려움이다.
 - 간단히 말하면, 모델이 깊어질 수록 급격히 Gradient의 영향력이 줄어드는 현상이다.
 
-### Residual Net
+### Residual Block(BottleNeck)
 <img src="https://github.com/sandartchip/TIL/assets/15938354/34c5227a-ad2f-45a7-8a01-ca3755900f30" width="500px"/>
 
 - ResNet 모델에 사용되는 가장 기본적인 구조.
@@ -111,7 +111,7 @@ def resnet50(pretrained=False, progress=True, **kwargs):
   return _resnet('resnet50', Bottleneck, [3, 4, 6, 3], pretrained, progress, **kwargs)
 ```
 여기서 정했음
-- block은 ResNet50의 경우, BottleNeck block임. bottle neck block은
+- block은 ResNet50의 경우, BottleNeck block임. bottle neck block은 그..내가 아는 1x1, 3x3, 1,1 convolution 연결된 걔. 
 - self.inplanes=64에서 self.inplanes= planes * block.expansion 으로 inplanes가 업데이트 됨.
 
 
