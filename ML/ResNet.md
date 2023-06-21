@@ -126,15 +126,32 @@ def resnet50(pretrained=False, progress=True, **kwargs):
 ```
 여기서 정했음
 - block은 ResNet50의 경우, BottleNeck block임. bottle neck block은 그..내가 아는 1x1, 3x3, 1,1 convolution 연결된 걔.
+
+
+#### downsampling 
+- downsample을 이용해서 연산이 이뤄질 수 있도록 사이즈를 맞춰 줌.
 - 큰 단위 Layer 시작할 떄 1번째 Bottle Neck에서 down sampling을 하는데, 그걸 하는 거는 3x3 걔인거임. (3x3블록에서 stride 2로 적용) 얘는 이미지 크기 줄이는거임. 채널 크기는 그대로임. (맞나..)
+
+```python
+
+layers.append(block(self.inplanes, planes, stride, downsample, self.groups, self.base_width, previous_dilation, norm_layer))
+
+for _ in range(1, blocks):
+ layers.append(block(self.inplanes, planes, groups=self.groups, base_width=self.base_width, dilation=self.dilation, norm_layer=norm_layer)
+ 
+```
+- 요기서 사용한 block은 각각 BottleNeck 1개 임!!
+- 첫 번재 BOTTLENECK 블록에만 stride2를 적용하는데, 그 stride2 적용되는 곳이
+
+![image](https://github.com/sandartchip/TIL/assets/15938354/ddd64ebb-7eb5-4f80-9a31-0ee65936499f) 
+- 블록 안에 있는 3개짜리 conv애들 중에 conv3x3에만 적용되는거임요.
+
 - self.inplanes=64에서 self.inplanes= planes * block.expansion 으로 inplanes가 업데이트 됨.
 
 
 #### BottleNeck Architecture 
 <img src="https://github.com/sandartchip/TIL/assets/15938354/bed30c51-17c1-4ca7-94ac-e61b71c30a67" width="400px"/>
 <img src="https://github.com/sandartchip/TIL/assets/15938354/381a66e3-1885-4777-b5b0-a1f5d6cdce84">
-
-- downsample을 이용해서 연산이 이뤄질 수 있도록 사이즈를 맞춰 줌.
 
 
 - 각 residual 함수 F에 관하여, 3개의 Bottle Neck Block으로 구현하게 됨.
@@ -169,3 +186,4 @@ def resnet50(pretrained=False, progress=True, **kwargs):
 https://jisuhan.tistory.com/71
 https://inhovation97.tistory.com/39
 https://gaussian37.github.io/dl-concept-resnet/
+https://pseudo-lab.github.io/pytorch-guide/docs/ch03-1.html
