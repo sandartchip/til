@@ -55,15 +55,13 @@
 
 <img src="https://github.com/sandartchip/TIL/assets/15938354/471ed494-588e-4901-9d64-a10246fbb4e5" />
 
-<img src="https://github.com/sandartchip/TIL/assets/15938354/1e736c20-a702-4e9e-8eea-cd16267e8f16" />
-
-
 <img src="https://github.com/sandartchip/TIL/assets/15938354/186495ab-fcb6-4967-84c8-2f3a3c841558" />
 
 #### 전체 구조 - code
 
 - 처음에 BottleNeck에 들어가기 전 부분. 
 <img src="https://github.com/sandartchip/TIL/assets/15938354/ab7c1415-558e-482c-bf8f-4376959bcafe" />
+<img src="https://github.com/sandartchip/TIL/assets/15938354/1e736c20-a702-4e9e-8eea-cd16267e8f16" />
 
 ![image](https://github.com/sandartchip/TIL/assets/15938354/ffecbed4-6e2b-450f-8d26-308a9e157231)
 
