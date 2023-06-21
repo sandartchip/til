@@ -113,7 +113,7 @@
   
 - down sampling이란, **더 작은 이미지로 크기를 축소**시키는 것.
 - ResNet에서는 복잡도를 줄이기 위해 stride=2로 대체함.
-- ResNet에서는 차원이 바뀌는 블록의 첫 번째 convolutional layer에서 stride를 2로 사용하여 feature map 크기를 줄여 줌.
+- ResNet에서는 차원이 바뀌는 블록의 첫 번째 convolutional layer에서 stride를 2로 사용하여 feature map 크기(갯수가 아님)를 줄여 줌.
 - BottleNeck에서 BottleNeck으로 넘어갈 때 downsampling을 추가해주어 채널 사이즈를 맞춰 줌.
 - 밑에 downsample if문 부분은 내부에서 size 안맞을 때 사용 (이거 맞는지 확인 필요)
 - 따라서 conv3 1, con4 1, conv5 1에서 사용됨. (틀린 거 아님?)
