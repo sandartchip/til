@@ -82,10 +82,13 @@
 - 이후에 컨볼루션 레이어를 거치면서 채널의 갯수는 늘어남. 
 
 #### Down Sampling
-
-<img src="https://github.com/sandartchip/TIL/assets/15938354/c68ac492-afd2-4a35-b31b-f336dd194081" width="300px"/>
-(그림 안 정확)
-
+<img src="https://github.com/sandartchip/TIL/assets/15938354/1fc446f8-b01f-4216-a2b0-7f9d26807e8c" width="300px" />
+(그림 안 정확. 한번 더 확인 필요)
+- 각 레이어는 여러개의 블록으로 이뤄져 있고 각 블록은 1x1 3x3 1x1 conv와 batch norm, relu로 연결되어 있음.
+- 여기서 downsampling은 각 레이어의 모든 블록에 적용되는게 아님. 각 레이어의 첫 번째 블록에만 적용 됨.
+- 첫 번째 블록에서 모든 1x1, 3x3, 1x1 conv 레이어에 적용되는 것도 아님.
+- 첫 번째 블록의 3x3 conv에만 적용됨
+  
 - down sampling이란, **더 작은 이미지로 크기를 축소**시키는 것.
 - ResNet에서는 복잡도를 줄이기 위해 stride=2로 대체함.
 - ResNet에서는 차원이 바뀌는 블록의 첫 번째 convolutional layer에서 stride를 2로 사용하여 feature map 크기를 줄여 줌.
