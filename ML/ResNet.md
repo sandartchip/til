@@ -82,6 +82,7 @@
 #### Down Sampling
 
 <img src="https://github.com/sandartchip/TIL/assets/15938354/c68ac492-afd2-4a35-b31b-f336dd194081" width="300px"/>
+(그림 안 정확)
 
 - down sampling이란, **더 작은 이미지로 크기를 축소**시키는 것.
 - ResNet에서는 복잡도를 줄이기 위해 stride=2로 대체함.
