@@ -48,7 +48,6 @@
 
 ![image](https://github.com/sandartchip/TIL/assets/15938354/18c37fcf-3d4f-42ba-877b-e36fa437cf48)
 
-<img src="https://github.com/sandartchip/TIL/assets/15938354/a963b250-c33e-440a-aee9-0e7604cc1bce" width="300px" />
 <br>
 
 
