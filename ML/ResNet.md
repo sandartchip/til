@@ -47,8 +47,7 @@
 
 #### inplanes
 - input channel의 갯수.
-- ResNet50에서 inplanes(input feature map size)는 3으로 초기화되어 있음.
-- ResNet50은 맨 처음에 3개의 채널의 input을 받는다는 얘기.
+- ResNet50에서 inplanes(input feature map size)는 64으로 초기화되어 있음.
 - 이후에 컨볼루션 레이어를 거치면서 채널의 갯수는 늘어남. 
 
 #### Down Sampling
@@ -76,6 +75,9 @@
 #### _make_layer함수
 ![image](https://github.com/sandartchip/TIL/assets/15938354/64468c2e-5d61-4ca5-aa63-8ad362e4b814)
 - conv2X, conv3_x, conv4_x, conv5_x을 구현하며 각 층에 해당하는 block을 갯수에 맞게 생성 및 연결해주는 역할을 함.
+
+- self.inplanes=64에서 self.inplanes= planes * block.expansion 으로 inplanes가 업데이트 됨.
+
 
 #### BottleNeck Architecture 
 <img src="https://github.com/sandartchip/TIL/assets/15938354/bed30c51-17c1-4ca7-94ac-e61b71c30a67" width="400px"/>
