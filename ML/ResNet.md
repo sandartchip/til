@@ -30,6 +30,14 @@
 - 1+1+ 9+12+18+9 = 50
 - 총 50개의 layer를 갖고 있으며, 각각의 conv 청크에 있는 []가 residual Block임을 명시해 줌.
 
+#### 필터
+- 필터의 개수는 각 block 들을 거치면서 증가함 (64->128->
+
+#### inplanes
+- input channel의 갯수.
+- ResNet50에서 inplanes는 3으로 초기화되어 있음.
+- ResNet50은 맨 처음에 3개의 채널의 input을 받는다는 얘기.
+- 이후에 컨볼루션 레이어를 거치면서 채널의 갯수는 늘어남. 
 
 #### Down Sampling
 - down sampling이란, 더 작은 이미지로 크기를 축소시키는 것.
