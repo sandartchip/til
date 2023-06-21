@@ -1,3 +1,8 @@
+## 필터의 개념
+
+<img src="https://github.com/sandartchip/TIL/assets/15938354/71a7f8b7-6680-49f5-a3f4-b840a7f20886" width="300px"/>
+
+
 
 ## 현재 해야 하는 일
 
