@@ -54,13 +54,12 @@
 
 - 각 residual 함수 F에 관하여, 3개의 Bottle Neck Block으로 구현하게 됨.
 - 3개의 layer는 1x1, 3x3, 1x1로 구성됨.
-- 얘가 BottleNeck Block 1개임. 
-
-<br>
-<img src="https://github.com/sandartchip/TIL/assets/15938354/262a9c12-ee88-4f24-a95a-d5693f1dbeb4" width="300px"/>
+- 얘가 BottleNeck Block 1개임.
 - 각각의 Residual Block은 conv, batch normalization, relu로 구성
 - 마지막 layer에서 identity mapping 
 
+<br>
+<img src="https://github.com/sandartchip/TIL/assets/15938354/262a9c12-ee88-4f24-a95a-d5693f1dbeb4" width="300px"/>
 
 #### BottleNeck Architecture 
 <img src="https://github.com/sandartchip/TIL/assets/15938354/bed30c51-17c1-4ca7-94ac-e61b71c30a67" width="400px"/>
