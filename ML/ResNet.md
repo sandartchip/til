@@ -27,7 +27,6 @@
 
 #### ResNet50 Layers
 <img src="https://github.com/sandartchip/TIL/assets/15938354/372360b1-3291-4afc-924c-9deccebf41b7" width="700px"/>
-![image](https://github.com/sandartchip/TIL/assets/15938354/2f767cb8-f7ed-45bb-bd66-9890e87ffdc5)
 
 
 - 1+1+ 9+12+18+9 = 50
