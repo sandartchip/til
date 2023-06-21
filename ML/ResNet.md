@@ -80,6 +80,9 @@
 - 이후에 컨볼루션 레이어를 거치면서 채널의 갯수는 늘어남. 
 
 #### Down Sampling
+
+<img src="https://github.com/sandartchip/TIL/assets/15938354/c68ac492-afd2-4a35-b31b-f336dd194081" width="300px"/>
+
 - down sampling이란, **더 작은 이미지로 크기를 축소**시키는 것.
 - ResNet에서는 복잡도를 줄이기 위해 stride=2로 대체함.
 - ResNet에서는 차원이 바뀌는 블록의 첫 번째 convolutional layer에서 stride를 2로 사용하여 feature map 크기를 줄여 줌.
