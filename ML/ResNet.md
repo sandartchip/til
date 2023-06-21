@@ -30,9 +30,7 @@
 
 - 1+1+ 9+12+18+9 = 50
 - 총 50개의 layer를 갖고 있으며, 각각의 conv 청크에 있는 []가 residual Block임을 명시해 줌.
-
-
-<img src="https://github.com/sandartchip/TIL/assets/15938354/bed30c51-17c1-4ca7-94ac-e61b71c30a67" width="400px"/>
+![image](https://github.com/sandartchip/TIL/assets/15938354/471ed494-588e-4901-9d64-a10246fbb4e5)
 
 
 #### 필터
@@ -52,16 +50,18 @@
 
 #### code로 구현
 - 각 residual 함수 F에 관하여, 3개의 Layer stack으로 구현하게 됨.
-- 3개의 layer는 1x1, 3x3, 1x1로 구성됨. 
+- 3개의 layer는 1x1, 3x3, 1x1로 구성됨.
+<img src="https://github.com/sandartchip/TIL/assets/15938354/262a9c12-ee88-4f24-a95a-d5693f1dbeb4" width="200px"/>
+- 각각의 Residual Block은 conv, batch normalization, relu로 구성
+- 마지막 layer에서 identity mapping 
 
-##### BottleNeck Architecture 
-- 각 residual 함수 F에 관하여, 3개의 Layer stack으로 구현하게 됨.
-- 3개의 Layer는 1x1, 3x3, 1x1 convolutional layer로 이루어짐.
 
-- 각각의 Convolution -> Batch Normalization -> ReLu로 묶인 블럭 별로
-Residual 값을 추가적으로 더해줌으로써 Gradient Vanishing/Exploding 문제를 해결할 수 있다.
+#### BottleNeck Architecture 
+<img src="https://github.com/sandartchip/TIL/assets/15938354/bed30c51-17c1-4ca7-94ac-e61b71c30a67" width="400px"/>
 
-- Batch Normalization : 처음 input을 normalize한 다음 CNN을 통과하면 normalize상태가 무너짐. 걔가 normal distribution을 따른다는 보장이 없음
+
+##### Batch Normalization 
+- 처음 input을 normalize한 다음 CNN을 통과하면 normalize상태가 무너짐. 걔가 normal distribution을 따른다는 보장이 없음
 - 그래서 한 번 더 Normalize해주는 것.
 
 <img src="https://github.com/sandartchip/TIL/assets/15938354/1429e480-2dac-48ac-842f-3d6b0f13476e" width="500px">
