@@ -56,8 +56,9 @@
 ![image](https://github.com/sandartchip/TIL/assets/15938354/bbc3c129-fac0-4169-8b88-45053c7674c3)
 
 
-- 1+1+ 9+12+18+9 = 50
+- ResNet50인 이유? 1+1+ 9+12+18+9 = 50
 - 총 50개의 layer를 갖고 있으며, 각각의 conv 청크에 있는 []가 residual Block임을 명시해 줌.
+- Layer마다 다른 Residual Block 형태가 반복되어 학습되는 과정을 거침.
 
 #### convolution Block 
 <img src="https://github.com/sandartchip/TIL/assets/15938354/dad341d8-6637-4e97-bd2f-28b9c869f1b1">
@@ -113,7 +114,10 @@
 - 얘가 BottleNeck Block 1개임.
 - 각각의 Residual Block은 conv, batch normalization, relu로 구성
 - 마지막 layer에서 identity mapping
-- Identity Mapping 시 Identity Mapping 후 ReLu를 적용함. 
+- Identity Mapping 시 Identity Mapping 후 ReLu를 적용함.
+
+##### 1. conv1x1
+- 
 
 
 ##### Batch Normalization 
