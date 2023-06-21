@@ -117,7 +117,8 @@ def resnet50(pretrained=False, progress=True, **kwargs):
   return _resnet('resnet50', Bottleneck, [3, 4, 6, 3], pretrained, progress, **kwargs)
 ```
 여기서 정했음
-- block은 ResNet50의 경우, BottleNeck block임. bottle neck block은 그..내가 아는 1x1, 3x3, 1,1 convolution 연결된 걔. 
+- block은 ResNet50의 경우, BottleNeck block임. bottle neck block은 그..내가 아는 1x1, 3x3, 1,1 convolution 연결된 걔.
+- 큰 단위 Layer 시작할 떄 1번째 Bottle Neck에서 down sampling을 하는데, 그걸 하는 거는 3x3 걔인거임. (3x3블록에서 stride 2로 적용)
 - self.inplanes=64에서 self.inplanes= planes * block.expansion 으로 inplanes가 업데이트 됨.
 
 
