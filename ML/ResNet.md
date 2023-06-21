@@ -153,6 +153,8 @@ def resnet50(pretrained=False, progress=True, **kwargs):
 여기서 정했음
 - block은 ResNet50의 경우, BottleNeck block임. bottle neck block은 그..내가 아는 1x1, 3x3, 1,1 convolution 연결된 걔.
 
+<img src="https://github.com/sandartchip/TIL/assets/15938354/0f41224e-b503-4dc5-a2cb-34ce72890f4f" />
+
 
 #### downsampling 
 - downsample을 이용해서 연산이 이뤄질 수 있도록 사이즈를 맞춰 줌.
