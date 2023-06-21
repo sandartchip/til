@@ -64,7 +64,7 @@
 
 #### BottleNeck Architecture 
 <img src="https://github.com/sandartchip/TIL/assets/15938354/bed30c51-17c1-4ca7-94ac-e61b71c30a67" width="400px"/>
-
+<img src="https://github.com/sandartchip/TIL/assets/15938354/381a66e3-1885-4777-b5b0-a1f5d6cdce84">
 
 ##### Batch Normalization 
 - 처음 input을 normalize한 다음 CNN을 통과하면 normalize상태가 무너짐. 걔가 normal distribution을 따른다는 보장이 없음
