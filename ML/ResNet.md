@@ -29,15 +29,19 @@
 <img src="https://github.com/sandartchip/TIL/assets/15938354/372360b1-3291-4afc-924c-9deccebf41b7" width="700px"/>
 - 1+1+ 9+12+18+9 = 50
 - 총 50개의 layer를 갖고 있으며, 각각의 conv 청크에 있는 []가 residual Block임을 명시해 줌.
-- 
 
+
+#### Down Sampling
+- down sampling이란, 더 작은 이미지로 크기를 축소시키는 것.
+- ResNet에서는 복잡도를 줄이기 위해 stride=2로 대체함.
+- ResNet에서는 차원이 바뀌는 블록의 첫 번째 convolutional layer에서 stride를 2로 사용하여 feature map 크기를 줄여 줌.
+- 따라서 conv3 1, con4 1, conv5 1에서 사용됨. 
 
 #### code로 구현
 - 각 residual 함수 F에 관하여, 3개의 Layer stack으로 구현하게 됨.
-- 3개의 layer는 1x1, 3x3, 
+- 3개의 layer는 1x1, 3x3, 1x1로 구성됨. 
 
 ##### BottleNeck Architecture 
-- 
 - 각 residual 함수 F에 관하여, 3개의 Layer stack으로 구현하게 됨.
 - 3개의 Layer는 1x1, 3x3, 1x1 convolutional layer로 이루어짐.
 
