@@ -143,7 +143,7 @@
 ![image](https://github.com/sandartchip/TIL/assets/15938354/64468c2e-5d61-4ca5-aa63-8ad362e4b814)
 - 레지듀얼 블록 여러개 연결해주는 애.
 - 블록에 1x1이랑 3x3이랑 1x1 이런 애들 들어있음. 
-- conv2X, conv3_x, conv4_x, conv5_x을 구현하며 각 층에 해당하는 block을 갯수에 맞게 생성 및 연결해주는 역할을 함.
+- conv2_x, conv3_x, conv4_x, conv5_x을 구현하며 각 층에 해당하는 block을 갯수에 맞게 생성 및 연결해주는 역할을 함.
 - 한 레이어 당 블록을 몇 개 생성할건지는
 ```python
 
