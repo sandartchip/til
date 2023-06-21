@@ -8,7 +8,6 @@
 <img src="https://github.com/sandartchip/TIL/assets/15938354/6314365f-4fd1-4b82-9108-d1ad569734af" width="600px"/>
 
 
-
 - 내가 자꾸 햇갈리는게, 인풋 이미지 크기와 필터 크기(channel size).
 - 
 - 인풋 이미지  
