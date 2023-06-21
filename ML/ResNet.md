@@ -52,7 +52,11 @@
 
 ## code로 구현
 ![image](https://github.com/sandartchip/TIL/assets/15938354/471ed494-588e-4901-9d64-a10246fbb4e5)
-<img src="https://github.com/sandartchip/TIL/assets/15938354/186495ab-fcb6-4967-84c8-2f3a3c841558">
+<img src="https://github.com/sandartchip/TIL/assets/15938354/186495ab-fcb6-4967-84c8-2f3a3c841558" />
+
+#### 전체 구조 - code
+
+![image](https://github.com/sandartchip/TIL/assets/15938354/ffecbed4-6e2b-450f-8d26-308a9e157231)
 
 
 #### BottleNeck Architecture 
