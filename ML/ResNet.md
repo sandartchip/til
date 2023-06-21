@@ -1,7 +1,9 @@
 ## down sampling과 채널 수
 - down sampling과 채널 수 reduction은 **같은 게 아님**
 
-- 둘이 동시에 일어날 수는 있지만, 이미지 처리의 다른 측면 임.  
+- 둘이 동시에 일어날 수는 있지만, 이미지 처리의 다른 측면 임.
+- down sampling은 각 Layer의 첫 번째 블록의 3x3 conv에서만 일어 남. 
+- 채널 수는 각 Layer의 모든 블록에서 증가(1x1)했다가 그대로(3x3)였다가 감소(두번째 1x1)함. 
 
 #### down sampling
 <img src="https://github.com/sandartchip/TIL/assets/15938354/cae731a3-7ac2-41ce-9481-8b486630c71c" width="300px"/>
