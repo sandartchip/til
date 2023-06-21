@@ -109,6 +109,9 @@
 <img src="https://github.com/sandartchip/TIL/assets/15938354/bed30c51-17c1-4ca7-94ac-e61b71c30a67" width="400px"/>
 <img src="https://github.com/sandartchip/TIL/assets/15938354/381a66e3-1885-4777-b5b0-a1f5d6cdce84">
 
+- downsample을 이용해서 연산이 이뤄질 수 있도록 사이즈를 맞춰 줌.
+
+
 - 각 residual 함수 F에 관하여, 3개의 Bottle Neck Block으로 구현하게 됨.
 - 3개의 layer는 1x1, 3x3, 1x1로 구성됨.
 - 얘가 BottleNeck Block 1개임.
