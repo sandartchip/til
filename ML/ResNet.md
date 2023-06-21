@@ -73,8 +73,9 @@
 ### 전체 ResNet
 ![image](https://github.com/sandartchip/TIL/assets/15938354/ffecbed4-6e2b-450f-8d26-308a9e157231)
 
+#### _make_layer함수
 ![image](https://github.com/sandartchip/TIL/assets/15938354/64468c2e-5d61-4ca5-aa63-8ad362e4b814)
-
+- conv2X, conv3_x, conv4_x, conv5_x을 구현하며 각 층에 해당하는 block을 갯수에 맞게 생성 및 연결해주는 역할을 함.
 
 #### BottleNeck Architecture 
 <img src="https://github.com/sandartchip/TIL/assets/15938354/bed30c51-17c1-4ca7-94ac-e61b71c30a67" width="400px"/>
