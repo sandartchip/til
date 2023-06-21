@@ -30,8 +30,10 @@
 
 # ResNet50
 - ResNet은 간단한 구조를 가지고,  참신한 아이디어로 현재까지도 많은 network에서 사용되고 있음.
-- stride2의 downsampling이 각 Residual 블록에서 적용됨. 
+![image](https://github.com/sandartchip/TIL/assets/15938354/da58a590-93a1-4ad1-a593-020e3d943618)
 
+- 실선은 feature map의 가로 세로 해상도가 바뀌지 않는 경우
+- 점선은 다운 샘플링으로 해상도가 바뀌는 경우임. 이전 단계의 feature map이 가로 세로 방향으로 절반씩 줄어듬.
 
 ### Motivation 
  
@@ -158,3 +160,4 @@ def resnet50(pretrained=False, progress=True, **kwargs):
 
 https://jisuhan.tistory.com/71
 https://inhovation97.tistory.com/39
+https://gaussian37.github.io/dl-concept-resnet/
