@@ -62,9 +62,8 @@
 
 #### 전체 구조 - code
 
-![image](https://github.com/sandartchip/TIL/assets/15938354/ab7c1415-558e-482c-bf8f-4376959bcafe)
-
-
+- 처음에 BottleNeck에 들어가기 전 부분. 
+<img src="https://github.com/sandartchip/TIL/assets/15938354/ab7c1415-558e-482c-bf8f-4376959bcafe" />
 
 ![image](https://github.com/sandartchip/TIL/assets/15938354/ffecbed4-6e2b-450f-8d26-308a9e157231)
 
