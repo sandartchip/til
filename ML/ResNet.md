@@ -4,8 +4,8 @@
 - ResNet50의 마지막 Conv Layer의 Feature map의 갯수 변경 = Feature map을 만드는 output 필터의 갯수(필터 채널의 수 X) 변경 = output channel 수 바꾸기
 
 <img src="https://github.com/sandartchip/TIL/assets/15938354/a963b250-c33e-440a-aee9-0e7604cc1bce" width="300px" />
-
-<img src="https://github.com/sandartchip/TIL/assets/15938354/6314365f-4fd1-4b82-9108-d1ad569734af" width="300px"/>
+<br>
+<img src="https://github.com/sandartchip/TIL/assets/15938354/6314365f-4fd1-4b82-9108-d1ad569734af" width="600px"/>
 
 
 
