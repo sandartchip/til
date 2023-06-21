@@ -105,6 +105,7 @@
 - conv2X, conv3_x, conv4_x, conv5_x을 구현하며 각 층에 해당하는 block을 갯수에 맞게 생성 및 연결해주는 역할을 함.
 - 블록을 몇 개 생성할건지는
 <img src="https://github.com/sandartchip/TIL/assets/15938354/c402043e-3d33-48d2-bea1-2b25cb15648f" width="300px">
+<br>
 여기서 정했음
 
 - self.inplanes=64에서 self.inplanes= planes * block.expansion 으로 inplanes가 업데이트 됨.
