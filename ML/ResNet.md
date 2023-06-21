@@ -51,9 +51,11 @@
 - 따라서 conv3 1, con4 1, conv5 1에서 사용됨. 
 
 ## code로 구현
+- BottleNeck 여러 개 연결 
 
 <img src="https://github.com/sandartchip/TIL/assets/15938354/471ed494-588e-4901-9d64-a10246fbb4e5" />
-![image](https://github.com/sandartchip/TIL/assets/15938354/1e736c20-a702-4e9e-8eea-cd16267e8f16)
+
+<img src="https://github.com/sandartchip/TIL/assets/15938354/1e736c20-a702-4e9e-8eea-cd16267e8f16" />
 
 
 <img src="https://github.com/sandartchip/TIL/assets/15938354/186495ab-fcb6-4967-84c8-2f3a3c841558" />
