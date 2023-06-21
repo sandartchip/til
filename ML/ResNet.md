@@ -1,8 +1,11 @@
 ## down sampling과 채널 수
 - down sampling과 채널 수 reduction은 **같은 게 아님**
 
+- 둘이 동시에 일어날 수는 있지만, 이미지 처리의 다른 측면 임.  
+
 #### down sampling
 <img src="https://github.com/sandartchip/TIL/assets/15938354/cae731a3-7ac2-41ce-9481-8b486630c71c" width="300px"/>
+
 - 더 작은 이미지로 크기를 축소시키는 것.
 - Max pooling, stride로 순회하는 거 같은거.
 
