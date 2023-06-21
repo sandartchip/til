@@ -6,9 +6,15 @@
 
 ## 현재 해야 하는 일
 
+![image](https://github.com/sandartchip/TIL/assets/15938354/38054fb7-4319-42f0-bdd9-c42c49f76f52)
+
 - Grad CAM에 ResNet50의 conv5_x(layer4)의 Bottle Neck 3개 중 마지막 Bottle Neck가 들어감
 - 이 Conv Layer의 conv 결과(output feature map)의 갯수 변경 
 - ResNet50의 마지막 Conv Layer의 Feature map의 갯수 변경 = Feature map을 만드는 output 필터의 갯수(필터 채널의 수 X) 변경 = output channel 수 바꾸기
+
+- 코드 상으론 이 부분
+![image](https://github.com/sandartchip/TIL/assets/15938354/dbe1823c-9f35-4d94-81ca-41a3df1c0e00)
+
 
 ![image](https://github.com/sandartchip/TIL/assets/15938354/18c37fcf-3d4f-42ba-877b-e36fa437cf48)
 
