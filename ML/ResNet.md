@@ -6,7 +6,7 @@
 
 ## 현재 해야 하는 일
 
-![image](https://github.com/sandartchip/TIL/assets/15938354/38054fb7-4319-42f0-bdd9-c42c49f76f52)
+<img src="https://github.com/sandartchip/TIL/assets/15938354/38054fb7-4319-42f0-bdd9-c42c49f76f52" width="500px"/>
 
 - Grad CAM에 ResNet50의 conv5_x(layer4)의 Bottle Neck 3개 중 마지막 Bottle Neck가 들어감
 - 이 Conv Layer의 conv 결과(output feature map)의 갯수 변경 
