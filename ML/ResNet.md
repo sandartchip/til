@@ -34,6 +34,13 @@
 - 1+1+ 9+12+18+9 = 50
 - 총 50개의 layer를 갖고 있으며, 각각의 conv 청크에 있는 []가 residual Block임을 명시해 줌.
 
+#### convolution Block 
+<img src="https://github.com/sandartchip/TIL/assets/15938354/dad341d8-6637-4e97-bd2f-28b9c869f1b1">
+
+
+#### expansion
+- in_planes는 input data의 채널 수 이고, out_planes는 output data의 채널 수임.
+- <img src="https://github.com/sandartchip/TIL/assets/15938354/64825026-8bc0-4036-9e54-91ee9283c254" />
 
 #### 필터
 - 필터의 개수는 각 block 들을 거치면서 증가함 (64->128->
