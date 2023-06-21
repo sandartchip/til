@@ -225,7 +225,8 @@ for _ in range(1, blocks):
 - 그 과정을 batch별로(?) 수행
 
 
-https://jisuhan.tistory.com/71
-https://inhovation97.tistory.com/39
-https://gaussian37.github.io/dl-concept-resnet/
-https://pseudo-lab.github.io/pytorch-guide/docs/ch03-1.html
+https://jisuhan.tistory.com/71<br>
+https://inhovation97.tistory.com/39<br>
+https://gaussian37.github.io/dl-concept-resnet/<br>
+https://pseudo-lab.github.io/pytorch-guide/docs/ch03-1.html<br>
+https://bo-10000.tistory.com/133
