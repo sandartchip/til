@@ -111,7 +111,7 @@ def resnet50(pretrained=False, progress=True, **kwargs):
   return _resnet('resnet50', Bottleneck, [3, 4, 6, 3], pretrained, progress, **kwargs)
 ```
 여기서 정했음
-
+- block은 ResNet50의 경우, BottleNeck block임. bottle neck block은
 - self.inplanes=64에서 self.inplanes= planes * block.expansion 으로 inplanes가 업데이트 됨.
 
 
