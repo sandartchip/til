@@ -63,7 +63,7 @@
 <img src="https://github.com/sandartchip/TIL/assets/15938354/ab7c1415-558e-482c-bf8f-4376959bcafe" />
 <img src="https://github.com/sandartchip/TIL/assets/15938354/1e736c20-a702-4e9e-8eea-cd16267e8f16" />
 
-### 전체 
+### 전체 ResNet
 ![image](https://github.com/sandartchip/TIL/assets/15938354/ffecbed4-6e2b-450f-8d26-308a9e157231)
 
 
