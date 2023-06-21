@@ -43,7 +43,8 @@
 - 입력 값이 출력값에 들어감에 따라, 레이어들이 많아지면서 잊혀지는 vanishing gradient problem을 해결하게 됨.
 
 #### ResNet50 Layers
-<img src="https://github.com/sandartchip/TIL/assets/15938354/372360b1-3291-4afc-924c-9deccebf41b7" width="700px"/>
+![image](https://github.com/sandartchip/TIL/assets/15938354/bbc3c129-fac0-4169-8b88-45053c7674c3)
+
 
 - 1+1+ 9+12+18+9 = 50
 - 총 50개의 layer를 갖고 있으며, 각각의 conv 청크에 있는 []가 residual Block임을 명시해 줌.
