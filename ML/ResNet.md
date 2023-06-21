@@ -35,12 +35,12 @@
 ## 현재 해야 하는 일
 
 <img src="https://github.com/sandartchip/TIL/assets/15938354/38054fb7-4319-42f0-bdd9-c42c49f76f52" width="350px"/>
-<img src="https://github.com/sandartchip/TIL/assets/15938354/8f88ae20-feb1-42c5-9ade-7e423c420603" />
+<img src="https://github.com/sandartchip/TIL/assets/15938354/2555e6c9-8416-4a0d-8ea5-5e504fe998d8" />
 
 - Stage : 한 개의 downsampling block과 여러 개의 residual block으로 이루어져 있다.
-- Downsampling block : Path A와 path B로 구성되며, 마지막에 두 path의 output을 더한다.
--- Path A : 3개의 conv로 구성된 bottleneck 구조로, input size를 2배 줄이고 channel dim을 4배 늘린다.
---Path B: channel size만 Path A와 동일하게 늘리는 1x1 conv 하나로 구성되어 있다.
+- **Downsampling block** : Path A와 path B로 구성되며, 마지막에 두 path의 output을 더한다.
+- Path A : 3개의 conv로 구성된 bottleneck 구조로, input size를 2배 줄이고 channel dim을 4배 늘린다.
+- Path B: channel size만 Path A와 동일하게 늘리는 1x1 conv 하나로 구성되어 있다.
 - Residual block은 downsampling block과 동일한 구조인데, 대신 stride=1로 설정하여 input size는 유지한다.
  
 
