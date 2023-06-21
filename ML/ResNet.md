@@ -126,7 +126,7 @@ def resnet50(pretrained=False, progress=True, **kwargs):
 ```
 여기서 정했음
 - block은 ResNet50의 경우, BottleNeck block임. bottle neck block은 그..내가 아는 1x1, 3x3, 1,1 convolution 연결된 걔.
-- 큰 단위 Layer 시작할 떄 1번째 Bottle Neck에서 down sampling을 하는데, 그걸 하는 거는 3x3 걔인거임. (3x3블록에서 stride 2로 적용)
+- 큰 단위 Layer 시작할 떄 1번째 Bottle Neck에서 down sampling을 하는데, 그걸 하는 거는 3x3 걔인거임. (3x3블록에서 stride 2로 적용) 얘는 이미지 크기 줄이는거임. 채널 크기는 그대로임. (맞나..)
 - self.inplanes=64에서 self.inplanes= planes * block.expansion 으로 inplanes가 업데이트 됨.
 
 
@@ -145,7 +145,15 @@ def resnet50(pretrained=False, progress=True, **kwargs):
 - Identity Mapping 시 Identity Mapping 후 ReLu를 적용함.
 
 #### 1. conv1x1
-- 
+- 채널 방향을 압축함. (downsampling 아님)
+
+#### 2. conv3x3
+- 이 압축된 상태에서 3x3 convolution으로 추가 feature를 뽑아 냄.
+
+#### 3. conv1x1
+- 다시 채널의 수를 늘려 줌.
+
+이런 식으로 변수의 수를 줄이면서도 원하는 갯수의 feature를 뽑을 수 있도록 함. 
 
 
 ##### Batch Normalization 
