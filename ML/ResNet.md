@@ -1,3 +1,22 @@
+## down sampling과 채널 수
+- down sampling과 채널 수 reduction은 **같은 게 아님**
+
+#### down sampling
+<img src="https://github.com/sandartchip/TIL/assets/15938354/cae731a3-7ac2-41ce-9481-8b486630c71c" width="300px"/>
+- 더 작은 이미지로 크기를 축소시키는 것.
+- Max pooling, stride로 순회하는 거 같은거.
+
+#### reducting the number of channel
+- 이미지의 채널 갯수를 줄이는 거.
+- 224x224픽셀 이미지가 RGB 채널 가지고 1000x1000 픽셀 이미지가 RGB 채널 가지듯.
+
+- RGB(3개의 채널)->흑백(GrayScale, 1개의 채널) 이런 식으로, 특징 잡아내는 필터 갯수 줄이는거. 
+
+![image](https://github.com/sandartchip/TIL/assets/15938354/3e43de92-26ff-4aba-8825-b68d7acd0d50)
+
+- 이건 채널 갯수 줄이는거. RGB에서 흑백이 되는 거 처럼.
+- downsampling 아님욬...
+
 ## 필터의 개념
 
 <img src="https://github.com/sandartchip/TIL/assets/15938354/71a7f8b7-6680-49f5-a3f4-b840a7f20886" width="400px"/>
