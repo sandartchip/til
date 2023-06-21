@@ -56,7 +56,7 @@
 - 각 residual 함수 F에 관하여, 3개의 Layer stack으로 구현하게 됨.
 - 3개의 layer는 1x1, 3x3, 1x1로 구성됨.
 
-<img src="https://github.com/sandartchip/TIL/assets/15938354/262a9c12-ee88-4f24-a95a-d5693f1dbeb4" width="500px"/>
+<img src="https://github.com/sandartchip/TIL/assets/15938354/262a9c12-ee88-4f24-a95a-d5693f1dbeb4" width="400px"/>
 - 각각의 Residual Block은 conv, batch normalization, relu로 구성
 - 마지막 layer에서 identity mapping 
 
