@@ -173,6 +173,8 @@ for _ in range(1, blocks):
 
 - self.inplanes=64에서 self.inplanes= planes * block.expansion 으로 inplanes가 업데이트 됨.
 
+<img src="https://github.com/sandartchip/TIL/assets/15938354/19a0ab32-84c0-48c9-8630-d1954452ffc0" />
+
 
 #### BottleNeck Architecture 
 <img src="https://github.com/sandartchip/TIL/assets/15938354/bed30c51-17c1-4ca7-94ac-e61b71c30a67" width="400px"/>
