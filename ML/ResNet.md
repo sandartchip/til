@@ -157,7 +157,7 @@
 <img src="https://github.com/sandartchip/TIL/assets/15938354/0f41224e-b503-4dc5-a2cb-34ce72890f4f" />
 - 이 make_layer함수 얘에 있는 얘내는 1x1 이게 아님.. Bottle Neck 임.(햇갈리지 말 것) 즉 이 블록 하나하나에 1x1 3x3 1x1 이거 세트로 묶여있는 애들임..
 - 블록 내 시작 layer, downsampling 필요 -> 이 부분이 저거 맨 위에 있는 블록. 밑에 둘이는 #동일 블록 반복 이부분.
-- inplanes: input channel 갯수.
+- inplanes: input channel 갯수. make layer 1번 할 때마다 inplanes가 늘어남.
 
 
 - 레지듀얼 블록 여러개 연결해주는 애.
