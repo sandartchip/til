@@ -150,7 +150,8 @@
 
 #### _make_layer함수
 ![image](https://github.com/sandartchip/TIL/assets/15938354/64468c2e-5d61-4ca5-aa63-8ad362e4b814)
-- projection shortcut(1x1 convolution으로 dimension 맞춰 줌)이랑 downsampling(이미지 크기 줄이기)이 동시에 진행 됨. 
+- the number of ...이 부분에서, projection shortcut(conv1x1으로 dimension 맞춰 줌)이랑 downsampling(이미지 크기 줄이기- stride 2)이 동시에 진행 됨. 
+
 
 <img src="https://github.com/sandartchip/TIL/assets/15938354/0f41224e-b503-4dc5-a2cb-34ce72890f4f" />
 - 이 make_layer함수 얘에 있는 얘내는 1x1 이게 아님.. Bottle Neck 임.(햇갈리지 말 것) 즉 이 블록 하나하나에 1x1 3x3 1x1 이거 세트로 묶여있는 애들임..
