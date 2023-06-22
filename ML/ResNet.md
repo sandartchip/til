@@ -36,8 +36,6 @@
 - 인풋 이미지 크기 줄이는건 down sampling. 
 
 ## 현재 해야 하는 일
-
-<img src="https://github.com/sandartchip/TIL/assets/15938354/38054fb7-4319-42f0-bdd9-c42c49f76f52" width="350px"/>
 <img src="https://github.com/sandartchip/TIL/assets/15938354/2555e6c9-8416-4a0d-8ea5-5e504fe998d8" />
 
 - Stage : 한 개의 downsampling block과 여러 개의 residual block으로 이루어져 있다.
