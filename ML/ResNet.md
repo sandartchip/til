@@ -36,8 +36,6 @@
 - 인풋 이미지 크기 줄이는건 down sampling. 
 
 ## 현재 해야 하는 일
-<img src="https://github.com/sandartchip/TIL/assets/15938354/2555e6c9-8416-4a0d-8ea5-5e504fe998d8" />
-
 - Stage : 한 개의 downsampling block과 여러 개의 residual block으로 이루어져 있다.
 - **Downsampling block** : Path A와 path B로 구성되며, 마지막에 두 path의 output을 더한다.
 - Path A : 3개의 conv로 구성된 bottleneck 구조로, input size를 2배 줄이고 channel dim을 4배 늘린다.
