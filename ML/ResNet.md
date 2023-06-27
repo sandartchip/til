@@ -1,10 +1,10 @@
 ## down sampling과 채널 수
-- down sampling과 채널 수 reduction은 **같은 게 아님**
+- down sampling과 채널 수 reduction은 **같은 게 아님!**
+- 물론, down sampling과 채널 수 reduction은 동시에 일어날 수 있음. 
 - down sampling을 채널 수 reduction이랑 자꾸 햇갈려서 혼돈이 오는 중.
 - 채널 수 reduction은 1x1 conv로 하는거임. downsampling은 max pooling이나 stride=2로 하는 겅미.
 - 지금 해야하는건 채널 수 reduction이지 image size의 down sampling이 아님 
 
-- 둘이 동시에 일어날 수는 있지만, 이미지 처리의 다른 측면 임.
 - down sampling은 각 Layer의 첫 번째 블록의 3x3 conv에서만 일어 남. 
 - 채널 수는 각 Layer의 모든 블록에서 증가(1x1)했다가 그대로(3x3)였다가 감소(두번째 1x1)함. 
 
