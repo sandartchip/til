@@ -11,6 +11,11 @@
 
 #### Validation Set과 Test Set의 차이
 
-- Validation set은 여러 모델들 각각에 적용되어 성능을 측정하며, 최종 모델을 선정하기 위해 사용한다. (1 epoch을 epoch 수만큼 돌리는 만큼)
-- 
+- Validation set은 1 epoch(batch 여러 번) 돌 때마다 만들어지는 여러 모델들 각각에 적용되어 성능을 측정한다.
+- 최종 모델을 선정하기 위해 사용한다. (1 epoch을 epoch 수만큼 돌리는 만큼)
+
+```python
+
+```
+
 - 반면 Test Set은 최종 모델에 대해 
