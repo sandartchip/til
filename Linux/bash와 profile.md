@@ -4,9 +4,8 @@
 OS에서는 /etc/profile, .bash_profile or .profile을 실행하고, 각 파일 내부에서 다른 파일을 실행한다.
 
  
-
-1. /etc/profile
-
+### 1. /etc/profile
+- 모든 사용자에 대한 환경설정 파일. 
 해당파일 안의 shell script
 for i in /etc/profile.d/*.sh ; do
 
@@ -28,11 +27,11 @@ done
 
  
 
-2./etc/bashrc
+### 2./etc/bashrc
  
 
 3. ~/.bash_profile OR ~/.profile (.bash_profile 이 없으면 .profile을 실행. .bash_profile 이 1순위이고, 우선순위에 따라 1개만 실행된다.)
-
+- 개인 사용자에 대한 환경설정 파일. 로그인 시 설정 내용을 읽어들임.
 해당 파일안의 shell script
 if [ -f ~/.bashrc ]; then
 
