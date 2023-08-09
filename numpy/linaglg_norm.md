@@ -9,7 +9,8 @@
 - ||B||와 같은 차수가 생략된 표기는 L2 norm을 의미함. 
 
 
-![image](https://github.com/sandartchip/TIL/assets/15938354/d679b3f5-4ead-48d8-9cc6-22f3b89a3603)
+<img src="https://github.com/sandartchip/TIL/assets/15938354/d679b3f5-4ead-48d8-9cc6-22f3b89a3603" width="400px" />
 
 
-- Norm이 측정한 
+- Norm 안에 이미 square과 sum이 포함되어 있음.
+
