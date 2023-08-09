@@ -1,6 +1,6 @@
 
 
-<img src="https://github.com/sandartchip/TIL/assets/15938354/9711ff3b-73f5-4947-b4d5-760b8bb15bcc"/>
+<img src="https://github.com/sandartchip/TIL/assets/15938354/9711ff3b-73f5-4947-b4d5-760b8bb15bcc" width="300px"/>
 
 ### np.linalg.norm 함수
 
