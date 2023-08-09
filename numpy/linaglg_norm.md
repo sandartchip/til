@@ -8,6 +8,8 @@
 - 일반적으로 가장 많이 사용되는 Norm은 L2 Norm임.
 - ||B||와 같은 차수가 생략된 표기는 L2 norm을 의미함. 
 
-<img src="https://github.com/sandartchip/TIL/assets/15938354/2d6e171c-a0b1-4af6-9e37-e4a9ffb7d8b3" width="500px" />
+
+![image](https://github.com/sandartchip/TIL/assets/15938354/d679b3f5-4ead-48d8-9cc6-22f3b89a3603)
+
 
 - Norm이 측정한 
