@@ -7,7 +7,7 @@
 A2 = np.array([ [1,2,3], [10, 20, 30] ])
 B2 = np.array([ [4,5,6], [40,50,60] ])
 
-![image](https://github.com/sandartchip/TIL/assets/15938354/0c9ee61b-ea13-4689-9b98-232404b0d953)
+<img src="https://github.com/sandartchip/TIL/assets/15938354/0c9ee61b-ea13-4689-9b98-232404b0d953" width="200px">
 
 
 >>> np.concatenate((A2, B2), axis=0)
