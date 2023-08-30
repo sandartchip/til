@@ -4,6 +4,7 @@
 
 ## Softmax 함수의 입력으로 어떻게 바꿀까? 
 <img src="https://github.com/sandartchip/TIL/assets/15938354/717a9e0b-09ca-41c1-aa60-a8e5461d3065">
+
 - 4개의 독립면수 : 모델이 4차원 벡터를 입력으로 받음을 의미. 
 - Softmax 함수의 입력으로 사용되는 벡터의 차원--(변형)--> 분류하고자 하는 클래스의 갯수 
 
