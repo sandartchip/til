@@ -1,6 +1,5 @@
 
-
-<img src="https://github.com/sandartchip/TIL/assets/15938354/048bba24-8c11-41bb-9b76-65675d6dee64 width="500px">
+<img src="https://github.com/sandartchip/TIL/assets/15938354/2e00574f-7394-4f6a-bc80-8c75b15dd131" width="500px">
 
 ## Broadcasting Rule
 
