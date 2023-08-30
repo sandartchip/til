@@ -20,3 +20,7 @@
 - Softmax 함수의 출력은 분류하고자 하는 클래스의 갯수만큼 차원을 가지는 벡터.
 - 0과 1사이의 값.
 
+<img src="https://github.com/sandartchip/TIL/assets/15938354/666bf01e-1caf-46e4-b1c5-5e33315bf4c5">
+
+- Softmax의 결과와 One Hot으로 변형된 실제 레이블간의 오차를 계산(cross-entropy 함수)
+
