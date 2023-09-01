@@ -1,6 +1,18 @@
 
 - cs231n) 1-3. Softmax를 구현해야 함. 
-- 소프트맥스 함수의 출력은 분류하고자 하는 클래스의 갯수만큼 차원을 가지는 벡터 
+- 소프트맥스 함수의 출력은 분류하고자 하는 클래스의 갯수만큼 차원을 가지는 벡터
+
+- 개념이 너무 안잡혀 있어서 다시 정리 해 봄 ㅠㅠ
+
+# 순전파
+- 행렬의 곱.
+- Y = np.dot(X, W) + B
+
+<img src="https://github.com/sandartchip/TIL/assets/15938354/2ef3eb3a-5e92-4463-b969-96135e585fd1" width="200px" />
+- Affine 변환 이라고도 함.
+
+# 역전파
+
 
 ## Softmax 함수의 입력으로 어떻게 바꿀까? 
 <img src="https://github.com/sandartchip/TIL/assets/15938354/717a9e0b-09ca-41c1-aa60-a8e5461d3065">
@@ -25,3 +37,7 @@
 
 - Softmax의 결과와 One Hot으로 변형된 실제 레이블간의 오차를 계산(cross-entropy 함수)
 
+
+
+
+https://ratsgo.github.io/deep%20learning/2017/10/02/softmax/
