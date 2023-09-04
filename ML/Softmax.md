@@ -6,6 +6,23 @@
 - 소프트맥스 함수의 출력은 분류하고자 하는 클래스의 갯수만큼 차원을 가지는 벡터
 
 - 개념이 너무 안잡혀 있어서 다시 정리 해 봄 ㅠㅠ
+- i번째 데이터의 W가 안좋다는 정도 계산은 Li.
+- Loss를 Optimize할 때 쓰는게 Gradient Descent.
+
+## 코드의 순서
+
+### 1. probability 계산
+
+```python
+
+
+f_i = X[i].dot(W)
+f_i -= np.max(f_i) 
+
+p = lambda k: np.exp(f_i[k]) / sum_j 
+```
+
+
 
 # 순전파
 <img src="https://github.com/sandartchip/TIL/assets/15938354/72924510-72f0-439d-8698-9a6b3b295c69" width="180px" style="border: 1px solid #000"/>
@@ -88,4 +105,5 @@ result = np.log(np.exp(y_score) / np.sum(np.exp(scores)))  # scores의 각 원�
 
 https://ratsgo.github.io/deep%20learning/2017/10/02/softmax/ <br>
 https://lionkingchuchu.tistory.com/38  <br>
-https://jason7406.medium.com/cs231n-2-loss-functions-and-optimization-2-489b86404a13
+https://jason7406.medium.com/cs231n-2-loss-functions-and-optimization-2-489b86404a13<br>
+https://dlsdn73.tistory.com/1109
