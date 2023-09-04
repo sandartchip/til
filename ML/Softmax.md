@@ -55,6 +55,9 @@ result = np.log(np.exp(y_score) / np.sum(np.exp(scores)))  # scores의 각 원�
 - dW는 backpropagation을 이용하여 각 correct_class에서 Xi만큼 뺌 
 
 
+<img src="https://github.com/sandartchip/TIL/assets/15938354/46970f47-01f6-48c9-b445-f4765f8938dd" />
+
+
 
 ## Softmax 함수의 입력으로 어떻게 바꿀까? 
 <img src="https://github.com/sandartchip/TIL/assets/15938354/717a9e0b-09ca-41c1-aa60-a8e5461d3065">
