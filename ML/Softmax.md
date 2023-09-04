@@ -7,7 +7,7 @@
 ## 순전파
 - 행렬의 곱.
 - Y = np.dot(X, W) + B
-<img src="https://github.com/sandartchip/TIL/assets/15938354/2ef3eb3a-5e92-4463-b969-96135e585fd1" width="200px" />
+<img src="https://github.com/sandartchip/TIL/assets/15938354/2ef3eb3a-5e92-4463-b969-96135e585fd1" width="350px" />
 
 - Affine 변환 이라고도 함.
 
