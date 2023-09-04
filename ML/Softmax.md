@@ -1,6 +1,6 @@
 
 - cs231n) 1-3. Softmax를 구현해야 함.
-- 이 과제에서의 Softmax() 함수는 단지 softmax 함수 만이 아니라, 실제 모델 예측을 하기 위해 1개의 Affine Layer과 연결되어 있는 softmax 함수이다.
+- 이 과제에서의 Softmax() 함수는 단지 softmax 함수 만이 아니라, 실제 모델 예측을 하기 위해 1개의 순전파 Layer과 연결되어 있는 softmax 함수이다.
 
 - Softmax 함수의 forward, backward를 구현, Stochastic Gradient Desecent를 구현
 - 소프트맥스 함수의 출력은 분류하고자 하는 클래스의 갯수만큼 차원을 가지는 벡터
