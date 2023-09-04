@@ -12,6 +12,9 @@
 - BackPropagation 시키기 
  <img src="https://github.com/sandartchip/TIL/assets/15938354/46970f47-01f6-48c9-b445-f4765f8938dd" />
 
+ <img src="https://github.com/sandartchip/TIL/assets/15938354/e2a2f96c-9631-4f0d-bd3c-85ad3bb429b8 "/>
+
+
 ```python
 W : A numpy array of shape (D, C) containing weights.
 num_dims = W.shape[0]
