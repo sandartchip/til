@@ -79,6 +79,6 @@ result = np.log(np.exp(y_score) / np.sum(np.exp(scores)))  # scores의 각 원�
 
 
 
-https://ratsgo.github.io/deep%20learning/2017/10/02/softmax/
-https://lionkingchuchu.tistory.com/38
+https://ratsgo.github.io/deep%20learning/2017/10/02/softmax/ <br>
+https://lionkingchuchu.tistory.com/38  <br>
 https://jason7406.medium.com/cs231n-2-loss-functions-and-optimization-2-489b86404a13
