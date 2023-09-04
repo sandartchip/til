@@ -9,11 +9,15 @@
 
 # 순전파
 <img src="https://github.com/sandartchip/TIL/assets/15938354/72924510-72f0-439d-8698-9a6b3b295c69" width="180px" style="border: 1px solid #000"/>
+- 수식 
+- 행렬의 곱.
+
+```python
+scores = np.dot(X[i], W)
+y_score = scores[y[i]]  # i번째 데이터의 점수 
+result = np.log(np.exp(y_score) / np.sum(np.exp(scores))) 
 
 ```
-
-- 행렬의 곱.
-- 수식 
 
 
 - Y = np.dot(X, W) + B
