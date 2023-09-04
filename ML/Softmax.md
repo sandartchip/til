@@ -32,6 +32,7 @@ result = np.log(np.exp(y_score) / np.sum(np.exp(scores)))  # scores의 각 원�
 ##### Log 변환 
 
 <img src="https://github.com/sandartchip/TIL/assets/15938354/5a5c69c7-9bf0-4fd2-b082-a30a479cba8d" width="300px" />
+<br>
 - 각 class의 점수를 확률 분포를 적용해 계산하여 확률값으로 변환했을 때, 확률값이 1에 가까우면 가까울 수록 좋은 것.
 - 분류기 함수 f를 평가해주는 loss값은 적으면 적을 수록 좋은거.
 - 적으면 적을 수록 좋음의 분포를 나타내는 함수 = -log() 
