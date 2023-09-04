@@ -14,11 +14,13 @@
 
 ```python
 
+num_dims = W.shape[0]
+
   for i in xrange(num_train):
     scores = X[i, :].dot(W)
     exp_scores = np.exp(scores)
 
-    prob_scores = exp_scores/np.sum(exp_scores)
+    prob_scores = exp_scores/np.sum(exp_scores)  
 
     for d in xrange(num_dims):
         for k in xrange(num_classes):
