@@ -12,6 +12,23 @@
 - BackPropagation 시키기 
  <img src="https://github.com/sandartchip/TIL/assets/15938354/46970f47-01f6-48c9-b445-f4765f8938dd" />
 
+```python
+
+  for i in xrange(num_train):
+    scores = X[i, :].dot(W)
+    exp_scores = np.exp(scores)
+
+    prob_scores = exp_scores/np.sum(exp_scores)
+
+    for d in xrange(num_dims):
+        for k in xrange(num_classes):
+            if k == y[i]:
+                dW[d, k] += X.T[d, i] * (prob_scores[k]-1)
+            else:
+                dW[d, k] += X.T[d, i] * prob_scores[k]
+
+```
+
 ## 코드의 순서
 
 ### 1. probability 계산
