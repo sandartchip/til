@@ -116,8 +116,7 @@ result = np.log(np.exp(y_score) / np.sum(np.exp(scores)))  # scores의 각 원�
 - Softmax의 결과와 One Hot으로 변형된 실제 레이블간의 오차를 계산(cross-entropy 함수)
 
 
-
-
+https://github.com/martinkersner/cs231n/blob/master/assignment1/softmax.py <br>
 https://ratsgo.github.io/deep%20learning/2017/10/02/softmax/ <br>
 https://lionkingchuchu.tistory.com/38  <br>
 https://jason7406.medium.com/cs231n-2-loss-functions-and-optimization-2-489b86404a13<br>
