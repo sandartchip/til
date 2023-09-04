@@ -30,7 +30,7 @@ result = np.log(np.exp(y_score) / np.sum(np.exp(scores)))  # scores의 각 원�
 - 적으면 적을 수록 좋음의 분포를 나타내는 함수 = -log() 
 
 #### Softmax 함수의 Loss Function
-<img src="https://github.com/sandartchip/TIL/assets/15938354/ef223aca-c3fc-45ab-bb33-f94df5747c5f" width="400px" />
+<img src="https://github.com/sandartchip/TIL/assets/15938354/ef223aca-c3fc-45ab-bb33-f94df5747c5f" width="600px" />
 
 
 # 역전파
