@@ -14,6 +14,25 @@
 
  <img src="https://github.com/sandartchip/TIL/assets/15938354/e2a2f96c-9631-4f0d-bd3c-85ad3bb429b8 "/>
 
+```python
+class SoftmaxAndCEE:
+    def __init__(self):
+        self.y = None
+        self.t = None
+
+    def forward(self, x, t):
+        self.t = t
+        self.y = softmax(x)
+        return CEE(self.y, self.t)
+        
+    def backward(self, dout=1):
+        if self.t.ndim == 1:
+            batch_size = 1
+        else:
+            batch_size = self.t.shape[0]
+        dx = (self.y - self.t) / batch_size
+        return dx
+```
 - 여기서는 Softmax 미분값이 y-t인데 왜 저기선 또 prob랑 빼는데 아 ㅅㅂ 
 
 
