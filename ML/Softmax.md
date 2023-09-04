@@ -20,6 +20,8 @@
 ```python
 W : A numpy array of shape (D, C) containing weights.
 num_dims = W.shape[0]
+num_classes = W.shape[1]
+num_train = X.shape[0]
 
   for i in xrange(num_train):
     scores = X[i, :].dot(W)
