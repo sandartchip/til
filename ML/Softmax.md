@@ -16,7 +16,6 @@
 scores = np.dot(X[i], W) # shape: 1 x D 
 y_score = scores[y[i]]  # i번째 데이터의 정답 클래스의 점수 
 result = np.log(np.exp(y_score) / np.sum(np.exp(scores)))  # scores의 각 원소들 exp하고 더함 
-
 ```
 
 - Y = np.dot(X, W) + B
