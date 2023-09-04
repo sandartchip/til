@@ -45,6 +45,8 @@ result = np.log(np.exp(y_score) / np.sum(np.exp(scores)))  # scores의 각 원�
 #### Softmax Loss 전체 역전파 
 <img src="https://github.com/sandartchip/TIL/assets/15938354/fcb685ae-4867-41a1-a705-7c66ecb24e1a" />
 
+- 결국 Softmax-with-Loss 계층의 최종적인 미분값은 yi-ti임
+- 이렇게 간단하게 최종 미분값이 계산될 수 있는 이유는 **손실함수로 크로스 엔트로피(CEE)를 사용하기 때문**임.  
 
 - dW는 backpropagation을 이용하여 각 correct_class에서 Xi만큼 뺌 
 
