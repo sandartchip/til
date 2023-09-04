@@ -8,7 +8,7 @@
 - 개념이 너무 안잡혀 있어서 다시 정리 해 봄 ㅠㅠ
 
 # 순전파
-<img src="https://github.com/sandartchip/TIL/assets/15938354/72924510-72f0-439d-8698-9a6b3b295c69" width="200px" />
+<img src="https://github.com/sandartchip/TIL/assets/15938354/72924510-72f0-439d-8698-9a6b3b295c69" width="150px" />
 
 - 행렬의 곱.
 - 수식 
