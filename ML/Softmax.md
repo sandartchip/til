@@ -7,6 +7,7 @@
 
 - 개념이 너무 안잡혀 있어서 다시 정리 해 봄 ㅠㅠ
 - i번째 데이터의 W가 안좋다는 정도 계산은 Li.
+- 
 - Loss를 Optimize할 때 쓰는게 Gradient Descent.
 
 ## 코드의 순서
