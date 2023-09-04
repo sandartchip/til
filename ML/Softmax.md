@@ -4,14 +4,14 @@
 
 - 개념이 너무 안잡혀 있어서 다시 정리 해 봄 ㅠㅠ
 
-## 순전파
+# 순전파
 - 행렬의 곱.
 - Y = np.dot(X, W) + B
 <img src="https://github.com/sandartchip/TIL/assets/15938354/2ef3eb3a-5e92-4463-b969-96135e585fd1" width="350px" />
 
 - Affine 변환 이라고도 함.
 
-## 역전파
+# 역전파
 
 
 ## Softmax 함수의 입력으로 어떻게 바꿀까? 
