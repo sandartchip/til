@@ -13,17 +13,25 @@
 - 행렬의 곱.
 
 ```python
-scores = np.dot(X[i], W)
-y_score = scores[y[i]]  # i번째 데이터의 점수 
-result = np.log(np.exp(y_score) / np.sum(np.exp(scores))) 
+scores = np.dot(X[i], W) # shape: 1 x D 
+y_score = scores[y[i]]  # i번째 데이터의 정답 클래스의 점수 
+result = np.log(np.exp(y_score) / np.sum(np.exp(scores)))  # scores의 각 원소들 exp하고 더함 
 
 ```
-
 
 - Y = np.dot(X, W) + B
 <img src="https://github.com/sandartchip/TIL/assets/15938354/2ef3eb3a-5e92-4463-b969-96135e585fd1" width="350px" />
 
 - Affine 변환 이라고도 함.
+
+<img src="https://github.com/sandartchip/TIL/assets/15938354/5a5c69c7-9bf0-4fd2-b082-a30a479cba8d" width="300px" />
+- 각 class의 점수를 확률 분포를 적용해 계산하여 확률값으로 변환했을 때, 확률값이 1에 가까우면 가까울 수록 좋은 것.
+- 분류기 함수 f를 평가해주는 loss값은 적으면 적을 수록 좋은거.
+- 적으면 적을 수록 좋음의 분포를 나타내는 함수 = -log() 
+
+#### Softmax 함수의 Loss Function
+<img src="https://github.com/sandartchip/TIL/assets/15938354/ef223aca-c3fc-45ab-bb33-f94df5747c5f" width="400px" />
+
 
 # 역전파
 
@@ -59,3 +67,4 @@ result = np.log(np.exp(y_score) / np.sum(np.exp(scores)))
 
 https://ratsgo.github.io/deep%20learning/2017/10/02/softmax/
 https://lionkingchuchu.tistory.com/38
+https://jason7406.medium.com/cs231n-2-loss-functions-and-optimization-2-489b86404a13
