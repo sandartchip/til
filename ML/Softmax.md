@@ -13,7 +13,7 @@
  <img src="https://github.com/sandartchip/TIL/assets/15938354/46970f47-01f6-48c9-b445-f4765f8938dd" />
 
 ```python
-
+W : A numpy array of shape (D, C) containing weights.
 num_dims = W.shape[0]
 
   for i in xrange(num_train):
