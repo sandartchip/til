@@ -46,7 +46,7 @@ result = np.log(np.exp(y_score) / np.sum(np.exp(scores)))  # scores의 각 원�
 <img src="https://github.com/sandartchip/TIL/assets/15938354/fcb685ae-4867-41a1-a705-7c66ecb24e1a" width="400px" />
 
 ##### 전체모식도-축약도 (Softmax 뒤에 Cross Entropy가 붙음. 그래야 미분이 쉬워서)
-<img src="https://github.com/sandartchip/TIL/assets/15938354/85f396d8-997c-4032-bfc3-48538841af56"  />
+<img src="https://github.com/sandartchip/TIL/assets/15938354/85f396d8-997c-4032-bfc3-48538841af56" width="350px" />
 
 
 - 결국 **Softmax-Cross Entropy-with-Loss 계층의 최종적인 미분값은 yi-ti**임
