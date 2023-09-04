@@ -1,17 +1,27 @@
 
-- cs231n) 1-3. Softmax를 구현해야 함. 
+- cs231n) 1-3. Softmax를 구현해야 함.
+- 이 과제에서의 Softmax() 함수는 단지 softmax 함수 만이 아니라, 실제 모델 예측을 하기 위해 1개의 Affine Layer과 연결되어 있는 softmax 함수이다.
+
+- Softmax 함수의 forward, backward를 구현, Stochastic Gradient Desecent를 구현
 - 소프트맥스 함수의 출력은 분류하고자 하는 클래스의 갯수만큼 차원을 가지는 벡터
 
 - 개념이 너무 안잡혀 있어서 다시 정리 해 봄 ㅠㅠ
 
 # 순전파
+<img src="https://github.com/sandartchip/TIL/assets/15938354/72924510-72f0-439d-8698-9a6b3b295c69" wid/>
+
 - 행렬의 곱.
+- 수식 
+
+
 - Y = np.dot(X, W) + B
 <img src="https://github.com/sandartchip/TIL/assets/15938354/2ef3eb3a-5e92-4463-b969-96135e585fd1" width="350px" />
 
 - Affine 변환 이라고도 함.
 
 # 역전파
+
+- dW는 backpropagation을 이용하여 각 correct_class에서 Xi만큼 뺌 
 
 
 ## Softmax 함수의 입력으로 어떻게 바꿀까? 
@@ -42,3 +52,4 @@
 
 
 https://ratsgo.github.io/deep%20learning/2017/10/02/softmax/
+https://lionkingchuchu.tistory.com/38
