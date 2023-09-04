@@ -32,6 +32,29 @@ class SoftmaxAndCEE:
             batch_size = self.t.shape[0]
         dx = (self.y - self.t) / batch_size
         return dx
+
+x = np.array([[1.0,2.0,3.0],
+              [4.0,4.0,6.0],
+              [7.0,9.0,10.0]])
+
+t = np.array([[0,0,1],
+              [1,0,0],
+              [0,1,0]])
+
+sac = SoftmaxAndCEE()
+L = sac.forward(x, t)
+print(L)
+
+dx = sac.backward(1)
+print(dx)
+
+=================================
+
+1.3320538242820614
+
+[[ 0.03001019  0.08157616 -0.11158635]
+ [-0.29783101  0.03550233  0.26232868]
+ [ 0.01170634 -0.24683451  0.23512817]]
 ```
 - 여기서는 Softmax 미분값이 y-t인데 왜 저기선 또 prob랑 빼는데 아 ㅅㅂ 
 
