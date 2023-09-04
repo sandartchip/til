@@ -25,7 +25,7 @@ num_train = X.shape[0]
 
   for i in xrange(num_train):
     scores = X[i, :].dot(W)
-    exp_scores = np.exp(scores)
+    exp_scores = np.exp(scores) # 이거 계산할 때 max로 빼주는 경우 있는데 그건 컴퓨터 오류 때문임
 
     prob_scores = exp_scores/np.sum(exp_scores)  
 
