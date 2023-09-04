@@ -7,11 +7,10 @@
 
 - 개념이 너무 안잡혀 있어서 다시 정리 해 봄 ㅠㅠ
 - i번째 데이터의 W가 안좋다는 정도 계산은 Li.
-
-<img src="https://github.com/sandartchip/TIL/assets/15938354/46970f47-01f6-48c9-b445-f4765f8938dd" />
-
-
 - Loss를 Optimize할 때 쓰는게 Gradient Descent.
+
+- BackPropagation 시키기 
+ <img src="https://github.com/sandartchip/TIL/assets/15938354/46970f47-01f6-48c9-b445-f4765f8938dd" />
 
 ## 코드의 순서
 
