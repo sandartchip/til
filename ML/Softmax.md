@@ -38,6 +38,11 @@ result = np.log(np.exp(y_score) / np.sum(np.exp(scores)))  # scores의 각 원�
 
 # 역전파
 
+#### 역전파-Softmax 계층
+<img src="https://github.com/sandartchip/TIL/assets/15938354/e74ba827-5f27-42b7-9a91-bf650010f6d5" />
+
+
+#### Softmax Loss 전체 역전파 
 <img src="https://github.com/sandartchip/TIL/assets/15938354/fcb685ae-4867-41a1-a705-7c66ecb24e1a" />
 
 
