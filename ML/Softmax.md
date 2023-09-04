@@ -14,7 +14,7 @@
 
  <img src="https://github.com/sandartchip/TIL/assets/15938354/e2a2f96c-9631-4f0d-bd3c-85ad3bb429b8 "/>
 
-- 여기서는 y-t인데 왜 저기선 또 prob랑 빼는데 아 ㅅㅂ 
+- 여기서는 Softmax 미분값이 y-t인데 왜 저기선 또 prob랑 빼는데 아 ㅅㅂ 
 
 
 ```python
