@@ -23,6 +23,8 @@ f_i -= np.max(f_i)
 p = lambda k: np.exp(f_i[k]) / sum_j 
 ```
 
+<img src="https://github.com/sandartchip/TIL/assets/15938354/46970f47-01f6-48c9-b445-f4765f8938dd" />
+
 
 
 # 순전파
@@ -71,10 +73,6 @@ result = np.log(np.exp(y_score) / np.sum(np.exp(scores)))  # scores의 각 원�
 - 이렇게 간단하게 최종 미분값이 계산될 수 있는 이유는 **손실함수로 크로스 엔트로피(CEE)를 사용하기 때문**임.  
 
 - dW는 backpropagation을 이용하여 각 correct_class에서 Xi만큼 뺌 
-
-
-<img src="https://github.com/sandartchip/TIL/assets/15938354/46970f47-01f6-48c9-b445-f4765f8938dd" />
-
 
 
 ## Softmax 함수의 입력으로 어떻게 바꿀까? 
