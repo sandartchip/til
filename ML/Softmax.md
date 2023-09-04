@@ -24,7 +24,7 @@ result = np.log(np.exp(y_score) / np.sum(np.exp(scores)))  # scores의 각 원�
 - Affine 변환 이라고도 함.
 
 ### Softmax 함수의 Loss Function
-<img src="https://github.com/sandartchip/TIL/assets/15938354/ef223aca-c3fc-45ab-bb33-f94df5747c5f" width="600px" />
+<img src="https://github.com/sandartchip/TIL/assets/15938354/ef223aca-c3fc-45ab-bb33-f94df5747c5f" width="400px" />
 
 #### Log 변환 
 - 마지막 Probability 값에 Log값이 씌워 짐. 
