@@ -59,8 +59,8 @@ print(dx)
 
 - 여기서는 Softmax 미분값이 y-t인데 왜 저기선 또 prob랑 빼는데 아 ㅅㅂ
 - ANSWER ) y-t는 Softmax-Loss 계층의 i번째 입력값 ai에 대한 Loss의 gradient.    (dL/da)
+<img src="https://github.com/sandartchip/TIL/assets/15938354/46970f47-01f6-48c9-b445-f4765f8938dd" /> <br>
 - 정답에서 쓰는 수식은 W에 대한 Loss의 미분값.    (dL/dW)
-<img src="https://github.com/sandartchip/TIL/assets/15938354/46970f47-01f6-48c9-b445-f4765f8938dd" />
 
 
 ```python
