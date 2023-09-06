@@ -62,6 +62,7 @@ print(dx)
 <img src="https://github.com/sandartchip/TIL/assets/15938354/46970f47-01f6-48c9-b445-f4765f8938dd" /> <br>
 - 정답에서 쓰는 수식은 W에 대한 Loss의 미분값.    (dL/dW)
 
+<br><br><br>
 
 ```python
 W : A numpy array of shape (D, C) containing weights.
