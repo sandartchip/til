@@ -22,7 +22,9 @@ That said, modern deep learning projects often use specialized deep learning lib
 So, while it's not mandatory to learn and implement deep learning exclusively with NumPy, having a good understanding of NumPy can be a valuable skill that complements your deep learning journey. Ultimately, the choice of tools and libraries depends on your specific project requirements and goals.
 
 
-딥 러닝을 모델링하고 구현하기 위해 NumPy만 사용할 필요는 없지만, NumPy를 잘 이해하면 상당히 유용할 수 있습니다. NumPy는 대규모 다차원 배열과 행렬을 지원하고 이러한 배열에서 작동하는 다양한 수학 함수를 제공하는 Python 라이브러리입니다. TensorFlow와 PyTorch와 같은 많은 딥 러닝 프레임워크는 NumPy를 기반으로 구축되었거나 NumPy와 유사한 기능을 제공합니다.
+## Numpy로 모델 구현하기 
+
+- 딥 러닝을 모델링하고 구현하기 위해 NumPy만 사용할 필요는 없지만, NumPy를 잘 이해하면 상당히 유용할 수 있습니다. NumPy는 대규모 다차원 배열과 행렬을 지원하고 이러한 배열에서 작동하는 다양한 수학 함수를 제공하는 Python 라이브러리입니다. TensorFlow와 PyTorch와 같은 많은 딥 러닝 프레임워크는 NumPy를 기반으로 구축되었거나 NumPy와 유사한 기능을 제공합니다.
 
 다음은 딥 러닝에 NumPy를 학습하고 사용하는 것이 유리한 몇 가지 이유입니다:
 
