@@ -1,17 +1,21 @@
 
-To model and implement deep learning, it is not necessary to use only NumPy, but having a solid understanding of NumPy can be quite beneficial. NumPy is a Python library that provides support for large, multi-dimensional arrays and matrices, along with a wide range of mathematical functions to operate on these arrays. Many deep learning frameworks, such as TensorFlow and PyTorch, are built on top of NumPy or provide NumPy-like functionality.
+## WHY, Implement with low level modeling 
+
+- To model and implement deep learning, it is not necessary to use only NumPy, but having a solid understanding of NumPy can be quite beneficial.
+- NumPy is a Python library that provides support for large, multi-dimensional arrays and matrices, along with a wide range of mathematical functions to operate on these arrays.
+- Many deep learning frameworks, such as TensorFlow and PyTorch, are built on top of NumPy or provide NumPy-like functionality.
 
 Here are some reasons why learning and using NumPy for deep learning can be advantageous:
 
-Efficient Array Manipulation: NumPy allows you to efficiently manipulate arrays and perform operations on them, which is essential for implementing neural networks where matrix and tensor operations are common.
+- Efficient Array Manipulation: NumPy allows you to efficiently manipulate arrays and perform operations on them, which is essential for implementing neural networks where matrix and tensor operations are common.
 
-Compatibility: NumPy is widely used in the Python ecosystem, making it compatible with various data manipulation and visualization libraries, such as Matplotlib and pandas. This compatibility can be helpful for preprocessing and analyzing data before feeding it into your deep learning models.
+- Compatibility: NumPy is widely used in the Python ecosystem, making it compatible with various data manipulation and visualization libraries, such as Matplotlib and pandas. This compatibility can be helpful for preprocessing and analyzing data before feeding it into your deep learning models.
 
-Understanding Deep Learning Basics: Implementing deep learning from scratch with NumPy can help you understand the fundamental concepts of neural networks, backpropagation, and gradient descent. This understanding can be valuable when working with higher-level deep learning libraries.
+- Understanding Deep Learning Basics: Implementing deep learning from scratch with NumPy can help you understand the fundamental concepts of neural networks, backpropagation, and gradient descent. This understanding can be valuable when working with higher-level deep learning libraries.
 
-Prototyping: NumPy is great for prototyping and experimenting with new ideas or architectures before transitioning to more specialized deep learning libraries. It allows you to quickly test and validate your concepts.
+- Prototyping: NumPy is great for prototyping and experimenting with new ideas or architectures before transitioning to more specialized deep learning libraries. It allows you to quickly test and validate your concepts.
 
-Custom Implementations: In some cases, you may need to implement custom layers or loss functions that are not readily available in deep learning libraries. Knowing NumPy can be useful in such scenarios.
+- Custom Implementations: In some cases, you may need to implement custom layers or loss functions that are not readily available in deep learning libraries. Knowing NumPy can be useful in such scenarios.
 
 That said, modern deep learning projects often use specialized deep learning libraries like TensorFlow or PyTorch because they provide high-level abstractions, automatic differentiation, GPU acceleration, and a wide range of pre-implemented layers and models. These libraries can significantly simplify the development process and improve performance.
 
