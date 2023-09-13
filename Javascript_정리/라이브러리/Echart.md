@@ -23,6 +23,8 @@ var option = {
 chart.setOption(option);
 ```
 
+- xAxis에 카테고리명이, yAxis에 값이 들어 감
+
 #### Horizontal Graph
 ```javascript
 var chart = echarts.init(document.getElementById('chart-container'));
