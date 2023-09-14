@@ -24,7 +24,7 @@
             bags_list = []    # store bag of data
             labels_list = []  # store bag of corresponding label of data
             valid_bags_counter = 0 # keep track of the bags being created
-            label_of_last_bag = 0
+            label_of_last_bag = 0 # 이건 뭐임..?
 
             for batch_data in train_loader:
                 numbers = batch_data[0]
