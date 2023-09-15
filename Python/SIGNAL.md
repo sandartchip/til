@@ -10,10 +10,16 @@
 위에서 설명한 것처럼 터미널에서 프로세스를 종료하고자 Ctrl + C를 입력할 때 사용됨. 
 Docker나 Kubernetes에서 이 시그널이 활용되진 않지만, 로컬에서 개발할 때 자주 사용하기도 합니다. gunicorn에서 즉시 종료할 때 사용되기도 합니다.
 
+- SIGINIT(Ctrl+C)가 발생할 때 Python 코드 내부에서 Keyboard Interrupt 에러 발생.
+
 ### signal handler
 signal이 발생했을 때 실행할 코드를 의미합니다. OS에서 소유하는 default signal handler라는 게 있고, signal 종류마다 서로 다른 handler를 가지고 있습니다. 예를 들어 SIGKILL의 default signal handler는 프로세스를 종료시키는 동작을 합니다. 프로세스가 직접 자신만을 위한 signal handler를 정의할 수 있는데, 이것을 user defined signal handler라고 합니다. OS는 해당 프로세스에 user defined handler가 있으면 그것을 실행하고, 없다면 default handler를 실행합니다. 단 두 가지 예외가 있는데, SIGKILL과 SIGSTOP은 항상 default handler가 사용됩니다.
 
 
+```python
+signal.signal(signal.SIGINT, self.stop)  # Ctrl + C가 발생했을 때 self.stop 함수가 호출 됨 (termination of the program)
+signal.signal(signal.SIGTERM, self.stop) # Docker STOP 등이 발생했을 때 SIGTERM이 발생-> 이 signal을 받은 프로세스는 처리를 마무리하고 정상 종료해야 함. 
+```
 
-
+#### 참고자료 
 https://tech.buzzvil.com/blog/asyncio-no-3-sigterm/
