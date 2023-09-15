@@ -4,11 +4,13 @@
 - 이 signal을 받은 프로세스는 처리를 마무리하고 정상 종료해야 하기 때문에 graceful shutdown에 적합합니다. docker stop과 kubectl delete pod 모두 즉시 SIGTERM을 보냅니다.
 
 ### SIGKILL
-프로세스에게 시간을 주지 않고 즉시 종료할 때 사용합니다. docker kill을 실행하면 컨테이너에 즉시 SIGKILL을 보냅니다. docker stop과 kubectl delete pod 모두 처음에는 SIGTERM을 보내지만, 만약 CLI에서 설정한 시간 동안 프로세스가 종료되지 않으면 SIGKILL을 다시 보내서 즉시 종료합니다.
+- 프로세스에게 시간을 주지 않고 즉시 종료할 때 사용.
+- docker kill을 실행하면 컨테이너에 즉시 SIGKILL을 보냄
+- docker stop과 kubectl delete pod 모두 처음에는 SIGTERM을 보내지만, 만약 CLI에서 설정한 시간 동안 프로세스가 종료되지 않으면 SIGKILL을 다시 보내서 즉시 종료함.
 
 ### SIGINT
-위에서 설명한 것처럼 터미널에서 프로세스를 종료하고자 Ctrl + C를 입력할 때 사용됨. 
-Docker나 Kubernetes에서 이 시그널이 활용되진 않지만, 로컬에서 개발할 때 자주 사용하기도 합니다. gunicorn에서 즉시 종료할 때 사용되기도 합니다.
+- 위에서 설명한 것처럼 터미널에서 프로세스를 종료하고자 Ctrl + C를 입력할 때 사용됨. 
+- Docker나 Kubernetes에서 이 시그널이 활용되진 않지만, 로컬에서 개발할 때 자주 사용하기도 함. gunicorn에서 즉시 종료할 때 사용되기도 합니다.
 
 - SIGINIT(Ctrl+C)가 발생할 때 Python 코드 내부에서 Keyboard Interrupt 에러 발생.
 
