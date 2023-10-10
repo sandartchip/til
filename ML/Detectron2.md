@@ -7,7 +7,7 @@
 
 ### Run a pre-trained detectron2 model
 
-- COCO 형식 이미지 준비
+- **COCO 형식 이미지 준비**
 - Config와 DefaultPredictor 생성, Inference 하기
 - 결과 시각화
 
