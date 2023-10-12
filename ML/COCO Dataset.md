@@ -62,7 +62,7 @@ categories[{
   "id" : int,
   "name": str,
   "supercategory" : str,
-'''
+```
 
 - annotations (list[dict])
 
