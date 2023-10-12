@@ -4,7 +4,7 @@
 
 - segmentation 정보와 bbox, category_id, id, bbox, image_id, iscrowd, area가 필요 함.
 
-
+- 기본 구조에 분야별 형식을 더한 형태로 구성되어 있음. object detection, segmentation, key point detection 등 분야에 따라 정해진 형식을 사용함.
 
 
 
