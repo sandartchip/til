@@ -1,6 +1,7 @@
 
 ### Example
-![image](https://github.com/sandartchip/TIL/assets/15938354/8ed64ac4-68ac-409a-8a1a-941f53fa7ea6)
+
+![image](https://github.com/sandartchip/TIL/assets/15938354/3a063708-8542-4b3f-8df1-9395805cbd09)
 
 - 기본 구조에 분야별 형식을 더한 형태로 구성되어 있음. object detection, segmentation, key point detection 등 분야에 따라 정해진 형식을 사용함.
 
