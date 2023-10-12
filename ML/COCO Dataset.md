@@ -10,6 +10,12 @@
 
 - segmentation의 경우, segmentation 정보와 bbox, category_id, id, bbox, image_id, iscrowd, area가 필요 함.
 
+- segmentation의 경우, 값이 list라면 폴리곤(각 connected component 별로 생성됨)의 list를 의미함.
+- 각각의 리스트는 단순한 **[x1, y1, ..., cn, yn]** (n>=3)포맷의 폴리곤임.
+- x와 y는 픽셀 단위로 표현한 절대 좌표임.
+- 값이 dict라면 COCO의 압축 RLE 포맷으로 나타낸 픽셀 별 Segmentation Mask를 나타냄.
+- dict에는 "size"와 "counts" 키가 있어야 함. 
+
 - 아래는 분야에 상관없이 항상 가지고 있는 기본 구조임.
 
 ### 기본 형식 
@@ -66,5 +72,10 @@ categories[{
 
 - annotations (list[dict])
 
+
+
+### 참고자료
+
 https://ctkim.tistory.com/entry/coco-data-set-%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C%EC%99%80-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EB%B0%8F-%EC%8B%9C%EA%B0%81%ED%99%94%EC%BD%94%EB%93%9C#:~:text=COCO%20Data%20Set%EC%9D%80%20%22Common,%EB%8C%80%EA%B7%9C%EB%AA%A8%20%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%85%8B%EC%9E%85%EB%8B%88%EB%8B%A
 
+https://detectron2-kr.netlify.app/tutorials/datasets.html
