@@ -5,10 +5,12 @@
 
 - COCO Dataset의 annotation 파일은 기본 구조에 파일 형식을 더한 형태로 되어 있음. 
 
-- **기본 구조**에 **분야별 형식**을 더한 형태로 구성되어 있음. object detection, segmentation, key point detection 등 분야에 따라 정해진 형식을 사용함.
+- **기본 구조**에 **분야별 형식**을 더한 형태로 구성되어 있음.
+- object detection, segmentation, key point detection 등 분야에 따라 정해진 형식을 사용함.
 
 - segmentation의 경우, segmentation 정보와 bbox, category_id, id, bbox, image_id, iscrowd, area가 필요 함.
 
+- 아래는 분야에 상관없이 항상 가지고 있는 기본 구조임.
 
 ### 기본 형식 
 ```
