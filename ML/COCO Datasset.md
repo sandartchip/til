@@ -3,10 +3,11 @@
 
 ![image](https://github.com/sandartchip/TIL/assets/15938354/3a063708-8542-4b3f-8df1-9395805cbd09)
 
-- 기본 구조에 분야별 형식을 더한 형태로 구성되어 있음. object detection, segmentation, key point detection 등 분야에 따라 정해진 형식을 사용함.
+- COCO Dataset의 annotation 파일은 기본 구조에 파일 형식을 더한 형태로 되어 있음. 
+
+- **기본 구조**에 **분야별 형식**을 더한 형태로 구성되어 있음. object detection, segmentation, key point detection 등 분야에 따라 정해진 형식을 사용함.
 
 - segmentation의 경우, segmentation 정보와 bbox, category_id, id, bbox, image_id, iscrowd, area가 필요 함.
-
 
 
 
