@@ -7,6 +7,11 @@
 
 
 ```python
+
+users = Users.objects.all()
+
+for user in users:
+  Notification(user=user, contents="반갑습니다.").save()
 ```
 
 - 위와 같은 방법으로 for문을 돌며 다수의 object를 만들어 낼 경우, save() 한 번당 DB와의 connection이 한 번 발생, insert 수행.
