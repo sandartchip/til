@@ -20,7 +20,7 @@
 -> pip(python2) 와 pip3(python3)가 달랐을 때의 글. 지금 서버에서는 pip와 pip3가 같아서 의미없어짐
 
 ### 1. conda 밖에서 pip install로 설치 
-- 
+- /usr/local/lib/python3.8/dist-packages
 
 ### 2. conda 내에서, pip install로 설치한 경우
 - 현재 activate된 가상환경에만 패키지를 설치.
@@ -30,6 +30,7 @@
 ![image](https://github.com/sandartchip/TIL/assets/15938354/a32d3db1-e1bc-47d5-a932-ca642b65b9a4)
 
 ex)
+
 ```
 base-> /Users/사용자이름/anaconda3
 py36 -> /Users/사용자이름/anaconda3/envs/py36
@@ -44,9 +45,5 @@ $ (py36) conda install jupyter
 - 다운받을 수 있는 패키지 차이. 속도는 pip가 더 빠른듯.
 
 https://medium.com/analytics-vidhya/understand-conda-and-pip-9e5c67da47cc
-
-​
-
-​
 
 ​
