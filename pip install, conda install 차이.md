@@ -26,7 +26,7 @@
 - 현재 activate된 가상환경에만 패키지를 설치.
 - conda가 activate된 상태에서는 pip 명령어를 사용해도 conda 환경에 설치됨.
 
-- 설치 위치 <br>
+- 설치 위치 <br><br>
 ![image](https://github.com/sandartchip/TIL/assets/15938354/a32d3db1-e1bc-47d5-a932-ca642b65b9a4)
 
 ex)
