@@ -19,7 +19,8 @@
 
 
 ### 2. conda 내에서, pip install로 설치한 경우
-- 현재 activate된 가상환경에만 패키지를 설치. 
+- 현재 activate된 가상환경에만 패키지를 설치.
+- conda가 activate된 상태에서는 pip 명령어를 사용해도 conda 환경에 설치됨.
 
 ex)
 ```
