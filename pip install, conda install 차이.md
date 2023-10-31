@@ -1,8 +1,6 @@
-pip install은 파이썬 패키지 관리를 통해 라이브러리 설치 및 패키지 관리를 함.
 
-​
-
-conda install은 anaconda 패키지 관리를 통해 라이브러리 설치 및 관리를 함.
+- pip install은 파이썬 패키지 관리를 통해 라이브러리 설치 및 패키지 관리를 함.
+- conda install은 anaconda 패키지 관리를 통해 라이브러리 설치 및 관리를 함.
 
 ​
 
