@@ -2,6 +2,8 @@
 - pip install은 파이썬 패키지 관리를 통해 라이브러리 설치 및 패키지 관리를 함.
 - conda install은 anaconda 패키지 관리를 통해 라이브러리 설치 및 관리를 함.
 
+<img src="https://github.com/sandartchip/TIL/assets/15938354/3bba3974-0224-4bc1-b165-49a2c7e14b3e"/>
+
 ​
 
 ### 1-1. conda가 아닌 일반 cmd상에서 pip로 설치한 경우
