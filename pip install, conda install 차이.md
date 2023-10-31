@@ -6,21 +6,28 @@
 
 ​
 
-### 1-1. conda deactive 상태, 일반 cmd상에서 pip로 설치한 경우
--> anaconda에서 관리하는 전역 pip 폴더에 설치됨.
+~~### 1-1. conda deactive 상태, 일반 cmd상에서 pip로 설치한 경우~~
+~~-> anaconda에서 관리하는 전역 pip 폴더에 설치됨.~~
 
-저장위치 예시) /Users/사용자이름/anaconda3/env/py36/bin/pip
+~~저장위치 예시) /Users/사용자이름/anaconda3/env/py36/bin/pip~~
 
 ​
-### 1-2. conda가 아닌 일반 cmd상에서 pip3로 설치한 경우​
+~~### 1-2. conda가 아닌 일반 cmd상에서 pip3로 설치한 경우​~~
 
--> local 내의 pip3에 들어감.
-저장위치 예시) /usr/local/bin/pip3
+~~-> local 내의 pip3에 들어감.
+저장위치 예시) /usr/local/bin/pip3~~
 
+-> pip(python2) 와 pip3(python3)가 달랐을 때의 글. 지금 서버에서는 pip와 pip3가 같아서 의미없어짐
+
+### 1. conda 밖에서 pip install로 설치 
+- 
 
 ### 2. conda 내에서, pip install로 설치한 경우
 - 현재 activate된 가상환경에만 패키지를 설치.
 - conda가 activate된 상태에서는 pip 명령어를 사용해도 conda 환경에 설치됨.
+
+- 설치 위치
+![image](https://github.com/sandartchip/TIL/assets/15938354/a32d3db1-e1bc-47d5-a932-ca642b65b9a4)
 
 ex)
 ```
