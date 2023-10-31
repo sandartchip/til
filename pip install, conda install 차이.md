@@ -14,28 +14,13 @@ conda install은 anaconda 패키지 관리를 통해 라이브러리 설치 및 
 저장위치 예시) /Users/사용자이름/anaconda3/env/py36/bin/pip
 
 ​
-### 1-2. conda가 아닌 일반 cmd상에서 pip3로 설치한 경우
-
-​
+### 1-2. conda가 아닌 일반 cmd상에서 pip3로 설치한 경우​
 
 -> local 내의 pip3에 들어감.
-
-​
-
 저장위치 예시) /usr/local/bin/pip3
 
-​
 
-​
-
-​
-
-​
-
-2. conda 내에서, pip install로 설치한 경우
-
-​
-
+### 2. conda 내에서, pip install로 설치한 경우
 - 현재 activate된 가상환경에만 패키지를 설치. 
 
 ex)
