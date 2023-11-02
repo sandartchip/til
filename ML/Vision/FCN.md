@@ -1,6 +1,7 @@
 
 
 # FCN(Fully Convolutional Networks) 
+- 기존의 네트워크들은 아키텍쳐의 끝 부분에 FC Layer가 있어 공간 정보를 담지 못한 채 
 - FCN은 픽셀 단위의 예측(pixelwise prediction)을 수행 함.
 - image recognition에 일반적으로 사용하는 FC(Fully Connected Layer) Classifier를 CNN으로 바꿔주어 공간 정보를 보전하고 다양한 Image size를 입력으로 받음. 
 
@@ -12,7 +13,7 @@
 
 
 
-### Upsampling 
+### Upsampling is backwards strided convolution 
 - Coarse(거친, 알맹이가 큰) Map을 원본 이미지 크기에 가까운 Dense Map으로 변환해야 함.
 - 방법 1: Deconvolution (backward strided convolution)
 - 방법 2: Bilinear Interpolation
