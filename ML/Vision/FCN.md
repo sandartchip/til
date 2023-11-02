@@ -9,7 +9,7 @@
 - 이 feature map 의 픽셀 하나하나를 classification 결과 값으로 하여, segmentation을 진행 함. 
 - Convolution Layer들 만으로 Segmentation 수행.
 
-- NIN(Network in Network, 1x1 Conv) 로 FC(Fully Connected Layer)를 대체하여 Spatial한 정보를 보존 함.
+- NIN(Network in Network, 1x1 Conv) 로 FC(Fully Connected Layer)를 대체하여 Spatial한 정보를 보존 함. (->???) 
 
 
 
@@ -18,6 +18,10 @@
 - 방법 1: Deconvolution (backward strided convolution)
 - 방법 2: Bilinear Interpolation
 
+
+### Skip Architecture
+- 최종 Feature map은 지역 정보를 '대략적으로' 유지하고 있어 이미지가 뭉개진다.
+- 이를 방지하기 위해, **feature 추출 단계의 feature map도 Upsampling에 포함(Sum)하여 정보 손실을 막자**는 것이 핵심 아이디어이다. 
 
 ### 참고자료
 https://nolja98.tistory.com/295
