@@ -39,7 +39,7 @@ info{
 image{
   "id" : int, 
   "width" : int, 
-  "height" : int, 
+  "height" : int,  
   "file_name" : str, 
   "license" : int, 
   "flickr_url" : str, 
@@ -55,8 +55,8 @@ license{
 - object detection 분야라면 기본 구조에 아래의 형식을 추가 함.
 ```
 annotation{
-  "id" : int, 
-  "image_id" : int, 
+  "id" : int,  (필수X)
+  "image_id" : int, (필수)
   "category_id" : int, 
   "segmentation" : RLE or [polygon], 
   "area" : float, 
