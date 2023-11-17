@@ -37,10 +37,11 @@ info{
 }
  
 image{
-  "id" : int, 
-  "width" : int, 
-  "height" : int,  
-  "file_name" : str, 
+  "id" : int,  (필수)
+  "width" : int, (필수)
+  "height" : int,  (필수)
+  "file_name" : str, (필수)
+  "date_captured": str, (필수)
   "license" : int, 
   "flickr_url" : str, 
 }
@@ -57,11 +58,11 @@ license{
 annotation{
   "id" : int,  (필수X)
   "image_id" : int, (필수)
-  "category_id" : int, 
-  "segmentation" : RLE or [polygon], 
+  "category_id" : int,  (필수) 
+  "bbox" : [x,y,width,height], (필수) 
+  "segmentation" : RLE or [polygon],  
   "area" : float, 
-  "bbox" : [x,y,width,height], 
-  "iscrowd" : 0 or 1,
+  "iscrowd" : 0 or 1, 
 }
 
 categories[{
