@@ -21,10 +21,11 @@
 ### 기본 형식 
 ```
 {
-"info" : info, 
-"images" : [image], 
-"annotations" : [annotation], 
-"licenses" : [license],
+"images" : [image],  (필수)
+"annotations" : [annotation], (필수)
+"categories": [categories],  (필수) 
+"info" : info, (필수X)
+"licenses" : [license], (필수X)
 }
 
 info{
