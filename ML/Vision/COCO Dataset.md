@@ -11,7 +11,7 @@
 - segmentation의 경우, segmentation 정보와 bbox, category_id, id, bbox, image_id, iscrowd, area가 필요 함.
 
 - segmentation의 경우, 값이 list라면 폴리곤(각 connected component 별로 생성됨)의 list를 의미함.
-- 각각의 리스트는 단순한 **[x1, y1, ..., cn, yn]** (n>=3)포맷의 폴리곤임.
+- segmentation의 각각의 리스트는 단순한 **[x1, y1, ..., cn, yn]** (n>=3)포맷의 폴리곤임.
 - x와 y는 픽셀 단위로 표현한 절대 좌표임.
 - 값이 dict라면 COCO의 압축 RLE 포맷으로 나타낸 픽셀 별 Segmentation Mask를 나타냄.
 - dict에는 "size"와 "counts" 키가 있어야 함. 
