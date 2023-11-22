@@ -57,7 +57,7 @@ license{
 - object detection 분야라면 기본 구조에 아래의 형식을 추가 함.
 ```
 annotation{
-  "id" : int,  (필수X)
+  "id" : int,  (필수. 없으면 COCO 변환 시 에러)
   "image_id" : int, (필수)
   "category_id" : int,  (필수) 
   "bbox" : [x,y,width,height], (필수) 
