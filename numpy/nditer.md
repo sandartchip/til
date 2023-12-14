@@ -1,15 +1,17 @@
 ```python
 
 arr = np.array([[1, 2, 3], [4, 5, 6]])
+```
 
-
+```python
+# 노가다로 2차원 배열 loop 
 for row in range(0, arr.shape[0]):
   for col in range(0, arr.shape[1]):
 	print(arr[row, col], end= ' ')
 ```
 
 ```python
-
+# nditer로 루프 
 it = np.nditer(arr, flags=['multi_index'])
 
 
