@@ -1,6 +1,7 @@
 
 
-<img src="https://github.com/sandartchip/TIL/assets/15938354/ba0ceade-1d7a-4059-bdb5-19265b494ce2" width="500px">
+## 전체 구조 
+<img src="https://github.com/sandartchip/TIL/assets/15938354/ba0ceade-1d7a-4059-bdb5-19265b494ce2" width="600px">
 
 ![image](https://github.com/sandartchip/TIL/assets/15938354/4188e419-87a4-4deb-94a8-d37c4d4e041e)
 
