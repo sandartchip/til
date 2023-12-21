@@ -36,7 +36,7 @@ np.random.rand(3, 2)
 - input으로 들어오는게 **matrix array shape임** 
 - 표준 정규분포를 다음과 같이 표현 가능
 
-```sigma * np.random.randn() + mu```
+```sigma * np.random.randn(matrix shape) + mu```
 
 ### 예시 
 
