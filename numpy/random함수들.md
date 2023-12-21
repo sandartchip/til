@@ -20,7 +20,16 @@ np.random.randint(5, size=(2, 4))
 ## rand
 - random.rand(m, n) : 0~1의 균일분포(uniform distribution) 난수를 matrix array (m, n) 생성
 - randn과 달리 양수만 나옴. 
+```python
+np.random.rand(6)
+>> array([0.88599222, 0.82914491, 0.43118895, 0.33944631, 0.92531795,
+       0.57969949])
 
+np.random.rand(3, 2)
+>> array([[0.60619103, 0.56921904, 0.54332837],
+       [0.29953333, 0.36113596, 0.67134909]])
+
+```
   
 ## randn 
 - random.randn(m, n) : 0~1 사이의 가우시안 표준 정규 분포에서 난수 matrix array 생성
