@@ -18,7 +18,9 @@ np.random.randint(5, size=(2, 4))
 ```
 
 ## rand
-- random.rand(m, n) : 0~1의 균일분포 표준정규분포 난수를 matrix array (m, n) 생성
+- random.rand(m, n) : 0~1의 균일분포(uniform distribution) 난수를 matrix array (m, n) 생성
+- randn과 달리 양수만 나옴. 
+
   
 ## randn 
 - random.randn(m, n) : 0~1 사이의 가우시안 표준 정규 분포에서 난수 matrix array 생성
