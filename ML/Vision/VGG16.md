@@ -8,7 +8,8 @@
 
 ![image](https://github.com/sandartchip/TIL/assets/15938354/2a963597-fc14-45ea-90ff-4072a4bec418)
 
-
+- 3x3 conv 과정에서는 필터 통과해도 feature map 안 줄어듬. (zero padding)으로
+- max pooling할 때 stride 2를 써서 이미지 크기가 반으로 줄어듬.
 
 
 ## 장점
