@@ -6,7 +6,7 @@
 
 ```python
 random.randint(1, 10)
->>> 5   (1~10 사이 정수 1개 )
+>>> 5   (1 이상 10 미만 정수 1개 )
 
 np.random.randint(2, size=10)
 >>> array([1, 0, 0, 0, 1, 1, 0, 0, 1, 0]) # random
