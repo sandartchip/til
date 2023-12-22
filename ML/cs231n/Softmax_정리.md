@@ -59,6 +59,7 @@ print(dx)
 
 - 여기서는 Softmax 미분값이 y-t인데 왜 저기선 또 prob랑 빼는데 아 ㅅㅂ
 - ANSWER ) y-t는 Computational Graph의 Softmax-Loss 계층의 **i번째 입력값 ai**에 대한 Loss의 gradient.    (dL/da)
+- 똑같은 Loss를 미분해도 누구로 편미분하느냐에 따라 미분결과가 달라짐
 
 <br><br><br>
 <img src="https://github.com/sandartchip/TIL/assets/15938354/46970f47-01f6-48c9-b445-f4765f8938dd" /> <br>
