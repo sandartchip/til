@@ -9,7 +9,9 @@
 - i번째 데이터의 W가 안좋다는 정도 계산은 Li.
 - Loss를 Optimize할 때 쓰는게 Gradient Descent.
 
-- BackPropagation 시키기 
+- BackPropagation 시키기
+- ![image](https://github.com/sandartchip/TIL/assets/15938354/3d752837-0426-41b7-9c9d-e11e5316793e)
+
  <img src="https://github.com/sandartchip/TIL/assets/15938354/46970f47-01f6-48c9-b445-f4765f8938dd" />
 
  <img src="https://github.com/sandartchip/TIL/assets/15938354/e2a2f96c-9631-4f0d-bd3c-85ad3bb429b8 "/>
@@ -170,6 +172,10 @@ result = np.log(np.exp(y_score) / np.sum(np.exp(scores)))  # scores의 각 원�
 - Softmax의 결과와 One Hot으로 변형된 실제 레이블간의 오차를 계산(cross-entropy 함수)
 
 
+
+### 참고자료
+
+https://wlsyou98.wordpress.com/2023/08/09/cs231n-assignment1-softmaxtwo-layer-netfeatures/
 https://github.com/martinkersner/cs231n/blob/master/assignment1/softmax.py <br>
 https://ratsgo.github.io/deep%20learning/2017/10/02/softmax/ <br>
 https://lionkingchuchu.tistory.com/38  <br>
