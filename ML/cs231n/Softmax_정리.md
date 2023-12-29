@@ -10,8 +10,9 @@
 - Loss를 Optimize할 때 쓰는게 Gradient Descent.
 
 - BackPropagation 시키기
-- <img src="https://github.com/sandartchip/TIL/assets/15938354/3d752837-0426-41b7-9c9d-e11e5316793e" width="600px"/>
+- <img src="https://github.com/sandartchip/TIL/assets/15938354/3d752837-0426-41b7-9c9d-e11e5316793e" width="500px"/>
 
+- 깔끔하게 정리하면 
  <img src="https://github.com/sandartchip/TIL/assets/15938354/46970f47-01f6-48c9-b445-f4765f8938dd" />
 
  <img src="https://github.com/sandartchip/TIL/assets/15938354/e2a2f96c-9631-4f0d-bd3c-85ad3bb429b8 "/>
