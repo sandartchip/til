@@ -57,7 +57,7 @@ print(dx)
  [ 0.01170634 -0.24683451  0.23512817]]
 ```
 
-- 여기서는 Softmax 미분값이 y-t인데 왜 저기선 또 prob랑 빼는데 아 ㅅㅂ
+- 여기서는 Softmax 미분값이 y-t인데 왜 저기선 또 prob랑 빼는거임 ??
 - ANSWER ) y-t는 Computational Graph의 Softmax-Loss 계층의 **i번째 입력값 ai**에 대한 Loss의 gradient.    (dL/da)
 - 똑같은 Loss를 미분해도 누구로 편미분하느냐에 따라 미분결과가 달라짐
 
