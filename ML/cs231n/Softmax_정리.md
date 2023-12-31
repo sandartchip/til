@@ -61,7 +61,8 @@ print(dx)
 ```
 
 - Question) 여기서는 Softmax 미분값이 y-t인데 왜 저기선 또 prob랑 빼는거임 ??
-- ANSWER ) y-t는 Computational Graph의 Softmax-Loss x에 대한 Loss의 gradient.    (dL/dx), w랑 상관없음 
+- ANSWER ) y-t는 Computational Graph의 Softmax-Loss의 Input x에 대한 Loss의 gradient.    (dL/dx), w랑 상관없음.
+- w가 있는건 앞에 Affine 붙인경우.
 - 문제풀이에 쓰인건 dL/dw 임. 
 - 똑같은 Loss를 미분해도 누구로 편미분하느냐에 따라 미분결과가 달라짐
 
