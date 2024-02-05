@@ -67,9 +67,9 @@ annotation{
 }
 
 categories[{
-  "id" : int,
-  "name": str,
-  "supercategory" : str,
+  "id" : int(필수),
+  "name": str(필수),
+  "supercategory" : str(필수 X),
 ```
 
 - annotations (list[dict])
