@@ -92,6 +92,12 @@ categories[{
 - images (list[dict])
 - annotations (list[dict])
 
+### 예시
+<img src="https://github.com/sandartchip/TIL/assets/15938354/b707dd59-d97d-4b0f-9c90-ff395b888674" width="300px" />
+<img src="https://github.com/sandartchip/TIL/assets/15938354/d21a9e74-726e-42b2-901e-548693859930 "/>
+![image](https://github.com/sandartchip/TIL/assets/15938354/8a892524-c08e-4ef1-b2bb-f16d47d625d0)
+
+
 
 
 ### 참고자료
