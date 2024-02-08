@@ -27,7 +27,11 @@
 "info" : info, (필수X)
 "licenses" : [license], (필수X)
 }
+```
 
+- 전체는 3~5개의 항목을 가진 dictionary임.
+- 각각 element 중에 info만 dict고 나머지는 리스트임.
+```
 info{
 "year" : int, 
 "version" : str, 
