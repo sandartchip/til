@@ -71,14 +71,17 @@ annotation
   "id" : int,  (필수. 없으면 COCO 변환 시 에러)
   "image_id" : int, (필수)
   "category_id" : int,  (필수) 
-  "bbox" : [x,y,width,height], (필수) 
+  "bbox" : [좌상단 x, 좌상단 y,width,height], (필수) 
   "segmentation" : RLE or [polygon],  
   "area" : float, 
   "iscrowd" : 0 or 1, 
 },
 {...
 }
+```
+<img src="https://github.com/sandartchip/TIL/assets/15938354/78157e7f-9c12-4682-b28e-a2fd1f06dba8" />
 
+```
 categories[{
   "id" : int(필수),
   "name": str(필수),
