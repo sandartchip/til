@@ -41,7 +41,8 @@ info{
 "date_created" : datetime,
 }
  
-image{
+image
+[{
   "id" : int,  (필수)
   "width" : int, (필수)
   "height" : int,  (필수)
@@ -49,18 +50,24 @@ image{
   "date_captured": str, (필수)
   "license" : int, 
   "flickr_url" : str, 
+},
+{
 }
+]
 
-license{
+licenses
+[{
   "id" : int, 
   "name" : str, 
   "url" : str,
-}
+},
+{
 ```
 
 - object detection 분야라면 기본 구조에 아래의 형식을 추가 함.
 ```
-annotation{
+annotation
+[{
   "id" : int,  (필수. 없으면 COCO 변환 시 에러)
   "image_id" : int, (필수)
   "category_id" : int,  (필수) 
@@ -68,15 +75,20 @@ annotation{
   "segmentation" : RLE or [polygon],  
   "area" : float, 
   "iscrowd" : 0 or 1, 
+},
+{...
 }
 
 categories[{
   "id" : int(필수),
   "name": str(필수),
-  "supercategory" : str(필수 X),
+  "supercategory" : str(필수 X)}
+  ,
+  {...
+  } 
 ```
 
-- 이미지와 annotation은 여러개가 올 수 있음
+- 이미지와 annotation, categories, licenses은 여러개가 올 수 있음
 - images (list[dict])
 - annotations (list[dict])
 
