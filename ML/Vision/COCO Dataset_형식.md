@@ -72,6 +72,8 @@ categories[{
   "supercategory" : str(필수 X),
 ```
 
+- 이미지와 annotation은 여러개가 올 수 있음
+- images (list[dict])
 - annotations (list[dict])
 
 
