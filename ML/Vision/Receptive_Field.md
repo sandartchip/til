@@ -1,3 +1,4 @@
+### CNN의 Receptive Field
 
 <img src="https://velog.velcdn.com/images/sandartchip/post/36622689-6a4b-4647-bcf2-5c59d0df5006/image.png" width="400px"/>
 
